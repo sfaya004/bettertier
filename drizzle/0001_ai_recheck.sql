@@ -1,0 +1,1 @@
+ALTER TABLE `products` ADD `last_ai_checked_at` text;

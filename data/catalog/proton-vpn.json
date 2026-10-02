@@ -1,0 +1,247 @@
+{
+  "company": {
+    "slug": "proton-vpn",
+    "name": "Proton VPN",
+    "category": "vpn",
+    "website": "https://protonvpn.com",
+    "pricingUrl": "https://protonvpn.com/pricing",
+    "shortDescription": "A private internet connection (VPN) from a Swiss company, with a genuinely free plan and optional email and storage.",
+    "planHelp": "Sign in at account.protonvpn.com and open the 'Subscription' page. It shows your plan name, the price you pay and the renewal date."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://protonvpn.com/pricing",
+      "title": "Proton VPN pricing",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://protonvpn.com/support/proton-vpn-plans",
+      "title": "Proton VPN plans explained (official support)",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://protonvpn.com/free-vpn/free-vs-paid",
+      "title": "Compare Proton VPN Free and paid plans",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://proton.me/support/proton-plans",
+      "title": "Proton plans explained (official support)",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "devices",
+      "label": "Devices protected at the same time",
+      "type": "number",
+      "question": "How many devices (phones, computers, and tablets) do you want to protect?",
+      "help": "The free plan covers only one device at a time. The paid plans cover ten.",
+      "options": [
+        {
+          "label": "Just 1",
+          "value": 1
+        },
+        {
+          "label": "2 to 5",
+          "value": 5
+        },
+        {
+          "label": "6 to 10",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "key": "connection_speed",
+      "label": "Connection speed",
+      "type": "ordinal",
+      "levels": [
+        "medium",
+        "highest"
+      ],
+      "levelLabels": {
+        "medium": "Medium speed",
+        "highest": "Fastest speed"
+      },
+      "question": "Do you need the fastest connection, or is a slower one acceptable?",
+      "help": "The free plan is slower and can be busy at peak times. The paid plans give the fastest speeds.",
+      "options": [
+        {
+          "label": "A slower connection is fine",
+          "value": "medium"
+        },
+        {
+          "label": "I want the fastest",
+          "value": "highest"
+        }
+      ]
+    },
+    {
+      "key": "streaming_support",
+      "label": "Works with TV and movie services",
+      "type": "boolean",
+      "question": "Do you want to watch services like Netflix, Disney+ or Prime Video while connected?",
+      "help": "The free plan is not designed for this. The paid plans are."
+    },
+    {
+      "key": "choose_server_location",
+      "label": "Choosing which country you appear to be in",
+      "type": "boolean",
+      "question": "Do you need to choose which country you appear to be connecting from?",
+      "help": "On the free plan the country is picked for you from a short list. On paid plans you can choose from over 140 countries."
+    },
+    {
+      "key": "ad_blocker",
+      "label": "Blocking ads and trackers",
+      "type": "boolean",
+      "question": "Would you like ads and tracking to be blocked automatically?",
+      "help": "Proton calls this \"NetShield\"."
+    },
+    {
+      "key": "other_proton_services",
+      "label": "Other Proton apps (email, storage, passwords)",
+      "type": "ordinal",
+      "levels": [
+        "free",
+        "premium"
+      ],
+      "levelLabels": {
+        "free": "Basic versions of Proton Mail, Calendar, Drive and Pass",
+        "premium": "Full paid versions of Proton Mail, Calendar, Drive and Pass"
+      },
+      "question": "Do you also want the full paid versions of Proton's email, calendar, file storage and password apps?",
+      "options": [
+        {
+          "label": "No, the basic versions are fine",
+          "value": "free"
+        },
+        {
+          "label": "Yes, I want the full versions",
+          "value": "premium"
+        }
+      ]
+    },
+    {
+      "key": "storage_gb",
+      "label": "Online file storage",
+      "type": "number",
+      "question": "How much online storage do you need for photos and documents?",
+      "help": "Only the Proton Unlimited plan includes a large amount of storage (500 GB).",
+      "options": [
+        {
+          "label": "I don't need any",
+          "value": 0
+        },
+        {
+          "label": "A large amount (500 GB)",
+          "value": 500
+        }
+      ]
+    }
+  ],
+  "plans": [
+    {
+      "slug": "free",
+      "name": "Proton Free",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 0
+        }
+      ],
+      "features": {
+        "devices": 1,
+        "connection_speed": "medium",
+        "streaming_support": false,
+        "choose_server_location": false,
+        "ad_blocker": false,
+        "other_proton_services": "free",
+        "storage_gb": null
+      },
+      "bestFor": "Trying a private connection on one device without paying anything, with no ads and no time limit.",
+      "notes": "Free forever, no card needed, unlimited data. The country you connect through is chosen for you. CONFLICT NOTED: Proton's support article 'Proton VPN plans explained' says 10 countries are available on Free, while the 'Free vs paid' comparison page says 5 countries; both are official Proton pages. Free storage is listed by Proton as 1 GB for Mail plus a small amount of Drive storage, which was not stated consistently enough to record, so storage_gb is null."
+    },
+    {
+      "slug": "vpn-plus",
+      "name": "VPN Plus",
+      "tier": 2,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": null
+        },
+        {
+          "period": "annual",
+          "amount": null
+        }
+      ],
+      "features": {
+        "devices": 10,
+        "connection_speed": "highest",
+        "streaming_support": true,
+        "choose_server_location": true,
+        "ad_blocker": true,
+        "other_proton_services": "free",
+        "storage_gb": null
+      },
+      "bestFor": "Someone who wants a fast private connection for the whole household and to keep watching their usual television services.",
+      "notes": "PRICE NOT VERIFIED. Proton renders all of its prices with JavaScript, so every official Proton page fetched on 2026-09-21 (protonvpn.com/pricing, proton.me/pricing, protonvpn.com/vpn-deals, protonvpn.com/blog/monthly-plus-price-change) showed only placeholder values such as '$0.00' and '$XX.XX'. Proton's support article proton.me/support/proton-plans lists euro prices for its bundles but does not list VPN Plus at all. Both monthly and annual are therefore null and must be checked on the live site. Features verified: 10 devices, up to 10 Gbps, 20,000+ servers in 140+ countries, streaming, P2P/BitTorrent, NetShield ad and malware blocker, priority support and live chat, 30-day money-back guarantee. Includes the free versions of Proton Mail, Calendar, Drive and Pass."
+    },
+    {
+      "slug": "proton-unlimited",
+      "name": "Proton Unlimited",
+      "tier": 3,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": null
+        },
+        {
+          "period": "annual",
+          "amount": null
+        }
+      ],
+      "features": {
+        "devices": 10,
+        "connection_speed": "highest",
+        "streaming_support": true,
+        "choose_server_location": true,
+        "ad_blocker": true,
+        "other_proton_services": "premium",
+        "storage_gb": 500
+      },
+      "bestFor": "Someone who wants to replace Gmail and Google Drive as well, with private email, 500 GB of storage and a password keeper included.",
+      "notes": "PRICE NOT VERIFIED IN USD. Proton's official support page proton.me/support/proton-plans quotes Proton Unlimited as EUR 12.99 per month or EUR 119.88 for one year (EUR 9.99 a month). No US dollar figure could be obtained from any official page because prices are rendered by JavaScript, so both USD amounts are null. Includes everything in VPN Plus plus Proton Mail Plus (15 email addresses, 3 custom domains), Calendar Premium, Drive Plus, Pass Plus with unlimited email aliases, and 500 GB of storage shared between Mail and Drive."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is the free Proton VPN plan really free?",
+      "a": "Yes. There is no charge, no card needed, no ads and no limit on how much you use it. The trade-offs are one device at a time, a medium speed, a short list of countries chosen for you, and it is not meant for watching television services."
+    },
+    {
+      "q": "What is the difference between VPN Plus and Proton Unlimited?",
+      "a": "The private internet connection is exactly the same. Proton Unlimited adds the full paid versions of Proton's other apps: private email, calendar, 500 GB of file storage and a password keeper."
+    },
+    {
+      "q": "Why are no prices listed here?",
+      "a": "Proton shows its prices only after the page loads in a browser, so they could not be read from the official pages when this was checked. Please look at protonvpn.com/pricing for the current amount before buying."
+    },
+    {
+      "q": "Can I get my money back?",
+      "a": "Proton advertises a 30-day money-back guarantee on its paid plans."
+    }
+  ],
+  "notes": "Feature information is well verified from official Proton pages; prices are not. Proton's prices are generated by JavaScript on every page checked, and no official page states US dollar amounts in plain text. Proton also sells Duo (2 people) and Family (6 people) bundles, and a VPN Essentials/business range, which are outside the scope of this consumer file. Proton is based in Switzerland and operates a no-logs policy."
+}

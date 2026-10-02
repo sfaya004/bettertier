@@ -1,0 +1,227 @@
+{
+  "company": {
+    "slug": "norton-360",
+    "name": "Norton 360",
+    "category": "security",
+    "website": "https://us.norton.com",
+    "pricingUrl": "https://us.norton.com/products",
+    "shortDescription": "Virus protection for your computers and phones, with optional private internet connection, online backup and identity theft protection.",
+    "planHelp": "Sign in to your Norton account at my.norton.com and look at 'My Subscriptions'. It shows the plan name, the number of devices it covers, the renewal price and the renewal date."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://us.norton.com/products",
+      "title": "Norton products and plans",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://us.norton.com/products/norton-antivirus-plus",
+      "title": "Norton AntiVirus Plus",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://us.norton.com/products/norton-360-standard",
+      "title": "Norton 360 Standard",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://us.norton.com/products/norton-360-deluxe",
+      "title": "Norton 360 Deluxe",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "devices",
+      "label": "Devices protected",
+      "type": "number",
+      "question": "How many devices (phones, computers, and tablets) do you want to protect?",
+      "help": "Count every device in the house that you would like covered, including your family's phones.",
+      "options": [
+        {
+          "label": "Just 1",
+          "value": 1
+        },
+        {
+          "label": "2 or 3",
+          "value": 3
+        },
+        {
+          "label": "4 or 5",
+          "value": 5
+        },
+        {
+          "label": "6 to 10",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "key": "vpn",
+      "label": "Private internet connection",
+      "type": "boolean",
+      "question": "Do you want a private internet connection, so that other people cannot see what you do online?",
+      "help": "This is useful on public Wi-Fi, for example in a coffee shop, hotel, or hospital."
+    },
+    {
+      "key": "cloud_backup_gb",
+      "label": "Online backup for your files",
+      "type": "number",
+      "question": "How much space do you need to keep a safety copy of your photos and documents online?",
+      "help": "A safety copy means that if your computer breaks or is stolen, your files are still there. 50 GB is about 10,000 photos. Backup is for Windows computers only.",
+      "options": [
+        {
+          "label": "I don't need this",
+          "value": 0
+        },
+        {
+          "label": "A small amount (2 GB)",
+          "value": 2
+        },
+        {
+          "label": "A medium amount (50 GB)",
+          "value": 50
+        },
+        {
+          "label": "A large amount (250 GB)",
+          "value": 250
+        }
+      ]
+    },
+    {
+      "key": "parental_controls",
+      "label": "Controls for children",
+      "type": "boolean",
+      "question": "Do children use your devices and do you want to limit what they can see or how long they use them?"
+    },
+    {
+      "key": "dark_web_monitoring",
+      "label": "Warning if your details are stolen",
+      "type": "boolean",
+      "question": "Do you want to be told if your personal details turn up on a criminal website?"
+    },
+    {
+      "key": "identity_theft_protection",
+      "label": "Identity theft protection and money back",
+      "type": "boolean",
+      "question": "Do you want credit alerts, expert help and money back if someone steals your identity?",
+      "help": "Only the plans that include LifeLock have this. They watch your credit record and reimburse stolen funds up to a limit."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "antivirus-plus",
+      "name": "Norton AntiVirus Plus",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "annual",
+          "amount": 59.99
+        }
+      ],
+      "features": {
+        "devices": 1,
+        "vpn": false,
+        "cloud_backup_gb": 2,
+        "parental_controls": false,
+        "dark_web_monitoring": false,
+        "identity_theft_protection": false
+      },
+      "bestFor": "One computer, virus protection only, at the lowest price.",
+      "notes": "Standard (renewal) price is $59.99 a year for 1 device. PROMOTIONAL ONLY: $29.99 for the first year for new customers (advertised as 50% off). A 5-device version is also sold at $84.99 a year standard, $39.99 for the first year. Includes a password manager, smart firewall and 2 GB of cloud backup for Windows. Does not include the VPN, parental controls or dark web monitoring. Norton advertises a 60-day money-back guarantee."
+    },
+    {
+      "slug": "360-standard",
+      "name": "Norton 360 Standard",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "annual",
+          "amount": 94.99
+        }
+      ],
+      "features": {
+        "devices": 3,
+        "vpn": true,
+        "cloud_backup_gb": 2,
+        "parental_controls": false,
+        "dark_web_monitoring": true,
+        "identity_theft_protection": false
+      },
+      "bestFor": "One or two people with a few devices who also want a private internet connection.",
+      "notes": "Standard (renewal) price is $94.99 a year for 3 devices. PROMOTIONAL ONLY: $39.99 for the first year for new customers (advertised as 57% off). Adds the Secure VPN and dark web monitoring to AntiVirus Plus. Cloud backup is 2 GB, Windows only. No parental controls."
+    },
+    {
+      "slug": "360-deluxe",
+      "name": "Norton 360 Deluxe",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "annual",
+          "amount": 124.99
+        }
+      ],
+      "features": {
+        "devices": 5,
+        "vpn": true,
+        "cloud_backup_gb": 50,
+        "parental_controls": true,
+        "dark_web_monitoring": true,
+        "identity_theft_protection": false
+      },
+      "bestFor": "A family or a household with several devices, especially if there are children at home.",
+      "notes": "Standard (renewal) price is $124.99 a year for 5 devices. PROMOTIONAL ONLY: $49.99 for the first year for new customers (advertised as 60% off). Adds parental controls and increases cloud backup to 50 GB (Windows only)."
+    },
+    {
+      "slug": "360-with-lifelock-select-plus",
+      "name": "Norton 360 with LifeLock Select Plus",
+      "tier": 4,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "annual",
+          "amount": 189.99
+        }
+      ],
+      "features": {
+        "devices": 10,
+        "vpn": true,
+        "cloud_backup_gb": 250,
+        "parental_controls": true,
+        "dark_web_monitoring": true,
+        "identity_theft_protection": true
+      },
+      "bestFor": "Someone who is worried about identity theft and wants credit alerts, an expert to call and money back if funds are stolen.",
+      "notes": "Standard (renewal) price is $189.99 a year for 10 devices. PROMOTIONAL ONLY: $99.99 for the first year for new customers (advertised as 47% off). Adds LifeLock identity theft protection with Social Security and credit alerts, plus reimbursement of up to $25,000 for stolen funds. Cloud backup 250 GB (Windows only). Norton sells further LifeLock tiers (for example Advantage and Ultimate Plus) with higher reimbursement limits; those were not verified on the pages checked and are not listed here."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Why is the second year so much more expensive?",
+      "a": "The advertised price is an introductory price for your first year only. After that the subscription renews automatically at the standard price shown here, which is roughly double. Norton's own fine print says 'Renewal prices may be higher than the initial price and are subject to change'."
+    },
+    {
+      "q": "Does Norton renew by itself?",
+      "a": "Yes. Subscriptions renew automatically and Norton bills you up to 35 days before the renewal date unless you turn auto-renewal off in your Norton account."
+    },
+    {
+      "q": "Which plan do I need if I want the private internet connection?",
+      "a": "Norton 360 Standard and everything above it include the Secure VPN. Norton AntiVirus Plus does not."
+    },
+    {
+      "q": "Does the online backup work on a Mac?",
+      "a": "No. Norton's cloud backup is for Windows computers only, although the virus protection itself works on Macs, phones and tablets."
+    }
+  ],
+  "notes": "All prices are Norton's standard renewal prices, taken from the official US product pages on 2026-09-21; the much lower first-year prices are introductory offers for new customers only and are recorded in each plan's notes. Norton also sells a Norton Mobile Security plan for a single phone or tablet at $29.99 a year standard ($19.99 first year), and higher LifeLock tiers that were not verified. Norton advertises a 60-day money-back guarantee on annual plans."
+}

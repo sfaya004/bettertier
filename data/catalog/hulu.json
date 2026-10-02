@@ -1,0 +1,142 @@
+{
+  "company": {
+    "slug": "hulu",
+    "name": "Hulu",
+    "category": "streaming-video",
+    "website": "https://www.hulu.com",
+    "pricingUrl": "https://www.hulu.com/premium-no-ads",
+    "shortDescription": "American television shows the day after they air, plus movies and Hulu's own series.",
+    "planHelp": "On a computer go to hulu.com, sign in, click your name in the top right corner and choose Account. Your plan is shown at the top under Your Subscription, with a Manage Plan link next to it. In the Hulu app, tap your profile picture, then Account."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.hulu.com/premium-no-ads",
+      "title": "Watch Hulu without ads – Hulu (No Ads) pricing",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.hulu.com/annual-offer",
+      "title": "Hulu Annual Plan for $119.99/year",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.hulu.com/welcome",
+      "title": "Stream TV and Movies Live and Online | Hulu",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.hulu.com/time-to-have-hulu-live-tv",
+      "title": "Hulu + Live TV plans and pricing",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "ad_free",
+      "label": "No advertisements",
+      "type": "boolean",
+      "question": "Do you want to watch without advertisements?",
+      "help": "The cheaper Hulu plan plays advertisements before and during shows. Even on the more expensive plan, a small number of series still carry advertisements."
+    },
+    {
+      "key": "downloads",
+      "label": "Save shows to watch without internet",
+      "type": "boolean",
+      "question": "Do you save shows onto a phone or tablet to watch where there is no internet?"
+    },
+    {
+      "key": "simultaneous_streams",
+      "label": "People who can watch at the same time",
+      "type": "number",
+      "question": "How many people watch at the same time?",
+      "help": "Hulu allows two at once on both plans. If you need more, Hulu sells an Unlimited Screens extra with its Live TV service.",
+      "options": [
+        {
+          "label": "Just one",
+          "value": 1
+        },
+        {
+          "label": "2 at the same time",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "key": "live_tv",
+      "label": "Live television channels",
+      "type": "boolean",
+      "question": "Do you want live television channels, like the ones you get with cable or an antenna?",
+      "help": "The ordinary Hulu plans do not include live channels. Hulu sells a separate, much more expensive package called Hulu + Live TV for that."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "with-ads",
+      "name": "Hulu (With Ads)",
+      "tier": 1,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 11.99
+        },
+        {
+          "period": "annual",
+          "amount": 119.99
+        }
+      ],
+      "features": {
+        "ad_free": false,
+        "downloads": null,
+        "simultaneous_streams": 2,
+        "live_tv": false
+      },
+      "bestFor": "People who want next-day American television at the lowest price and do not mind advertisements.",
+      "notes": "Prices 11.99 per month and 119.99 per year are confirmed on Hulu's own pages; paying yearly saves about 16 percent. Marked uncertain because Hulu's help pages about saving shows for offline viewing could not be read (they load their text only in a web browser), so whether this plan allows downloads is recorded as null rather than guessed."
+    },
+    {
+      "slug": "no-ads",
+      "name": "Hulu (No Ads)",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 18.99
+        }
+      ],
+      "features": {
+        "ad_free": true,
+        "downloads": true,
+        "simultaneous_streams": 2,
+        "live_tv": false
+      },
+      "bestFor": "People who watch a lot of Hulu and do not want to sit through advertisements.",
+      "notes": "Price 18.99 per month is confirmed on Hulu's own no-advertisements page, which also describes saving shows for offline viewing as a feature of this plan. A small number of series still show advertisements because of the deals behind them. Hulu does not advertise an annual version of this plan."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Does Hulu include live television channels?",
+      "a": "Not on the ordinary plans. For live channels you need Hulu + Live TV, which is a separate and much more expensive package – 89.99 a month with advertisements on Hulu's library, or 99.99 a month without. Those prices also include Disney+ and ESPN Select."
+    },
+    {
+      "q": "Can I save money by paying for a year at once?",
+      "a": "Yes, on the plan with advertisements. It costs 119.99 for twelve months instead of 11.99 each month, which saves about 16 percent."
+    },
+    {
+      "q": "How many people can watch at the same time?",
+      "a": "Two screens at once. With Hulu + Live TV you can pay extra for an Unlimited Screens option that allows more devices at home."
+    },
+    {
+      "q": "Is it cheaper to get Hulu with Disney+?",
+      "a": "Usually yes. Disney+ and Hulu together, both with advertisements, cost 12.99 a month, which is only a little more than Hulu on its own."
+    }
+  ],
+  "notes": "Hulu + Live TV is recorded here for information only and is NOT modelled as a plan: 89.99 per month for Hulu (with ads) plus Disney+ and ESPN Select, or 99.99 per month for the version without advertisements on Hulu's library. Both include over 100 live channels, unlimited recording, and two screens at a time, with an extra-cost Unlimited Screens option. Bundle prices seen on Hulu's site: Disney+ and Hulu both with ads 12.99 per month; both without ads 19.99 per month; Disney+, Hulu and ESPN Select 21.99 per month (premium version 32.99); Disney+, Hulu and ESPN Unlimited 35.99 per month (premium 44.99); student bundle 6.49 per month. Hulu's help center pages could not be read directly because their text loads only inside a web browser; all figures above come from Hulu's public marketing pages."
+}

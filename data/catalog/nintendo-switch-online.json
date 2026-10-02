@@ -1,0 +1,211 @@
+{
+  "company": {
+    "slug": "nintendo-switch-online",
+    "name": "Nintendo Switch Online",
+    "category": "gaming",
+    "website": "https://www.nintendo.com/us/switch/online/",
+    "pricingUrl": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/41194/~/how-much-does-a-nintendo-switch-online-membership-cost",
+    "shortDescription": "Nintendo's membership: play Switch games online with other people, keep your saved games backed up, and play a library of old Nintendo games.",
+    "planHelp": "On your Switch, select your profile picture on the Home screen, then scroll down to Nintendo Switch Online. It shows which membership you have and when it renews."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/41194/~/how-much-does-a-nintendo-switch-online-membership-cost",
+      "title": "How Much Does a Nintendo Switch Online Membership Cost? – Nintendo Support",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.nintendo.com/us/switch/online/",
+      "title": "Nintendo Switch Online – Nintendo (US)",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "members",
+      "label": "People who can use the membership",
+      "type": "number",
+      "question": "How many people in your home need it?",
+      "help": "The family membership covers up to eight Nintendo Accounts, and they do not all have to live in the same house.",
+      "options": [
+        {
+          "label": "Just me",
+          "value": 1
+        },
+        {
+          "label": "2 or 3 people",
+          "value": 3
+        },
+        {
+          "label": "4 to 8 people",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "key": "online_play",
+      "label": "Playing with other people online",
+      "type": "boolean",
+      "question": "Do you play games against or alongside other people over the internet?",
+      "help": "Games such as Mario Kart, Splatoon and Animal Crossing need this to play with others."
+    },
+    {
+      "key": "classic_games",
+      "label": "Older Nintendo games included",
+      "type": "ordinal",
+      "levels": [
+        "basic",
+        "expanded"
+      ],
+      "levelLabels": {
+        "basic": "NES, Super NES and Game Boy games",
+        "expanded": "Those plus Nintendo 64, Game Boy Advance and SEGA Genesis games"
+      },
+      "question": "Which older games would you like to be able to play?",
+      "help": "These are the games from Nintendo's older machines, included at no extra cost while you are a member.",
+      "options": [
+        {
+          "label": "The NES, Super NES and Game Boy ones are enough",
+          "value": "basic"
+        },
+        {
+          "label": "I want the Nintendo 64 and Game Boy Advance ones too",
+          "value": "expanded"
+        }
+      ]
+    },
+    {
+      "key": "dlc_included",
+      "label": "Paid game add-ons included",
+      "type": "boolean",
+      "question": "Do you play Mario Kart 8 Deluxe or Animal Crossing: New Horizons and want their paid extras at no additional cost?",
+      "help": "This covers the Mario Kart 8 Deluxe Booster Course Pass and the Animal Crossing Happy Home Paradise add-on, which otherwise cost around $25 each to buy."
+    },
+    {
+      "key": "cloud_saves",
+      "label": "Saved games backed up online",
+      "type": "boolean",
+      "question": "Do you want your saved games copied to the internet, so you don't lose your progress if the console breaks?"
+    }
+  ],
+  "plans": [
+    {
+      "slug": "individual",
+      "name": "Individual Membership",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 1,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 3.99
+        },
+        {
+          "period": "annual",
+          "amount": 19.99
+        }
+      ],
+      "features": {
+        "members": 1,
+        "online_play": true,
+        "classic_games": "basic",
+        "dlc_included": false,
+        "cloud_saves": true
+      },
+      "bestFor": "One person who mainly wants to play online and keep their saved games safe.",
+      "notes": "Nintendo also sells a 3-month option at $7.99, which the data format cannot record as a price period, so it is noted here instead. Covers one Nintendo Account."
+    },
+    {
+      "slug": "family",
+      "name": "Family Membership",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 8,
+      "prices": [
+        {
+          "period": "annual",
+          "amount": 34.99
+        }
+      ],
+      "features": {
+        "members": 8,
+        "online_play": true,
+        "classic_games": "basic",
+        "dlc_included": false,
+        "cloud_saves": true
+      },
+      "bestFor": "Two or more people in a household — it is cheaper than two individual memberships.",
+      "notes": "Sold as a 12-month membership only; there is no monthly family option. Covers up to eight Nintendo Accounts — the person who buys it plus seven others. They do not need to share a console or an address. Worth it from two people upwards: two individual memberships cost $39.98 a year against $34.99 for the family one."
+    },
+    {
+      "slug": "individual-expansion-pack",
+      "name": "Individual + Expansion Pack",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 1,
+      "prices": [
+        {
+          "period": "annual",
+          "amount": 49.99
+        }
+      ],
+      "features": {
+        "members": 1,
+        "online_play": true,
+        "classic_games": "expanded",
+        "dlc_included": true,
+        "cloud_saves": true
+      },
+      "bestFor": "One person who wants the Nintendo 64 and Game Boy Advance games, or the Mario Kart and Animal Crossing add-ons.",
+      "notes": "Sold as a 12-month membership only. Adds the Nintendo 64, Game Boy Advance and SEGA Genesis libraries, plus the Mario Kart 8 Deluxe Booster Course Pass and the Animal Crossing: New Horizons Happy Home Paradise add-on. Costs $30 a year more than the plain individual membership."
+    },
+    {
+      "slug": "family-expansion-pack",
+      "name": "Family + Expansion Pack",
+      "tier": 4,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 8,
+      "prices": [
+        {
+          "period": "annual",
+          "amount": 79.99
+        }
+      ],
+      "features": {
+        "members": 8,
+        "online_play": true,
+        "classic_games": "expanded",
+        "dlc_included": true,
+        "cloud_saves": true
+      },
+      "bestFor": "A household where several people want the old games and the Mario Kart and Animal Crossing add-ons.",
+      "notes": "Sold as a 12-month membership only. Covers up to eight Nintendo Accounts with everything the Expansion Pack adds. Works out at about $10 per person per year if all eight places are used."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I need this to play my Switch at all?",
+      "a": "No. Games you own work perfectly well without it. You only need a membership to play with other people over the internet, to back up your saved games, and to play the library of old Nintendo games."
+    },
+    {
+      "q": "Is the family membership worth it?",
+      "a": "As soon as two people need it, yes. Two individual memberships cost $39.98 a year; one family membership covering up to eight people costs $34.99. The people sharing it do not have to live with you."
+    },
+    {
+      "q": "What does the Expansion Pack actually add?",
+      "a": "Three things: the Nintendo 64, Game Boy Advance and SEGA Genesis game libraries; the Mario Kart 8 Deluxe Booster Course Pass; and the Animal Crossing: New Horizons Happy Home Paradise add-on. If you play Mario Kart 8 Deluxe or Animal Crossing, those two add-ons alone cost about $25 each to buy outright."
+    },
+    {
+      "q": "What happens to my saved games if I stop paying?",
+      "a": "The online backups are held for six months after your membership ends, so you can pick up where you left off if you rejoin within that time. After that they are deleted."
+    }
+  ],
+  "notes": "Checked 21 September 2026. Prices come from Nintendo's own US support page and are: Individual 1-month $3.99, 3-month $7.99, 12-month $19.99; Family 12-month $34.99; Expansion Pack Individual 12-month $49.99; Expansion Pack Family 12-month $79.99. Only the monthly and annual figures appear in the prices lists because the data format has no quarterly period; the 3-month individual price is recorded in that plan's notes. The Family plan covering eight accounts is taken from Nintendo's own page, which describes sharing with \"seven other people\". The Expansion Pack is not a separate subscription — it is the upgraded version of the membership — so it is listed here as two extra plans rather than an add-on. The GameCube library and Nintendo Music were not confirmed for a specific tier on the pages checked, so they are not listed as features."
+}

@@ -1,0 +1,139 @@
+{
+  "company": {
+    "slug": "paramount-plus",
+    "name": "Paramount+",
+    "category": "streaming-video",
+    "website": "https://www.paramountplus.com",
+    "pricingUrl": "https://www.paramountplus.com/account/signup/pickplan/",
+    "shortDescription": "CBS shows, movies, Star Trek, and live sports including UFC and NFL games.",
+    "planHelp": "On a computer go to paramountplus.com, sign in, click your profile picture in the top right corner and choose Account. Your plan – Essential or Premium – is listed under Subscription, along with the next payment date. If you pay through Amazon, Apple or Roku, check there instead."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.paramountplus.com/sneak-peak/how-much-does-it-cost-to-watch-ufc/",
+      "title": "How Much Does It Cost To Watch UFC? – Paramount+ (plan prices)",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://help.paramountplus.com/s/article/PD-What-plans-are-available-for-Paramount-and-how-much-do-they-cost",
+      "title": "What plans are available for Paramount+ and how much do they cost? (page text would not load outside a web browser)",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "ad_free",
+      "label": "No advertisements",
+      "type": "boolean",
+      "question": "Do you want to watch without advertisements?",
+      "help": "The cheaper plan shows advertisements. The more expensive one removes most of them, though live television and a few shows still have them."
+    },
+    {
+      "key": "live_local_station",
+      "label": "Your local CBS channel, live",
+      "type": "boolean",
+      "question": "Do you want to watch your local CBS channel live, as it is broadcast?",
+      "help": "This is how you watch CBS news, daytime shows, and Sunday football live. Only the more expensive plan includes it."
+    },
+    {
+      "key": "downloads",
+      "label": "Save shows to watch without internet",
+      "type": "boolean",
+      "question": "Do you save shows onto a phone or tablet to watch where there is no internet?"
+    },
+    {
+      "key": "simultaneous_streams",
+      "label": "People who can watch at the same time",
+      "type": "number",
+      "question": "How many people watch at the same time?",
+      "options": [
+        {
+          "label": "Just one",
+          "value": 1
+        },
+        {
+          "label": "2 at the same time",
+          "value": 2
+        },
+        {
+          "label": "3 at the same time",
+          "value": 3
+        }
+      ]
+    }
+  ],
+  "plans": [
+    {
+      "slug": "essential",
+      "name": "Paramount+ Essential",
+      "tier": 1,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 8.99
+        },
+        {
+          "period": "annual",
+          "amount": 89.99
+        }
+      ],
+      "features": {
+        "ad_free": false,
+        "live_local_station": false,
+        "downloads": null,
+        "simultaneous_streams": null
+      },
+      "bestFor": "People who want Paramount's movies, series and UFC events at the lowest price and do not mind advertisements.",
+      "notes": "Prices 8.99 per month and 89.99 per year are confirmed on Paramount's own site. Marked uncertain because Paramount+'s help center pages would not load their text outside a web browser, so how many people may watch at once and whether shows can be saved for offline viewing are recorded as null rather than guessed. Includes every UFC numbered event and Fight Night, and about 40,000 episodes and movies, with advertisements. Does not include your live local CBS channel."
+    },
+    {
+      "slug": "premium",
+      "name": "Paramount+ Premium",
+      "tier": 2,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 13.99
+        },
+        {
+          "period": "annual",
+          "amount": 139.99
+        }
+      ],
+      "features": {
+        "ad_free": true,
+        "live_local_station": true,
+        "downloads": null,
+        "simultaneous_streams": null
+      },
+      "bestFor": "People who want their live local CBS channel, Sunday football and no advertisements.",
+      "notes": "Prices 13.99 per month and 139.99 per year are confirmed on Paramount's own site. Marked uncertain for the same reason as the Essential plan: stream count and offline saving could not be verified on an official page. Includes the live CBS feed, SHOWTIME shows and mostly advertisement-free viewing. Paramount states that live television and a small number of shows still carry advertisements."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What do I get for the extra money on the Premium plan?",
+      "a": "Your local CBS channel live, SHOWTIME shows, and almost no advertisements. If you like watching CBS news or Sunday football as it happens, you need this plan."
+    },
+    {
+      "q": "Is UFC included?",
+      "a": "Yes. Both plans include every numbered UFC event and UFC Fight Night, with no extra pay-per-view charge."
+    },
+    {
+      "q": "Is paying yearly cheaper?",
+      "a": "Yes. The cheaper plan is 89.99 for a year instead of 8.99 a month, and the more expensive one is 139.99 for a year instead of 13.99 a month – roughly two months free either way."
+    },
+    {
+      "q": "Does the Premium plan have absolutely no advertisements?",
+      "a": "Not quite. Live television and a few shows still carry advertisements, but the ordinary movies and series do not."
+    }
+  ],
+  "notes": "Prices exclude tax and were read from Paramount+'s own site on 2026-09-21. Paramount+'s help center and sign-up pages would not render their text outside a real web browser, so stream limits, offline saving and 4K availability could not be confirmed and are left as null. A student discount is offered at paramountplus.com/account/signup/edu-offer/ but its price was not verified."
+}

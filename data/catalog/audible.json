@@ -1,0 +1,227 @@
+{
+  "company": {
+    "slug": "audible",
+    "name": "Audible",
+    "category": "reading",
+    "website": "https://www.audible.com",
+    "pricingUrl": "https://www.audible.com/ep/memberbenefits",
+    "shortDescription": "Audiobooks and podcasts you listen to on your phone, tablet or smart speaker.",
+    "planHelp": "Open the Audible app or go to Audible.com, sign in, then choose Account Details. Your plan name and the date of your next payment are shown at the top of that page."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.audible.com/ep/memberbenefits",
+      "title": "Membership Plans & Pricing | Audible.com",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://help.audible.com/s/article/learn-about-premium-plus?language=en_US",
+      "title": "Learn about the Audible Premium Membership | Audible Help",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://help.audible.com/s/article/learn-about-audible-plus?language=en_US",
+      "title": "Learn about Audible Plus | Audible Help",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://help.audible.com/s/article/learn-about-standard-plan?language=en_US",
+      "title": "Learn about the Audible Standard Membership | Audible Help",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "credits_per_month",
+      "label": "Books you can choose each month",
+      "type": "number",
+      "question": "How many audiobooks do you want to pick each month?",
+      "help": "Each month your membership gives you a set number of picks (Audible calls them credits). You choose any book you like, and it stays in your library even if you later cancel.",
+      "options": [
+        {
+          "label": "None – I just want to listen to what's included",
+          "value": 0
+        },
+        {
+          "label": "One book a month",
+          "value": 1
+        },
+        {
+          "label": "Two books a month",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "key": "plus_catalog",
+      "label": "Listen-all-you-want catalog included",
+      "type": "boolean",
+      "question": "Do you want a big library of books and podcasts you can listen to freely, without using up a monthly pick?",
+      "help": "Audible calls this the Plus Catalog. You can listen to anything in it as much as you like, but those titles leave your library if you stop paying."
+    },
+    {
+      "key": "keep_titles_forever",
+      "label": "Books are yours to keep",
+      "type": "boolean",
+      "question": "Do you want to keep your books forever, even if you stop paying?",
+      "help": "A book you choose with a monthly pick stays in your library for good. Books from the listen-all-you-want catalog go away when the membership ends."
+    },
+    {
+      "key": "picks_roll_over",
+      "label": "Unused picks carry over to next month",
+      "type": "boolean",
+      "question": "If you don't choose a book one month, do you want to save it for later?",
+      "help": "On the Premium plans an unused pick is saved for up to a year. On the Standard plan an unused monthly selection is lost at the end of the month."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "plus",
+      "name": "Audible Plus",
+      "tier": 1,
+      "status": "grandfathered",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 7.95
+        }
+      ],
+      "features": {
+        "credits_per_month": 0,
+        "plus_catalog": true,
+        "keep_titles_forever": false,
+        "picks_roll_over": false
+      },
+      "bestFor": "People who are happy listening to whatever is included and don't need to own the books.",
+      "notes": "Audible's help page states Audible Plus is available only to people who were already members as of March 3, 2026 – new customers cannot sign up. Marked grandfathered for that reason. The $7.95/month figure comes from the same help page; an annual Audible Plus price is not listed on any official page we could read, so no annual price is recorded. Confidence is 'uncertain' because the plan is closed and the price shown may apply only to existing members."
+    },
+    {
+      "slug": "standard",
+      "name": "Audible Standard",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 8.99
+        }
+      ],
+      "features": {
+        "credits_per_month": 1,
+        "plus_catalog": false,
+        "keep_titles_forever": true,
+        "picks_roll_over": false
+      },
+      "bestFor": "One audiobook a month, at the lowest price, if you don't care about the listen-all-you-want catalog.",
+      "notes": "Audible's site shows this as the '$8.99/mo' monthly plan ('Casual Listener'); the help page calls it Audible Standard. It gives one selection a month from Audible's full collection of about 1 million titles, plus unlimited podcasts. Unused monthly selections do not roll over. The Plus Catalog is NOT included. Amazon Prime members are often offered $0.99/month for the first 4 months – that is a promotion, not the standard price."
+    },
+    {
+      "slug": "premium-1-credit-monthly",
+      "name": "Audible Premium – 1 credit a month",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 14.95
+        }
+      ],
+      "features": {
+        "credits_per_month": 1,
+        "plus_catalog": true,
+        "keep_titles_forever": true,
+        "picks_roll_over": true
+      },
+      "bestFor": "The usual choice: one book a month to keep, plus the big listen-all-you-want catalog.",
+      "notes": "Audible's site also labels this the 'Avid Listener' monthly plan. Includes member discounts on extra audiobook purchases. Every new membership starts with a 30-day free trial."
+    },
+    {
+      "slug": "premium-annual-12-credits",
+      "name": "Audible Premium Annual – 12 credits",
+      "tier": 4,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "annual",
+          "amount": 149.5
+        }
+      ],
+      "features": {
+        "credits_per_month": 1,
+        "plus_catalog": true,
+        "keep_titles_forever": true,
+        "picks_roll_over": true
+      },
+      "bestFor": "One book a month, paid once a year – cheaper over a year than paying monthly.",
+      "notes": "You pay $149.50 once and all 12 picks arrive straight away, so you can use them whenever you like during the year. That works out to about $12.46 a month versus $14.95 on the monthly plan."
+    },
+    {
+      "slug": "premium-2-credits-monthly",
+      "name": "Audible Premium – 2 credits a month",
+      "tier": 5,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 22.95
+        }
+      ],
+      "features": {
+        "credits_per_month": 2,
+        "plus_catalog": true,
+        "keep_titles_forever": true,
+        "picks_roll_over": true
+      },
+      "bestFor": "Heavy listeners who finish about two books a month.",
+      "notes": "Same benefits as the 1-credit Premium plan but with two picks each month."
+    },
+    {
+      "slug": "premium-annual-24-credits",
+      "name": "Audible Premium Annual – 24 credits",
+      "tier": 6,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "annual",
+          "amount": 229.5
+        }
+      ],
+      "features": {
+        "credits_per_month": 2,
+        "plus_catalog": true,
+        "keep_titles_forever": true,
+        "picks_roll_over": true
+      },
+      "bestFor": "Two books a month, paid once a year – the cheapest way to get 24 books.",
+      "notes": "All 24 picks arrive at the time of purchase. That is about $9.56 per book, the lowest per-book price Audible offers."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What exactly is a credit?",
+      "a": "A credit is simply a voucher for one audiobook. Your membership gives you one or two each month. You can use a credit on almost any book, however expensive it is, and that book then belongs to you for good – even if you cancel later."
+    },
+    {
+      "q": "What happens to my books if I cancel?",
+      "a": "Any book you bought outright or chose with a credit stays in your library forever. Books you were only borrowing from the listen-all-you-want catalog disappear when your membership ends."
+    },
+    {
+      "q": "Is it cheaper to pay once a year?",
+      "a": "Yes. The 12-credit yearly plan is $149.50, which is about $12.46 a month, compared with $14.95 a month if you pay monthly. The catch is that you pay the whole amount up front."
+    },
+    {
+      "q": "I'm an Amazon Prime member – do I get a discount?",
+      "a": "Amazon often offers Prime members a low introductory rate, such as $0.99 a month for the first four months. After the offer ends the normal price applies, so make a note of the date it changes."
+    }
+  ],
+  "notes": "Audible renamed its tiers: the plans previously marketed as 'Audible Premium Plus' are now shown simply as 'Audible Premium' on Audible's help pages, while the sign-up page uses friendly names ('Casual Listener' $8.99, 'Avid Listener' $14.95). Audible Plus (catalog-only, $7.95) closed to new customers on March 3, 2026 per Audible's help page. Audible is owned by Amazon; a separate Amazon Prime membership is not required. All plans include a 30-day free trial. Prices bought through the Apple App Store may be higher than prices on Audible.com."
+}

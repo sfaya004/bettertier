@@ -1,0 +1,380 @@
+{
+  "company": {
+    "slug": "chatgpt",
+    "name": "ChatGPT",
+    "category": "ai-tools",
+    "website": "https://chatgpt.com",
+    "pricingUrl": "https://chatgpt.com/pricing/",
+    "shortDescription": "An assistant you type questions to. It writes, explains, makes pictures and reads your files.",
+    "planHelp": "Open ChatGPT, click your name or picture in the bottom left corner, then choose Settings and look under Account. Your plan name is shown there."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://chatgpt.com/pricing/",
+      "title": "ChatGPT Pricing – OpenAI",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/11989085-what-is-chatgpt-go",
+      "title": "What is ChatGPT Go? – OpenAI Help Center",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://openai.com/index/introducing-chatgpt-go/",
+      "title": "Introducing ChatGPT Go, now available worldwide – OpenAI",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus",
+      "title": "What is ChatGPT Plus? – OpenAI Help Center",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/9793128-what-is-chatgpt-pro",
+      "title": "About ChatGPT Pro tiers – OpenAI Help Center",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/20001354",
+      "title": "GPT-5.6 and GPT-6 Pro in ChatGPT – OpenAI Help Center",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/9957612-generating-videos-on-sora",
+      "title": "Generating videos on Sora – OpenAI Help Center",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "usage_limit",
+      "label": "How much you can use it before it slows you down",
+      "type": "ordinal",
+      "levels": [
+        "limited",
+        "standard",
+        "high",
+        "very_high"
+      ],
+      "levelLabels": {
+        "limited": "A small amount each day",
+        "standard": "Enough for regular everyday use",
+        "high": "A lot, for daily work",
+        "very_high": "Very heavy use, all day"
+      },
+      "question": "How often do you use it?",
+      "help": "Every plan has a cap. When you reach it you have to wait a while before carrying on.",
+      "options": [
+        {
+          "label": "Once in a while",
+          "value": "limited"
+        },
+        {
+          "label": "Most days",
+          "value": "standard"
+        },
+        {
+          "label": "Every day, for hours",
+          "value": "high"
+        },
+        {
+          "label": "Many hours every day, it's my job",
+          "value": "very_high"
+        }
+      ]
+    },
+    {
+      "key": "model_access",
+      "label": "How smart the answers are",
+      "type": "ordinal",
+      "levels": [
+        "basic",
+        "advanced",
+        "frontier"
+      ],
+      "levelLabels": {
+        "basic": "The everyday assistant",
+        "advanced": "The one that thinks harder before answering",
+        "frontier": "The very best one, for difficult problems"
+      },
+      "question": "Do you need it to work through hard problems, or just answer everyday questions?",
+      "help": "The cheaper plans use the everyday version. Paid plans let it take longer and think more carefully.",
+      "options": [
+        {
+          "label": "Everyday questions are all I need",
+          "value": "basic"
+        },
+        {
+          "label": "I want more careful answers for tricky things",
+          "value": "advanced"
+        },
+        {
+          "label": "I need the very best for hard work",
+          "value": "frontier"
+        }
+      ]
+    },
+    {
+      "key": "image_generation",
+      "label": "Making pictures",
+      "type": "ordinal",
+      "levels": [
+        "limited",
+        "standard",
+        "high",
+        "unlimited"
+      ],
+      "levelLabels": {
+        "limited": "A few pictures, made slowly",
+        "standard": "More pictures",
+        "high": "Lots of pictures, better quality",
+        "unlimited": "As many as you like, made quickly"
+      },
+      "question": "How many pictures do you want to make?",
+      "help": "You describe a picture in words and it draws it for you.",
+      "options": [
+        {
+          "label": "I don't make pictures",
+          "value": "limited"
+        },
+        {
+          "label": "A few now and then",
+          "value": "standard"
+        },
+        {
+          "label": "Quite a lot",
+          "value": "high"
+        },
+        {
+          "label": "As many as I want",
+          "value": "unlimited"
+        }
+      ]
+    },
+    {
+      "key": "file_uploads",
+      "label": "Sending it your own documents and photos",
+      "type": "ordinal",
+      "levels": [
+        "limited",
+        "standard",
+        "expanded",
+        "maximum"
+      ],
+      "levelLabels": {
+        "limited": "Only a few",
+        "standard": "More than the free plan",
+        "expanded": "Plenty",
+        "maximum": "The most allowed"
+      },
+      "question": "How often do you want to send it your own files, such as a letter or a spreadsheet, and ask about them?",
+      "options": [
+        {
+          "label": "Rarely or never",
+          "value": "limited"
+        },
+        {
+          "label": "Now and then",
+          "value": "standard"
+        },
+        {
+          "label": "Often",
+          "value": "expanded"
+        },
+        {
+          "label": "All the time",
+          "value": "maximum"
+        }
+      ]
+    },
+    {
+      "key": "deep_research",
+      "label": "Long, thorough research reports",
+      "type": "ordinal",
+      "levels": [
+        "limited",
+        "expanded",
+        "maximum"
+      ],
+      "levelLabels": {
+        "limited": "Only a few a month",
+        "expanded": "A good number each month",
+        "maximum": "The most allowed"
+      },
+      "question": "Do you want it to go off, read lots of websites, and come back with a long written report?",
+      "help": "This takes several minutes and produces a detailed write-up with links to where it found things.",
+      "options": [
+        {
+          "label": "No, quick answers are fine",
+          "value": "limited"
+        },
+        {
+          "label": "Yes, sometimes",
+          "value": "expanded"
+        },
+        {
+          "label": "Yes, very often",
+          "value": "maximum"
+        }
+      ]
+    },
+    {
+      "key": "video_generation",
+      "label": "Making short videos",
+      "type": "boolean",
+      "question": "Do you want to make short videos from a written description?",
+      "help": "This is the Sora tool. Videos can be up to 20 seconds long."
+    },
+    {
+      "key": "priority_access",
+      "label": "Getting served first when the service is busy",
+      "type": "boolean",
+      "question": "Do you mind waiting when the service is busy?",
+      "help": "Paid plans are let through first at busy times."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "free",
+      "name": "Free",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 0
+        }
+      ],
+      "features": {
+        "usage_limit": "limited",
+        "model_access": "basic",
+        "image_generation": "limited",
+        "file_uploads": "limited",
+        "deep_research": "limited",
+        "video_generation": false,
+        "priority_access": false
+      },
+      "bestFor": "Trying it out, or asking a few questions here and there.",
+      "notes": "Unlimited plain text chats using the everyday model (GPT-5.6 Luna). Picture making, file sending, voice and research are all capped. The Sora help page states Free accounts are not eligible for video generation."
+    },
+    {
+      "slug": "go",
+      "name": "Go",
+      "tier": 2,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 8
+        }
+      ],
+      "features": {
+        "usage_limit": "standard",
+        "model_access": "basic",
+        "image_generation": "standard",
+        "file_uploads": "standard",
+        "deep_research": "limited",
+        "video_generation": null,
+        "priority_access": null
+      },
+      "bestFor": "Someone who uses it most days but doesn't need the smartest answers.",
+      "notes": "Price confirmed by OpenAI: \"In the US, Go is available for $8 per month.\" Marked uncertain because two values could not be confirmed on an official page: OpenAI's Sora help article lists Plus, Team and Pro as eligible for video making and does not mention Go, so video_generation is left blank rather than guessed; the same applies to priority access at busy times, which OpenAI only states for Plus and above. Go uses the same everyday model as Free (GPT-5.6 Luna) and does not get GPT-5.6 Sol."
+    },
+    {
+      "slug": "plus",
+      "name": "Plus",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 20
+        }
+      ],
+      "features": {
+        "usage_limit": "high",
+        "model_access": "advanced",
+        "image_generation": "high",
+        "file_uploads": "expanded",
+        "deep_research": "expanded",
+        "video_generation": true,
+        "priority_access": true
+      },
+      "bestFor": "Most people who use it every day for work, study or writing.",
+      "notes": "OpenAI states \"$20/month (billed monthly)\". Adds the harder-thinking model (GPT-5.6 Sol at Medium and High thinking), projects, scheduled tasks, custom GPTs and expanded Codex coding use. No annual price is published."
+    },
+    {
+      "slug": "pro-100",
+      "name": "Pro ($100)",
+      "tier": 4,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 100
+        }
+      ],
+      "features": {
+        "usage_limit": "very_high",
+        "model_access": "frontier",
+        "image_generation": "unlimited",
+        "file_uploads": "maximum",
+        "deep_research": "maximum",
+        "video_generation": true,
+        "priority_access": true
+      },
+      "bestFor": "People who use it for many hours a day and need the strongest answers.",
+      "notes": "OpenAI now sells Pro as two tiers. Its help center says: \"Pro $100 unlocks 5x higher usage than Plus, while Pro $200 unlocks 20x usage than Plus.\" Both Pro tiers include the same features; only the amount of use differs. Adds GPT-6 Pro (powered by GPT-6 Astra) and every thinking level of GPT-5.6 Sol."
+    },
+    {
+      "slug": "pro-200",
+      "name": "Pro ($200)",
+      "tier": 5,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 200
+        }
+      ],
+      "features": {
+        "usage_limit": "very_high",
+        "model_access": "frontier",
+        "image_generation": "unlimited",
+        "file_uploads": "maximum",
+        "deep_research": "maximum",
+        "video_generation": true,
+        "priority_access": true
+      },
+      "bestFor": "Very heavy users who keep running out of room on the $100 Pro tier.",
+      "notes": "Same features as Pro $100. The only difference OpenAI states is the usage allowance: 20x Plus instead of 5x Plus. The feature list above cannot show that difference because both sit at the top level."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I have to pay to use ChatGPT at all?",
+      "a": "No. The Free plan costs nothing and lets you have as many ordinary text conversations as you like. You only pay if you want more pictures, more file uploads, longer research or the smarter models."
+    },
+    {
+      "q": "What happens when I run out of my monthly allowance?",
+      "a": "It stops letting you use that feature and tells you to wait, usually a few hours. Nothing is charged automatically. You can wait, or move up to a bigger plan."
+    },
+    {
+      "q": "What is the difference between Pro at $100 and Pro at $200?",
+      "a": "Nothing except how much you can use. Both have exactly the same features. The $200 one simply lets you do about four times as much before you hit a limit."
+    },
+    {
+      "q": "Can I cancel whenever I like?",
+      "a": "Yes. Paid plans are month by month. If you cancel, you keep the paid features until the end of the month you have already paid for, then drop back to Free."
+    }
+  ],
+  "notes": "Checked 21 September 2026. Prices on chatgpt.com/pricing are drawn on the page by the browser and did not come through when fetched, so every price here comes from an OpenAI help-center article or an OpenAI announcement instead, which are also official sources. ChatGPT Go is confirmed available in the United States. No annual (yearly) billing option is published for any consumer tier. Model names current at the date checked: GPT-5.6 Luna (Free and Go), GPT-5.6 Sol (Plus and above), GPT-6 Astra / GPT-6 Pro (Pro only). OpenAI also sells extra usage as credits on personal plans; that is a top-up, not a plan, so it is not listed here."
+}

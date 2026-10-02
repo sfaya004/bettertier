@@ -1,0 +1,242 @@
+{
+  "company": {
+    "slug": "dropbox",
+    "name": "Dropbox",
+    "category": "cloud-storage",
+    "website": "https://www.dropbox.com",
+    "pricingUrl": "https://www.dropbox.com/plans",
+    "shortDescription": "Keeps your files in one place online so you can reach them from any computer or phone and share them with others.",
+    "planHelp": "Go to dropbox.com and sign in, click your picture or initials in the top right corner, then choose Settings. The Plan tab shows which plan you have and how much space you are using."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/plans",
+      "title": "Find Your Dropbox Plan – Dropbox",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.dropbox.com/buy",
+      "title": "Buy a Dropbox Plan for Personal or Professional Use – Dropbox",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.dropbox.com/individual",
+      "title": "Dropbox Personal Plans for Individual Use – Dropbox",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.dropbox.com/family",
+      "title": "Dropbox Family – Dropbox",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://help.dropbox.com/plans/dropbox-essentials",
+      "title": "What is Dropbox Essentials? – Dropbox Help",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "storage_gb",
+      "label": "Storage space",
+      "type": "number",
+      "question": "How much space do you need for your files?",
+      "help": "Text documents take almost no room. Photos and videos are what fill up a plan.",
+      "options": [
+        {
+          "label": "Just a few documents (2 GB)",
+          "value": 2
+        },
+        {
+          "label": "Mostly documents and a few photos (under 100 GB)",
+          "value": 100
+        },
+        {
+          "label": "Lots of photos and videos (200 GB to 2 TB)",
+          "value": 2000
+        }
+      ]
+    },
+    {
+      "key": "members",
+      "label": "People who get their own account",
+      "type": "number",
+      "question": "How many people will use this, each with their own account?",
+      "help": "On the Family plan everyone has a private Dropbox and there is one shared folder for things the whole family uses.",
+      "options": [
+        {
+          "label": "Just me",
+          "value": 1
+        },
+        {
+          "label": "2 people",
+          "value": 2
+        },
+        {
+          "label": "3 or 4 people",
+          "value": 4
+        },
+        {
+          "label": "5 or 6 people",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "key": "family_sharing",
+      "label": "Can be shared with family members",
+      "type": "boolean",
+      "question": "Do you want one bill that covers your whole household?"
+    },
+    {
+      "key": "file_recovery_days",
+      "label": "How long you can get back a deleted file",
+      "type": "number",
+      "question": "If you delete a file by mistake, how long might it take you to notice?",
+      "help": "Dropbox keeps deleted files for a while so you can bring them back.",
+      "options": [
+        {
+          "label": "I'd notice within a month (30 days)",
+          "value": 30
+        },
+        {
+          "label": "It might take me several months (180 days)",
+          "value": 180
+        }
+      ]
+    },
+    {
+      "key": "transfer_size_gb",
+      "label": "Largest batch of files you can send someone",
+      "type": "number",
+      "question": "Do you ever need to send someone very large files, such as videos?",
+      "options": [
+        {
+          "label": "No, just ordinary documents and photos",
+          "value": 2
+        },
+        {
+          "label": "Yes, large batches (up to 50 GB)",
+          "value": 50
+        },
+        {
+          "label": "Yes, very large batches (up to 100 GB)",
+          "value": 100
+        }
+      ]
+    }
+  ],
+  "plans": [
+    {
+      "slug": "basic",
+      "name": "Dropbox Basic",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 0
+        }
+      ],
+      "features": {
+        "storage_gb": 2,
+        "members": 1,
+        "family_sharing": false,
+        "file_recovery_days": 30,
+        "transfer_size_gb": 2
+      },
+      "bestFor": "Someone who only needs to move a handful of documents between a computer and a phone.",
+      "notes": "Free. 2 GB of space and up to 3 devices connected at once."
+    },
+    {
+      "slug": "plus",
+      "name": "Dropbox Plus",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 9.99
+        }
+      ],
+      "features": {
+        "storage_gb": 2000,
+        "members": 1,
+        "family_sharing": false,
+        "file_recovery_days": 30,
+        "transfer_size_gb": 50
+      },
+      "bestFor": "One person with a large collection of photos, documents or videos.",
+      "notes": "2 TB of space for one person. Dropbox's site shows a cheaper 'billed yearly' option, but the yearly amount was not shown in the readable page content, so it is not recorded."
+    },
+    {
+      "slug": "family",
+      "name": "Dropbox Family",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 16.99
+        }
+      ],
+      "features": {
+        "storage_gb": 2000,
+        "members": 6,
+        "family_sharing": true,
+        "file_recovery_days": 30,
+        "transfer_size_gb": 50
+      },
+      "bestFor": "A household where two or more people each want their own Dropbox on one bill.",
+      "notes": "2 TB shared between up to 6 people. Each person gets a private account, plus a shared 'Family Room' folder for photos and important documents. The yearly price was not shown in the readable page content."
+    },
+    {
+      "slug": "essentials",
+      "name": "Dropbox Essentials",
+      "tier": 4,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": null
+        }
+      ],
+      "features": {
+        "storage_gb": null,
+        "members": 1,
+        "family_sharing": false,
+        "file_recovery_days": 180,
+        "transfer_size_gb": 100
+      },
+      "bestFor": "One self-employed person who sends contracts for signature and needs more space than Plus.",
+      "notes": "Marked uncertain. Dropbox's help center confirms Essentials is a single-person plan that includes everything in the older Professional plan plus electronic signatures, but neither the price nor the storage amount appears on any Dropbox page that could be read; the public plans page now shows the team plan 'Standard' ($15 per user a month, from 3 TB for the team) in this position instead. Price and storage are left null rather than guessed. The 180-day file recovery and 100 GB transfer figures come from the comparable 'Standard' column on the plans page and should also be re-checked by hand."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is Dropbox free?",
+      "a": "There is a free plan called Basic, but it only gives 2 GB of space, which is about 600 photos. Most people who use Dropbox regularly end up paying for Plus."
+    },
+    {
+      "q": "Is Family cheaper than everyone buying their own plan?",
+      "a": "Yes, if two or more people need it. Family is $16.99 a month for up to 6 people, while two separate Plus plans would cost about $19.98. Remember the 2 TB of space is shared by everyone, not 2 TB each."
+    },
+    {
+      "q": "If I delete something by mistake, can I get it back?",
+      "a": "Yes. On the free and personal plans Dropbox keeps deleted files for 30 days. Go to the website, click Deleted files, find the file and choose Restore."
+    },
+    {
+      "q": "Do I have to install anything?",
+      "a": "No, you can use Dropbox entirely in a web browser. Most people also install the program so a Dropbox folder appears on their computer like any other folder."
+    }
+  ],
+  "notes": "Dropbox's public pricing page now leads with Basic, Plus, Standard and Advanced; Standard and Advanced are team/business plans priced per user and are excluded from this consumer catalog. The Family plan price ($16.99 a month) appears on dropbox.com/buy. Yearly prices are not shown in the readable page content for any plan, so only monthly prices are recorded. 'Professional' has been replaced by 'Essentials' according to Dropbox's help center, but no official page listing its price could be read."
+}

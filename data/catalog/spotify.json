@@ -1,0 +1,231 @@
+{
+  "company": {
+    "slug": "spotify",
+    "name": "Spotify",
+    "category": "music",
+    "website": "https://www.spotify.com",
+    "pricingUrl": "https://www.spotify.com/us/premium/",
+    "shortDescription": "Music and podcasts you can listen to on your phone, computer or speaker.",
+    "planHelp": "Open the Spotify app or go to spotify.com and sign in. Click your name in the top right corner, choose Account, and look at the box called 'Your plan'. It tells you which plan you have and what you pay."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.spotify.com/us/premium/",
+      "title": "Premium plans – Spotify",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://support.spotify.com/us/article/audio-quality/",
+      "title": "Audio quality – Spotify Support",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.spotify.com/us/free/",
+      "title": "Spotify Free",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "members",
+      "label": "People who get their own account",
+      "type": "number",
+      "question": "How many people will use this, each with their own account?",
+      "help": "Each person gets their own playlists and their own suggestions. Family and Duo plans need everyone to live at the same address.",
+      "options": [
+        {
+          "label": "Just me",
+          "value": 1
+        },
+        {
+          "label": "2 people",
+          "value": 2
+        },
+        {
+          "label": "3 or 4 people",
+          "value": 4
+        },
+        {
+          "label": "5 or 6 people",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "key": "ad_free",
+      "label": "No advertisements",
+      "type": "boolean",
+      "question": "Do you want to listen without advertisements?",
+      "help": "The free version plays advertisements between songs. All paid plans have no advertisements."
+    },
+    {
+      "key": "offline_access",
+      "label": "Save music to listen without internet",
+      "type": "boolean",
+      "question": "Do you want to save songs on your phone so you can listen where there is no internet?",
+      "help": "Useful on an airplane, in the car, or anywhere the signal is weak."
+    },
+    {
+      "key": "audio_quality",
+      "label": "Sound quality",
+      "type": "ordinal",
+      "levels": [
+        "standard",
+        "high",
+        "lossless"
+      ],
+      "levelLabels": {
+        "standard": "Normal sound, fine for phone speakers and earbuds",
+        "high": "Better sound for good headphones",
+        "lossless": "Best possible sound, the same as the original recording"
+      },
+      "question": "How important is sound quality to you?",
+      "help": "Most people are perfectly happy with normal sound. The very best quality only makes a difference with good headphones or a good stereo.",
+      "options": [
+        {
+          "label": "Normal is fine",
+          "value": "standard"
+        },
+        {
+          "label": "I'd like better sound",
+          "value": "high"
+        },
+        {
+          "label": "I want the very best sound",
+          "value": "lossless"
+        }
+      ]
+    }
+  ],
+  "plans": [
+    {
+      "slug": "free",
+      "name": "Spotify Free",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 0
+        }
+      ],
+      "features": {
+        "members": 1,
+        "ad_free": false,
+        "offline_access": false,
+        "audio_quality": "standard"
+      },
+      "bestFor": "Someone who just wants to try Spotify and doesn't mind hearing advertisements.",
+      "notes": "No credit card required. Advertisements play between songs. Spotify's audio quality page shows free accounts can reach the 'High' setting (about 160 kbit/s) but cannot use 'Very High' (320 kbit/s) or Lossless, so this is recorded as standard quality."
+    },
+    {
+      "slug": "premium-student",
+      "name": "Premium Student",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 6.99
+        }
+      ],
+      "features": {
+        "members": 1,
+        "ad_free": true,
+        "offline_access": true,
+        "audio_quality": "lossless"
+      },
+      "bestFor": "A college student who can prove they are enrolled.",
+      "notes": "Requires verification that you are enrolled at an accredited college or university. Includes Hulu (ad-supported) at no extra cost. New subscribers get 1 month at $0; that is a promotion, not the standard price."
+    },
+    {
+      "slug": "premium-individual",
+      "name": "Premium Individual",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 12.99
+        }
+      ],
+      "features": {
+        "members": 1,
+        "ad_free": true,
+        "offline_access": true,
+        "audio_quality": "lossless"
+      },
+      "bestFor": "One person who listens often and wants no advertisements.",
+      "notes": "Includes lossless audio up to 24-bit/44.1 kHz and 15 hours a month of audiobook listening. New subscribers are currently offered 3 months at $0; that is a promotion, not the standard price."
+    },
+    {
+      "slug": "premium-duo",
+      "name": "Premium Duo",
+      "tier": 4,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 2,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 18.99
+        }
+      ],
+      "features": {
+        "members": 2,
+        "ad_free": true,
+        "offline_access": true,
+        "audio_quality": "lossless"
+      },
+      "bestFor": "Two people living at the same address, such as a couple.",
+      "notes": "Both people must live at the same address. The 15 hours a month of audiobooks goes to the plan manager only."
+    },
+    {
+      "slug": "premium-family",
+      "name": "Premium Family",
+      "tier": 5,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 21.99
+        }
+      ],
+      "features": {
+        "members": 6,
+        "ad_free": true,
+        "offline_access": true,
+        "audio_quality": "lossless"
+      },
+      "bestFor": "A household of three or more people at the same address.",
+      "notes": "Up to 6 accounts, all at the same address. Includes parental controls and Premium benefits for members under 13. The 15 hours a month of audiobooks goes to the plan manager only."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I have to pay to use Spotify at all?",
+      "a": "No. Spotify Free costs nothing and needs no credit card. You will hear advertisements between songs and you cannot save music to listen without internet."
+    },
+    {
+      "q": "Is the Family plan cheaper than everyone paying on their own?",
+      "a": "Yes, if three or more people use it. Family costs $21.99 a month for up to 6 accounts, while three separate Individual plans would cost about $38.97 a month. Everyone must live at the same address."
+    },
+    {
+      "q": "Can I cancel or change my plan whenever I want?",
+      "a": "Yes. Sign in at spotify.com, go to Account, and choose 'Change plan' or 'Cancel Premium'. You keep Premium until the end of the month you already paid for, then the account becomes a free account."
+    },
+    {
+      "q": "Do I need special headphones to notice the better sound?",
+      "a": "Usually yes. The top sound quality (lossless) mainly makes a difference with good wired headphones or a stereo system. On ordinary earbuds or a phone speaker most people cannot hear the difference."
+    }
+  ],
+  "notes": "Prices read from Spotify's official US Premium page on 2026-09-21 and are the standard, non-promotional prices. Spotify now includes lossless audio (24-bit/44.1 kHz) on Premium plans at no extra charge. Spotify also sells a standalone Audiobooks Access plan; its price was not shown on the official page, so it is not included here."
+}

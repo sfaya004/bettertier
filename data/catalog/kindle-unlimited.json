@@ -1,0 +1,130 @@
+{
+  "company": {
+    "slug": "kindle-unlimited",
+    "name": "Kindle Unlimited",
+    "category": "reading",
+    "website": "https://www.amazon.com/kindleunlimited",
+    "pricingUrl": "https://www.amazon.com/kindle-dbs/hz/subscribe/ku",
+    "shortDescription": "Borrow as many e-books, magazines and comics as you like for one monthly fee.",
+    "planHelp": "Go to Amazon.com, sign in, then choose Account & Lists, then Memberships & Subscriptions. Kindle Unlimited is listed there with the date of your next payment and a Cancel button."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.aboutamazon.com/news/devices/what-is-kindle-unlimited",
+      "title": "Answers to all your questions about the Kindle Unlimited reading membership – About Amazon (official Amazon news site)",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GTQEND3RFAFNLKU5",
+      "title": "Understanding the Kindle Unlimited Subscription and Benefits – Amazon Customer Service",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "catalog_size",
+      "label": "How big the book selection is",
+      "type": "ordinal",
+      "levels": [
+        "sample",
+        "full"
+      ],
+      "levelLabels": {
+        "sample": "A small rotating selection (Prime Reading)",
+        "full": "The whole Kindle Unlimited library, over 5 million books"
+      },
+      "question": "How big a selection of books do you want?",
+      "help": "If you already pay for Amazon Prime you get a small free selection called Prime Reading. Kindle Unlimited opens up the whole library instead.",
+      "options": [
+        {
+          "label": "A small selection is enough",
+          "value": "sample"
+        },
+        {
+          "label": "I want the full library",
+          "value": "full"
+        }
+      ]
+    },
+    {
+      "key": "borrow_limit",
+      "label": "Books you can have out at one time",
+      "type": "number",
+      "question": "How many books do you like to have on the go at once?",
+      "help": "You can keep this many borrowed items on your device at a time. Return one and you can borrow another right away – there is no limit on how many you read in a month.",
+      "options": [
+        {
+          "label": "Just one or two",
+          "value": 2
+        },
+        {
+          "label": "A handful, around five",
+          "value": 5
+        },
+        {
+          "label": "Lots – ten or more",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "key": "magazines",
+      "label": "Magazines included",
+      "type": "boolean",
+      "question": "Would you like magazines as well as books?",
+      "help": "Titles such as USA Today, Reader's Digest and People are included at no extra cost."
+    },
+    {
+      "key": "audible_narration",
+      "label": "Books read aloud",
+      "type": "boolean",
+      "question": "Do you want some books read aloud to you?",
+      "help": "Thousands of Kindle Unlimited books come with narration at no extra charge. Look for the small headphone symbol next to a book. It is not every book, and it is not the same as a full Audible membership."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "kindle-unlimited",
+      "name": "Kindle Unlimited",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 11.99
+        }
+      ],
+      "features": {
+        "catalog_size": "full",
+        "borrow_limit": 20,
+        "magazines": true,
+        "audible_narration": true
+      },
+      "bestFor": "Anyone who reads more than about one e-book a month and doesn't mind that the books are borrowed, not owned.",
+      "notes": "One price, one plan – there is no annual, student or family version. $11.99 a month plus tax, confirmed on Amazon's official About Amazon page. You may borrow up to 20 items at a time. Amazon regularly offers free trials (commonly 30 days, and 3 months free around Prime Day); those are promotions, not the standard price. Kindle Unlimited can be read on a Kindle device or in the free Kindle app on a phone, tablet or computer – you do not need to own a Kindle."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I get to keep the books?",
+      "a": "No. Kindle Unlimited is more like a library than a bookshop. You can keep a book as long as you like while you are paying, but when you stop the membership the borrowed books disappear from your device. Books you buy separately are always yours."
+    },
+    {
+      "q": "I already pay for Amazon Prime. Do I need this too?",
+      "a": "Not necessarily. Prime already includes Prime Reading, a much smaller rotating selection of books and magazines at no extra cost, and one free book a month from Amazon First Reads. Kindle Unlimited is a separate $11.99 charge on top of Prime and opens up the full library of over 5 million titles."
+    },
+    {
+      "q": "Do I need to own a Kindle?",
+      "a": "No. The free Kindle app works on an iPhone, iPad, Android phone or tablet, and on a computer, and your place in a book is kept in step across all of them."
+    },
+    {
+      "q": "Is every book on Amazon included?",
+      "a": "No. Kindle Unlimited has a large but specific catalog, and many big-name new releases are not in it. Before subscribing it is worth searching for two or three books you actually want and checking they show the 'Read for free with Kindle Unlimited' label."
+    }
+  ],
+  "notes": "Prime Reading can be thought of as a free tier-0 option: it is included with an Amazon Prime membership at no extra charge and gives a small, rotating selection of Kindle Unlimited titles plus a free monthly pick through Amazon First Reads. It is not a purchasable Kindle Unlimited plan, so it is not listed as a plan here. Amazon.com's own subscription and help pages block automated reading (robots.txt), so the $11.99 figure and the 20-item borrowing limit were taken from About Amazon, Amazon's official corporate news site, rather than from the sign-up page itself. Price is per month plus tax and is not bundled with Amazon Prime."
+}

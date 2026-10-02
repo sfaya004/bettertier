@@ -1,0 +1,200 @@
+{
+  "company": {
+    "slug": "linkedin-premium",
+    "name": "LinkedIn Premium",
+    "category": "productivity",
+    "website": "https://www.linkedin.com",
+    "pricingUrl": "https://premium.linkedin.com/",
+    "shortDescription": "Paid extras on LinkedIn for job hunting and business contacts, including messaging strangers and online courses.",
+    "planHelp": "Sign in to LinkedIn, click your photo at the top right, then Settings & Privacy, then Subscriptions & payments. It shows your plan, price and renewal date. If you signed up on an iPhone, cancel through the iPhone Settings app instead."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://premium.linkedin.com/careers/career",
+      "title": "Premium Career | LinkedIn Premium",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://premium.linkedin.com/small-business/business",
+      "title": "Premium Business | LinkedIn Premium",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://premium.linkedin.com/careers/compare-plans",
+      "title": "Career Plans and Pricing | LinkedIn Premium",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://premium.linkedin.com/small-business/compare-plans",
+      "title": "Small Business Plans and Pricing | LinkedIn Premium",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "inmail_credits",
+      "label": "Messages you can send to people you don't know",
+      "type": "number",
+      "question": "How many people outside your own contacts would you want to message each month?",
+      "help": "LinkedIn calls these InMail messages. Normally you can only message people you are already connected to; these let you write to a stranger, such as someone hiring for a job.",
+      "options": [
+        {
+          "label": "None – I only message people I know",
+          "value": 0
+        },
+        {
+          "label": "A few, up to five a month",
+          "value": 5
+        },
+        {
+          "label": "Quite a lot, around fifteen a month",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "key": "who_viewed",
+      "label": "Seeing who looked at your profile",
+      "type": "ordinal",
+      "levels": [
+        "limited",
+        "full_year"
+      ],
+      "levelLabels": {
+        "limited": "Only a small number of recent viewers",
+        "full_year": "Everyone who looked, going back a full year"
+      },
+      "question": "Do you want to see everyone who has looked at your profile?",
+      "help": "Without paying, LinkedIn only shows you a few of your most recent visitors. Paid plans show the full list for the past 365 days.",
+      "options": [
+        {
+          "label": "A glimpse is fine",
+          "value": "limited"
+        },
+        {
+          "label": "I want the full list",
+          "value": "full_year"
+        }
+      ]
+    },
+    {
+      "key": "applicant_insights",
+      "label": "Seeing how you compare with other job applicants",
+      "type": "boolean",
+      "question": "Are you applying for jobs and would like to know how you compare with the other applicants?",
+      "help": "Shows you how many people have applied and whether your background lines up with what the job asks for."
+    },
+    {
+      "key": "learning_access",
+      "label": "Online courses included",
+      "type": "boolean",
+      "question": "Would you use online video courses on business, computing or creative skills?",
+      "help": "Both paid plans include more than 25,000 LinkedIn Learning courses at no extra charge."
+    },
+    {
+      "key": "company_insights",
+      "label": "Information about companies",
+      "type": "boolean",
+      "question": "Do you want figures on how companies are growing and who they are hiring?",
+      "help": "Useful if you sell to businesses or are researching an employer. Most job seekers do not need it."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "free",
+      "name": "LinkedIn (free account)",
+      "tier": 1,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 0
+        }
+      ],
+      "features": {
+        "inmail_credits": 0,
+        "who_viewed": "limited",
+        "applicant_insights": false,
+        "learning_access": false,
+        "company_insights": false
+      },
+      "bestFor": "Most people – you can build a profile, connect with people you know and apply for jobs without paying anything.",
+      "notes": "Included as the no-cost baseline so the paid plans can be compared against it. LinkedIn's own comparison table shows the free account with 'Limited view' of who viewed your profile and 'Basic search filters'. The table does not print a number of InMail credits in the free column; 0 is recorded here because InMail credits are listed only as a paid benefit. Confidence is 'uncertain' because LinkedIn's help pages block automated reading and the free column of the comparison table is incomplete."
+    },
+    {
+      "slug": "premium-career",
+      "name": "Premium Career",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 39.99
+        },
+        {
+          "period": "annual",
+          "amount": 239.88
+        }
+      ],
+      "features": {
+        "inmail_credits": 5,
+        "who_viewed": "full_year",
+        "applicant_insights": true,
+        "learning_access": true,
+        "company_insights": false
+      },
+      "bestFor": "Someone actively looking for a job over the next few months.",
+      "notes": "LinkedIn's page states 'Premium Career pricing starts at US$39.99/month or US$239.88/year' – the yearly price works out at about $19.99 a month, roughly half the monthly rate. Includes 5 InMail messages a month, a full year of profile-viewer history, guidance on how you match a job ad, and over 25,000 LinkedIn Learning courses. The wording 'starts at' means LinkedIn may show some people a different figure. A free trial (usually one month) is offered; it is a promotion, not the standard price. Many people subscribe for the few months of a job search and then cancel."
+    },
+    {
+      "slug": "premium-business",
+      "name": "Premium Business",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 69.99
+        },
+        {
+          "period": "annual",
+          "amount": 539.88
+        }
+      ],
+      "features": {
+        "inmail_credits": 15,
+        "who_viewed": "full_year",
+        "applicant_insights": false,
+        "learning_access": true,
+        "company_insights": true
+      },
+      "bestFor": "People who reach out to strangers for work – selling, recruiting or running a small business.",
+      "notes": "LinkedIn's page gives US$69.99/month or US$539.88/year, which LinkedIn describes as a 36% saving; the yearly figure is about $44.99 a month. Includes 15 InMail messages a month, unlimited searching for people and companies, full access to over 25,000 LinkedIn Learning courses, and company growth and hiring figures. The job-application comparison tools are part of the Career plan rather than this one, so that feature is recorded as not included."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I need to pay to use LinkedIn?",
+      "a": "No. A free LinkedIn account lets you build a profile, connect with people, and apply for jobs. The paid plans mainly help if you want to message strangers or are job hunting seriously."
+    },
+    {
+      "q": "What is an InMail?",
+      "a": "It is a message to someone you are not connected to – a hiring manager, for example. The free account cannot send them. Premium Career gives you 5 a month and Premium Business 15 a month."
+    },
+    {
+      "q": "Is paying yearly worth it?",
+      "a": "It is much cheaper per month – Career drops from about $40 to about $20 a month – but you pay the whole year up front. If you are subscribing just for a job search that may only last a few months, paying monthly and canceling can work out cheaper overall."
+    },
+    {
+      "q": "How do I stop being charged?",
+      "a": "Sign in on a computer, click your photo, then Settings & Privacy, then Subscriptions & payments, and cancel there. If you first signed up inside the LinkedIn app on an iPhone or iPad, you must cancel in the iPhone Settings app under your name, then Subscriptions."
+    }
+  ],
+  "notes": "LinkedIn also sells Premium All-in-One (30 InMail credits a month, aimed at small businesses) and Sales Navigator and Recruiter, which are business products and are excluded from this consumer catalog. LinkedIn's help center at linkedin.com/help blocks automated reading, so all figures here come from LinkedIn's own premium.linkedin.com marketing pages. Prices bought inside the iPhone or iPad app can be higher than on the website. LinkedIn is owned by Microsoft."
+}

@@ -1,0 +1,227 @@
+{
+  "company": {
+    "slug": "perplexity",
+    "name": "Perplexity",
+    "category": "ai-tools",
+    "website": "https://www.perplexity.ai",
+    "pricingUrl": "https://www.perplexity.ai/hub/pricing",
+    "shortDescription": "A search tool that answers your question in plain words and shows you where each fact came from.",
+    "planHelp": "Open Perplexity, click your picture or initials at the bottom left, then choose Settings and look under Account. Your plan is named there."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.perplexity.ai/hub/pricing",
+      "title": "Pricing – Perplexity",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "usage_limit",
+      "label": "How much you can use it before it makes you wait",
+      "type": "ordinal",
+      "levels": [
+        "limited",
+        "standard",
+        "high",
+        "very_high"
+      ],
+      "levelLabels": {
+        "limited": "A small number each week",
+        "standard": "Enough for everyday use",
+        "high": "About ten times the free amount",
+        "very_high": "The highest limits offered"
+      },
+      "question": "How often do you use it?",
+      "help": "The free plan gives you a limited number of the better searches each week. Paid plans give you far more.",
+      "options": [
+        {
+          "label": "Once in a while",
+          "value": "limited"
+        },
+        {
+          "label": "Most days",
+          "value": "high"
+        },
+        {
+          "label": "Many hours every day",
+          "value": "very_high"
+        }
+      ]
+    },
+    {
+      "key": "model_access",
+      "label": "How smart the answers are",
+      "type": "ordinal",
+      "levels": [
+        "basic",
+        "advanced",
+        "frontier"
+      ],
+      "levelLabels": {
+        "basic": "The basic answering system",
+        "advanced": "The leading systems from OpenAI, Google and Anthropic",
+        "frontier": "The very newest systems, including the slow careful ones"
+      },
+      "question": "Do you need the newest and smartest answering systems, or is a good, ordinary answer enough?",
+      "help": "Perplexity does not build its own answering systems; it uses ones from ChatGPT, Gemini, and Claude. Paid plans let you use the better ones.",
+      "options": [
+        {
+          "label": "An ordinary good answer is fine",
+          "value": "basic"
+        },
+        {
+          "label": "I want the leading ones",
+          "value": "advanced"
+        },
+        {
+          "label": "I want the very newest ones",
+          "value": "frontier"
+        }
+      ]
+    },
+    {
+      "key": "model_choice",
+      "label": "Choosing which answering system is used",
+      "type": "boolean",
+      "question": "Do you want to pick which system answers you, rather than letting Perplexity choose?",
+      "help": "Most people are happy letting it choose. This matters mainly to people who prefer one particular assistant."
+    },
+    {
+      "key": "deep_research",
+      "label": "Long, thorough research reports",
+      "type": "ordinal",
+      "levels": [
+        "none",
+        "standard",
+        "expert"
+      ],
+      "levelLabels": {
+        "none": "Not included",
+        "standard": "Included",
+        "expert": "The most thorough kind"
+      },
+      "question": "Do you want it to go off and come back with a long written report rather than a short answer?",
+      "help": "This takes several minutes and reads many websites for you.",
+      "options": [
+        {
+          "label": "No, short answers are fine",
+          "value": "none"
+        },
+        {
+          "label": "Yes, sometimes",
+          "value": "standard"
+        },
+        {
+          "label": "Yes, and I want the most thorough kind",
+          "value": "expert"
+        }
+      ]
+    },
+    {
+      "key": "priority_access",
+      "label": "Getting new features first",
+      "type": "boolean",
+      "question": "Do you want to be among the first to get new features?",
+      "help": "Only the most expensive plan gets this."
+    },
+    {
+      "key": "included_credits",
+      "label": "Credits included for the computer-controlling assistant",
+      "type": "info"
+    }
+  ],
+  "plans": [
+    {
+      "slug": "free",
+      "name": "Free",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 0
+        }
+      ],
+      "features": {
+        "usage_limit": "limited",
+        "model_access": "basic",
+        "model_choice": false,
+        "deep_research": "none",
+        "priority_access": false,
+        "included_credits": "None"
+      },
+      "bestFor": "Looking things up now and then and seeing where the answer came from.",
+      "notes": "Perplexity describes the free plan as \"Search only with accurate answers and citations\", with limited weekly usage and basic model access."
+    },
+    {
+      "slug": "pro",
+      "name": "Pro",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 20
+        }
+      ],
+      "features": {
+        "usage_limit": "high",
+        "model_access": "advanced",
+        "model_choice": true,
+        "deep_research": "standard",
+        "priority_access": false,
+        "included_credits": "4,000 bonus credits"
+      },
+      "bestFor": "Most people who look things up every day and want proper research reports.",
+      "notes": "Perplexity's pricing page lists $20 a month and \"10x\" the free allowance on several features. Adds deep research, a choice of the leading models, expanded use of the computer-controlling assistant, making documents and apps, and more memory. No yearly price is shown on the pricing page."
+    },
+    {
+      "slug": "max",
+      "name": "Max",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 200
+        }
+      ],
+      "features": {
+        "usage_limit": "very_high",
+        "model_access": "frontier",
+        "model_choice": true,
+        "deep_research": "expert",
+        "priority_access": true,
+        "included_credits": "35,000 bonus credits plus 10,000 credits every month"
+      },
+      "bestFor": "Researchers and professionals who use it for hours a day and want the highest limits.",
+      "notes": "Perplexity's pricing page lists $200 a month with the maximum use of the computer-controlling assistant, expert-level research, the newest advanced reasoning models, the highest usage limits and memory, and early access to new features. No yearly price is shown."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How is this different from just using Google?",
+      "a": "It writes you an answer in plain sentences instead of a list of links, and it puts a small numbered reference next to each fact so you can click through and check where it came from."
+    },
+    {
+      "q": "Is the free version enough?",
+      "a": "For looking something up a few times a week, yes. The free plan is search only: you do not get the long research reports, and you cannot choose which answering system is used."
+    },
+    {
+      "q": "Is Max worth ten times the price of Pro?",
+      "a": "Only for people who use it constantly for research work. The features are broadly the same; what you are buying is far higher limits, the most thorough research mode and early access to new things."
+    },
+    {
+      "q": "Can I pay for a year at a time?",
+      "a": "Perplexity's pricing page shows monthly prices only. If a yearly option exists it was not published there when this was checked, so ask before assuming a discount."
+    }
+  ],
+  "notes": "Checked 21 September 2026. Only monthly prices are published on Perplexity's pricing page; annual prices were not shown and have deliberately been left out rather than estimated. Perplexity does not publish exact daily search limits, deep research caps, image counts or file upload limits for any tier — the comparison table uses relative wording such as \"10x\" and dashes — so the ordinal levels here reflect that wording rather than measured numbers. The credit figures are quoted exactly as Perplexity states them; note that Pro's 4,000 and Max's 35,000 are described as bonus credits, while only Max is described as also receiving 10,000 credits every month."
+}

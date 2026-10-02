@@ -1,0 +1,232 @@
+{
+  "company": {
+    "slug": "mcafee",
+    "name": "McAfee",
+    "category": "security",
+    "website": "https://www.mcafee.com",
+    "pricingUrl": "https://www.mcafee.com/en-us/antivirus/mcafee-total-protection.html",
+    "shortDescription": "Virus and scam protection for all your devices, with identity monitoring, credit monitoring and a private internet connection on the higher plans.",
+    "planHelp": "Sign in at home.mcafee.com and open 'My Account' then 'Subscriptions'. It shows your plan name, what you will be charged at renewal and the renewal date."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.mcafee.com/en-us/identity-theft/protection.html",
+      "title": "McAfee identity theft protection – plan comparison",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.mcafee.com/en-us/products/mcafee-plus-ultimate.html",
+      "title": "McAfee+ Ultimate",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.mcafee.com/en-us/deals/",
+      "title": "McAfee deals page (plan line-up)",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.mcafee.com/en-us/antivirus/mcafee-total-protection.html",
+      "title": "McAfee Total Protection",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "devices",
+      "label": "Devices protected",
+      "type": "number",
+      "question": "How many devices (phones, computers, and tablets) do you want to protect?",
+      "help": "The McAfee+ plans cover an unlimited number of devices in your household, so you do not need to count them.",
+      "options": [
+        {
+          "label": "Just 1",
+          "value": 1
+        },
+        {
+          "label": "2 to 5",
+          "value": 5
+        },
+        {
+          "label": "6 to 10",
+          "value": 10
+        },
+        {
+          "label": "Unlimited",
+          "value": 999
+        }
+      ]
+    },
+    {
+      "key": "vpn",
+      "label": "Private internet connection",
+      "type": "boolean",
+      "question": "Do you want a private internet connection, so that other people cannot see what you do online?",
+      "help": "Useful on public Wi-Fi, for example in a coffee shop or hotel. Included on all McAfee+ plans."
+    },
+    {
+      "key": "identity_monitoring",
+      "label": "Watching for your personal details online",
+      "type": "boolean",
+      "question": "Do you want to be told if your personal details turn up where criminals trade them?"
+    },
+    {
+      "key": "personal_data_removal",
+      "label": "Removing your details from data-selling companies",
+      "type": "ordinal",
+      "levels": [
+        "scan_only",
+        "full_removal"
+      ],
+      "levelLabels": {
+        "scan_only": "Tells you where your details are listed",
+        "full_removal": "Asks the companies to delete your details for you"
+      },
+      "question": "Do you want McAfee to actually ask companies to delete your details, or just tell you where they are?",
+      "help": "The cheaper plan only finds and shows you where your information is. The higher plans do the asking for you.",
+      "options": [
+        {
+          "label": "Just tell me where they are",
+          "value": "scan_only"
+        },
+        {
+          "label": "Do the removals for me",
+          "value": "full_removal"
+        }
+      ]
+    },
+    {
+      "key": "credit_monitoring",
+      "label": "Watching your credit record",
+      "type": "ordinal",
+      "levels": [
+        "one_bureau_monthly",
+        "three_bureau_daily"
+      ],
+      "levelLabels": {
+        "one_bureau_monthly": "One credit agency, updated monthly",
+        "three_bureau_daily": "All three credit agencies, updated daily"
+      },
+      "question": "How closely do you want your credit record watched?",
+      "options": [
+        {
+          "label": "One agency, checked monthly",
+          "value": "one_bureau_monthly"
+        },
+        {
+          "label": "All three agencies, checked daily",
+          "value": "three_bureau_daily"
+        }
+      ]
+    },
+    {
+      "key": "identity_theft_insurance_usd",
+      "label": "Money back if your identity is stolen",
+      "type": "number",
+      "question": "How much coverage do you want if someone steals your identity?",
+      "help": "This is the most McAfee will pay out to help you recover from identity theft.",
+      "options": [
+        {
+          "label": "Up to $1 million",
+          "value": 1000000
+        },
+        {
+          "label": "Up to $2 million",
+          "value": 2000000
+        }
+      ]
+    }
+  ],
+  "plans": [
+    {
+      "slug": "mcafee-plus-premium",
+      "name": "McAfee+ Premium (Individual)",
+      "tier": 1,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "annual",
+          "amount": null
+        }
+      ],
+      "features": {
+        "devices": 999,
+        "vpn": true,
+        "identity_monitoring": true,
+        "personal_data_removal": "scan_only",
+        "credit_monitoring": "one_bureau_monthly",
+        "identity_theft_insurance_usd": 1000000
+      },
+      "bestFor": "One person who wants virus protection on all their devices plus a basic watch on their identity.",
+      "notes": "PRICE NOT VERIFIED. Every McAfee pricing page checked on 2026-09-21 renders its prices from JavaScript template variables such as {{digitalData.offers.o1.pricePerYear}}, so neither the first-year price nor the renewal price could be read from an official page. Verified features: unlimited devices, identity monitoring and alerts, personal info and online account SCANS (not removal), up to $1,000,000 identity theft coverage, bank and credit card transaction monitoring, 1-bureau credit monitoring with monthly score updates, identity restoration support and Secure VPN."
+    },
+    {
+      "slug": "mcafee-plus-advanced",
+      "name": "McAfee+ Advanced (Individual)",
+      "tier": 2,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "annual",
+          "amount": null
+        }
+      ],
+      "features": {
+        "devices": 999,
+        "vpn": true,
+        "identity_monitoring": true,
+        "personal_data_removal": "full_removal",
+        "credit_monitoring": "one_bureau_monthly",
+        "identity_theft_insurance_usd": 1000000
+      },
+      "bestFor": "Someone who wants McAfee to actively get their personal details deleted from the companies that sell them.",
+      "notes": "PRICE NOT VERIFIED – same reason as McAfee+ Premium (prices are JavaScript placeholders on every official page). Verified features: everything in Premium, but personal info and online accounts are REMOVED for you rather than just found. Still 1-bureau credit monitoring and up to $1,000,000 identity theft coverage. A Family version of this plan also exists covering 2 adults and 4 children under 18."
+    },
+    {
+      "slug": "mcafee-plus-ultimate",
+      "name": "McAfee+ Ultimate (Individual)",
+      "tier": 3,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "annual",
+          "amount": null
+        }
+      ],
+      "features": {
+        "devices": 999,
+        "vpn": true,
+        "identity_monitoring": true,
+        "personal_data_removal": "full_removal",
+        "credit_monitoring": "three_bureau_daily",
+        "identity_theft_insurance_usd": 2000000
+      },
+      "bestFor": "Someone who wants the closest watch on their credit and the largest payout if their identity is stolen.",
+      "notes": "PRICE NOT VERIFIED – same reason as above. One McAfee page referred to a $109.99/year renewal figure inside its free-trial terms, but it was not clear which product that applied to, so it has not been recorded as this plan's price. Verified features: everything in Advanced, plus 3-bureau credit monitoring with daily score updates, monitoring of investment and 401k accounts, up to $2,000,000 identity theft coverage and McAfee Assist (a live call with an expert to set the service up)."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Why are there no prices listed here?",
+      "a": "McAfee's website fills its prices in after the page loads in a browser, so they could not be read from the official pages when this was checked. Please look at the McAfee website for the current price before buying."
+    },
+    {
+      "q": "Will the price go up after the first year?",
+      "a": "Yes. McAfee's own terms say your subscription renews automatically each year and you will be charged 'the renewal subscription price in effect at the time of your renewal', which is normally much higher than the introductory first-year price."
+    },
+    {
+      "q": "What does 'unlimited devices' really mean?",
+      "a": "McAfee+ plans cover all the devices in your household for personal use, subject to a fair use policy. They are not meant for a business."
+    },
+    {
+      "q": "What is the difference between Premium and Advanced?",
+      "a": "Premium only tells you where your personal details have been listed online. Advanced actually contacts those companies and asks them to remove your details for you."
+    }
+  ],
+  "notes": "IMPORTANT LIMITATION: no McAfee price could be verified. All McAfee consumer pricing pages checked on 2026-09-21 (Total Protection, deals, McAfee+ Ultimate, antivirus landing page) show prices only as JavaScript template placeholders, and McAfee's support articles are behind a Salesforce page that returns no content to a fetcher. Every price is therefore null and every plan is marked uncertain. The task brief asked for six tiers named Basic, Essential, Plus, Premium, Advanced and Ultimate. Only the McAfee+ tiers Premium, Advanced and Ultimate could be confirmed as current consumer plans from official pages (with Family variants of Advanced and Ultimate). 'Basic', 'Essential' and 'Plus' appear to relate to the older McAfee Total Protection packaging (sold by device count: 1 device, 5 devices, 10 devices, Ultimate) and could not be confirmed as current named tiers, so they are not listed rather than invented."
+}

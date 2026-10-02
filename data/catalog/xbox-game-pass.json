@@ -1,0 +1,259 @@
+{
+  "company": {
+    "slug": "xbox-game-pass",
+    "name": "Xbox Game Pass",
+    "category": "gaming",
+    "website": "https://www.xbox.com/en-US/xbox-game-pass",
+    "pricingUrl": "https://www.xbox.com/en-US/xbox-game-pass/compare",
+    "shortDescription": "Pay monthly and play from a large library of games on an Xbox console, a PC, or by streaming over the internet.",
+    "planHelp": "On your Xbox, press the Xbox button, go to Profile & system, then Settings, then Account, then Subscriptions. On a computer, sign in at account.microsoft.com and click Services & subscriptions."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.xbox.com/en-US/xbox-game-pass",
+      "title": "Join Xbox Game Pass – Xbox",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.xbox.com/en-US/games/store/game-pass-essential/cfq7ttc0k5dj",
+      "title": "Buy Xbox Game Pass Essential — 1 Month – Xbox Store",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.xbox.com/en-US/games/store/game-pass-premium/CFQ7TTC0P85B",
+      "title": "Buy Xbox Game Pass Premium — 1 Month – Xbox Store",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.xbox.com/en-US/games/store/xbox-game-pass-ultimate/cfq7ttc0khs0",
+      "title": "Buy Xbox Game Pass Ultimate — 1 Month – Xbox Store",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.xbox.com/en-US/games/store/pc-game-pass/CFQ7TTC0KGQ8",
+      "title": "Buy PC Game Pass — 1 Month – Xbox Store",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "day_one_games",
+      "label": "Brand new games on the day they come out",
+      "type": "boolean",
+      "question": "Do you want to play big new games on the day they are released, without buying them?",
+      "help": "Without this, new Xbox games join the library about a year after they come out."
+    },
+    {
+      "key": "catalog_size",
+      "label": "How many games you can choose from",
+      "type": "ordinal",
+      "levels": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "levelLabels": {
+        "small": "About 50 games",
+        "medium": "200 to 300 games",
+        "large": "More than 500 games"
+      },
+      "question": "How big a selection of games do you want?",
+      "help": "Games come and go from the library over time.",
+      "options": [
+        {
+          "label": "A small selection is fine",
+          "value": "small"
+        },
+        {
+          "label": "A few hundred",
+          "value": "medium"
+        },
+        {
+          "label": "The biggest library",
+          "value": "large"
+        }
+      ]
+    },
+    {
+      "key": "console_games",
+      "label": "Playing on an Xbox console",
+      "type": "boolean",
+      "question": "Do you play on an Xbox console?"
+    },
+    {
+      "key": "pc_games",
+      "label": "Playing on a computer",
+      "type": "boolean",
+      "question": "Do you play on a Windows computer?"
+    },
+    {
+      "key": "online_multiplayer",
+      "label": "Playing with other people online on a console",
+      "type": "boolean",
+      "question": "Do you play games against or alongside other people over the internet on a console?",
+      "help": "On an Xbox console most games need a paid membership before you can play with other people. On a computer you do not need this."
+    },
+    {
+      "key": "cloud_gaming_hours",
+      "label": "Hours of streaming games each month",
+      "type": "number",
+      "question": "How many hours a month do you want to play games streamed over the internet, without downloading them?",
+      "help": "Streaming lets you play on a phone, tablet, TV or older console. Hours only count when you stream; downloaded games do not use them up.",
+      "options": [
+        {
+          "label": "I don't stream games",
+          "value": 0
+        },
+        {
+          "label": "Up to about 5 hours",
+          "value": 5
+        },
+        {
+          "label": "Up to about 10 hours",
+          "value": 10
+        },
+        {
+          "label": "15 hours or more",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "key": "ea_play",
+      "label": "EA Play included (EA SPORTS FC, The Sims and other EA games)",
+      "type": "boolean",
+      "question": "Do you play EA games such as EA SPORTS FC, Madden, Battlefield or The Sims?"
+    },
+    {
+      "key": "fortnite_crew",
+      "label": "Fortnite Crew included",
+      "type": "boolean",
+      "question": "Do you or your family play Fortnite and pay for the monthly Fortnite Crew extras?",
+      "help": "Fortnite Crew normally costs extra on its own."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "essential",
+      "name": "Xbox Game Pass Essential",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 9.99
+        }
+      ],
+      "features": {
+        "day_one_games": false,
+        "catalog_size": "small",
+        "console_games": true,
+        "pc_games": true,
+        "online_multiplayer": true,
+        "cloud_gaming_hours": 5,
+        "ea_play": false,
+        "fortnite_crew": false
+      },
+      "bestFor": "People who mainly buy their own games but need to play online with friends on an Xbox.",
+      "notes": "This is the tier that replaced the old Xbox Live Gold and then Game Pass Core. Includes 50+ games, online console multiplayer, in-game benefits, 5 hours of cloud playtime each month and Rewards points. A first-month or 14-day trial for $1 is regularly offered; the $9.99 figure is the standard price."
+    },
+    {
+      "slug": "pc-game-pass",
+      "name": "PC Game Pass",
+      "tier": 2,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 13.99
+        }
+      ],
+      "features": {
+        "day_one_games": true,
+        "catalog_size": "medium",
+        "console_games": false,
+        "pc_games": true,
+        "online_multiplayer": false,
+        "cloud_gaming_hours": null,
+        "ea_play": true,
+        "fortnite_crew": false
+      },
+      "bestFor": "Someone who only plays on a Windows computer and wants new games on day one.",
+      "notes": "Marked uncertain for one reason: the Xbox store page for PC Game Pass does not state how many hours of cloud streaming, if any, are included, so that value is left blank rather than guessed. The three console tiers all state their hours plainly. Online multiplayer is recorded as not included because the benefit Microsoft lists is specifically \"online console multiplayer\" and PC Game Pass is described as a PC-only library; playing with others on a computer does not need a membership anyway. Includes an EA Play membership at no extra cost, day one releases, 300+ PC games and a 2x Rewards points multiplier."
+    },
+    {
+      "slug": "premium",
+      "name": "Xbox Game Pass Premium",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 14.99
+        }
+      ],
+      "features": {
+        "day_one_games": false,
+        "catalog_size": "medium",
+        "console_games": true,
+        "pc_games": true,
+        "online_multiplayer": true,
+        "cloud_gaming_hours": 10,
+        "ea_play": false,
+        "fortnite_crew": false
+      },
+      "bestFor": "Patient players who are happy to wait about a year for the big new releases.",
+      "notes": "Includes 200+ games on console and PC, online console multiplayer, 10 hours of cloud playtime a month and a 2x Rewards multiplier. Microsoft's own wording: \"New Xbox published games join the library within 1 year of launch\" — so this tier does get the big Xbox titles, just not on release day."
+    },
+    {
+      "slug": "ultimate",
+      "name": "Xbox Game Pass Ultimate",
+      "tier": 4,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 22.99
+        }
+      ],
+      "features": {
+        "day_one_games": true,
+        "catalog_size": "large",
+        "console_games": true,
+        "pc_games": true,
+        "online_multiplayer": true,
+        "cloud_gaming_hours": 15,
+        "ea_play": true,
+        "fortnite_crew": true
+      },
+      "bestFor": "Someone who plays a lot, on more than one device, and wants new releases straight away.",
+      "notes": "500+ games including new releases on day one (selected titles; Call of Duty is excluded), playable on console, PC and supported handhelds. Includes EA Play, Fortnite Crew, Ubisoft+ Classics, 15 hours of cloud playtime a month with the best streaming quality and priority access, and up to a 4x Rewards multiplier."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Microsoft changed the names — which plan replaced mine?",
+      "a": "The old Game Pass Core is now called Essential, and the old Game Pass Standard is now called Premium. Ultimate and PC Game Pass kept their names. If you had Core or Standard you were moved across automatically."
+    },
+    {
+      "q": "Do I still need a membership just to play online with friends?",
+      "a": "On an Xbox console, yes, for most games — Essential is the cheapest way to do that. On a Windows computer you do not need any membership to play online."
+    },
+    {
+      "q": "Do I keep the games if I stop paying?",
+      "a": "No. The games stop working when the membership ends. Anything you bought outright is still yours, and members get a discount on buying games they want to keep."
+    },
+    {
+      "q": "What are the cloud hours for?",
+      "a": "They only apply when you stream a game over the internet instead of downloading it — handy on a phone, tablet or TV. If you download and play games on your console or computer, the hours are never used up."
+    }
+  ],
+  "notes": "Checked 21 September 2026. Microsoft renamed the tiers in late 2025 (Core became Essential, Standard became Premium) and adjusted Ultimate's price again in April 2026. The prices here were read from the live Xbox store product pages on 21 September 2026: Essential $9.99, PC Game Pass $13.99, Premium $14.99, Ultimate $22.99 a month. The main Game Pass landing page and the compare page draw their prices in the browser and returned placeholders, so the store product pages were used instead. Microsoft sells 3-month and other multi-month cards for some tiers at retail; only the standard monthly price is recorded here. Trial offers of $1 for the first month or 14 days are promotional and are not treated as the price."
+}

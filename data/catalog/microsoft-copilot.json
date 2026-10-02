@@ -1,0 +1,318 @@
+{
+  "company": {
+    "slug": "microsoft-copilot",
+    "name": "Microsoft Copilot",
+    "category": "ai-tools",
+    "website": "https://copilot.microsoft.com",
+    "pricingUrl": "https://www.microsoft.com/en-us/microsoft-365-copilot/pricing/individuals",
+    "shortDescription": "Microsoft's assistant. The paid versions come bundled with Word, Excel, PowerPoint, Outlook and online storage.",
+    "planHelp": "Go to account.microsoft.com and sign in, then click Services & subscriptions. Your plan is listed there, for example Microsoft 365 Personal."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.microsoft.com/en-us/microsoft-365-copilot/pricing/individuals",
+      "title": "Copilot Pricing Plans for Individuals – Microsoft Copilot",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/microsoft-365-copilot/about-microsoft-copilot-pro",
+      "title": "About Microsoft Copilot Pro – Microsoft Support",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "usage_limit",
+      "label": "How much you can use the assistant before it stops you",
+      "type": "ordinal",
+      "levels": [
+        "limited",
+        "standard",
+        "high",
+        "very_high"
+      ],
+      "levelLabels": {
+        "limited": "A small amount, and only when there is room",
+        "standard": "More than the free version",
+        "high": "A lot",
+        "very_high": "The most Microsoft offers"
+      },
+      "question": "How often do you use it?",
+      "help": "Microsoft says the free version works \"subject to available capacity and limits\", so at busy times it may simply stop until later.",
+      "options": [
+        {
+          "label": "Once in a while",
+          "value": "limited"
+        },
+        {
+          "label": "Most days",
+          "value": "standard"
+        },
+        {
+          "label": "Every day, for hours",
+          "value": "high"
+        },
+        {
+          "label": "Many hours every day, it's my job",
+          "value": "very_high"
+        }
+      ]
+    },
+    {
+      "key": "image_generation",
+      "label": "Making pictures",
+      "type": "ordinal",
+      "levels": [
+        "limited",
+        "standard",
+        "high",
+        "highest"
+      ],
+      "levelLabels": {
+        "limited": "A few",
+        "standard": "More than free",
+        "high": "Plenty",
+        "highest": "The most allowed"
+      },
+      "question": "How many pictures do you want to make?",
+      "help": "You describe a picture in words and it draws it for you.",
+      "options": [
+        {
+          "label": "I don't make pictures",
+          "value": "limited"
+        },
+        {
+          "label": "A few now and then",
+          "value": "standard"
+        },
+        {
+          "label": "Quite a lot",
+          "value": "high"
+        },
+        {
+          "label": "As many as possible",
+          "value": "highest"
+        }
+      ]
+    },
+    {
+      "key": "storage_gb",
+      "label": "Online storage for your files and photos",
+      "type": "number",
+      "question": "How much online storage do you need?",
+      "help": "A thousand gigabytes is one terabyte. The family plans give one terabyte to each person.",
+      "options": [
+        {
+          "label": "None, I don't need storage",
+          "value": 0
+        },
+        {
+          "label": "About 1 terabyte, just for me",
+          "value": 1024
+        },
+        {
+          "label": "6 terabytes to share with my family",
+          "value": 6144
+        }
+      ]
+    },
+    {
+      "key": "members",
+      "label": "People who can share the subscription",
+      "type": "number",
+      "question": "How many people will share this?",
+      "help": "Everyone sharing gets the Word and Excel apps and their own terabyte of storage, but only the person who pays gets the assistant inside those apps.",
+      "options": [
+        {
+          "label": "Just me",
+          "value": 1
+        },
+        {
+          "label": "2 or 3 people",
+          "value": 3
+        },
+        {
+          "label": "Up to 6 people",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "key": "desktop_apps",
+      "label": "Word, Excel, PowerPoint and Outlook on your computer",
+      "type": "boolean",
+      "question": "Do you want the full Word, Excel, PowerPoint and Outlook programs installed on your computer?",
+      "help": "The free assistant does not include these. Every paid Microsoft 365 plan does."
+    },
+    {
+      "key": "copilot_in_office_apps",
+      "label": "The assistant built into Word, Excel, PowerPoint and Outlook",
+      "type": "boolean",
+      "question": "Do you want the assistant to help you inside Word, Excel, PowerPoint and Outlook, rather than only in a separate chat window?",
+      "help": "On the family plans this only works for the person who pays for the subscription."
+    },
+    {
+      "key": "ai_usage_notes",
+      "label": "Microsoft's own wording for the assistant allowance",
+      "type": "info"
+    }
+  ],
+  "plans": [
+    {
+      "slug": "copilot-free",
+      "name": "Copilot (free)",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 0
+        }
+      ],
+      "features": {
+        "usage_limit": "limited",
+        "image_generation": "limited",
+        "storage_gb": 0,
+        "members": 1,
+        "desktop_apps": false,
+        "copilot_in_office_apps": false,
+        "ai_usage_notes": "A limited free version, subject to available capacity and limits"
+      },
+      "bestFor": "Trying the assistant out without paying anything.",
+      "notes": "Microsoft's pricing page says: \"Microsoft offers a limited free version of Copilot subject to available capacity and limits. When you hit a limit, you can choose to upgrade to a paid option or come back later.\" Microsoft does not publish a feature list for the free tier, so only what that sentence states is recorded. Storage is shown as 0 because no cloud storage is part of this free assistant; the 15 GB or so that comes with an ordinary Microsoft account is separate and is not a subscription benefit."
+    },
+    {
+      "slug": "microsoft-365-personal",
+      "name": "Microsoft 365 Personal",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 9.99
+        },
+        {
+          "period": "annual",
+          "amount": 99.99
+        }
+      ],
+      "features": {
+        "usage_limit": "standard",
+        "image_generation": "standard",
+        "storage_gb": 1024,
+        "members": 1,
+        "desktop_apps": true,
+        "copilot_in_office_apps": true,
+        "ai_usage_notes": "Advanced Copilot chat with higher usage than free"
+      },
+      "bestFor": "One person who wants Word and Excel plus a decent amount of assistant use.",
+      "notes": "Covers 1 person with 1 TB of storage. Adds higher usage for image creation, visual AI and audio, and use of the assistant with your work files."
+    },
+    {
+      "slug": "microsoft-365-family",
+      "name": "Microsoft 365 Family",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 12.99
+        },
+        {
+          "period": "annual",
+          "amount": 129.99
+        }
+      ],
+      "features": {
+        "usage_limit": "standard",
+        "image_generation": "standard",
+        "storage_gb": 6144,
+        "members": 6,
+        "desktop_apps": true,
+        "copilot_in_office_apps": true,
+        "ai_usage_notes": "Advanced Copilot chat with higher usage than free (owner only)"
+      },
+      "bestFor": "A household where several people want Word, Excel and their own storage.",
+      "notes": "Covers 1 to 6 people, 6 TB of storage in total (1 TB each). Important: Microsoft states that \"Copilot features in apps like Word, Excel, PowerPoint, and Outlook are available only to the subscription owner\" — the other five people get the apps and the storage but not the assistant inside them. Only $3 a month more than Personal, so it is usually better value for two people or more."
+    },
+    {
+      "slug": "microsoft-365-premium",
+      "name": "Microsoft 365 Premium",
+      "tier": 4,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 19.99
+        },
+        {
+          "period": "annual",
+          "amount": 199.99
+        }
+      ],
+      "features": {
+        "usage_limit": "high",
+        "image_generation": "high",
+        "storage_gb": 6144,
+        "members": 6,
+        "desktop_apps": true,
+        "copilot_in_office_apps": true,
+        "ai_usage_notes": "Advanced Copilot chat with extensive usage; limited usage for agentic AI"
+      },
+      "bestFor": "Someone who uses the assistant heavily and also wants Office for the family.",
+      "notes": "Covers 1 to 6 people, 6 TB total. Adds \"extensive\" assistant usage, extensive image creation, some use of the task-doing agents, and access to Copilot features currently exclusive to Premium and Pro. This is the plan Microsoft points former Copilot Pro subscribers towards."
+    },
+    {
+      "slug": "microsoft-365-pro",
+      "name": "Microsoft 365 Pro",
+      "tier": 5,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 99.99
+        }
+      ],
+      "features": {
+        "usage_limit": "very_high",
+        "image_generation": "highest",
+        "storage_gb": 6144,
+        "members": 6,
+        "desktop_apps": true,
+        "copilot_in_office_apps": true,
+        "ai_usage_notes": "Advanced Copilot chat with highest usage; highest agentic AI usage"
+      },
+      "bestFor": "Very heavy users who want the largest assistant allowance Microsoft sells to individuals.",
+      "notes": "Covers 1 to 6 people, 6 TB total. Monthly billing only — Microsoft does not offer a yearly price for this plan. Gives the highest usage of the assistant, the task-doing agents, visual AI and audio."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is Copilot Pro still available?",
+      "a": "No. Microsoft's support page states: \"Copilot Pro is no longer available for purchase; existing subscribers can continue using it until they cancel or support ends on August 1, 2026.\" That date has now passed. Microsoft points people to Microsoft 365 Premium instead."
+    },
+    {
+      "q": "Do I have to pay to use Copilot?",
+      "a": "No. There is a free version. Microsoft describes it as limited and says it works when there is spare capacity, so at busy times it may stop working until later."
+    },
+    {
+      "q": "If I buy the Family plan, does everyone get the assistant?",
+      "a": "No, and this catches people out. Everyone gets the Word and Excel programs and their own terabyte of storage, but the assistant inside those programs works only for the person who pays."
+    },
+    {
+      "q": "Is it cheaper to pay for a whole year?",
+      "a": "Yes, on every plan that offers it. Paying yearly works out at about two months free — for example Personal is $9.99 a month or $99.99 for the year. Microsoft 365 Pro is the exception and is monthly only."
+    }
+  ],
+  "notes": "Checked 21 September 2026. Microsoft has folded the old Copilot Pro subscription into its Microsoft 365 consumer plans, so there is no longer a standalone paid Copilot for individuals; Copilot Pro is not listed here because it can no longer be bought and its support ended on 1 August 2026. The consumer line-up is now: free Copilot, Microsoft 365 Personal, Family, Premium and Pro. Microsoft does not publish message counts or credit numbers for any consumer tier — only words like \"higher\", \"extensive\" and \"highest\" — so the usage and image ordinals reflect that wording rather than measured limits, and the exact wording is kept in the ai_usage_notes field. All paid plans also include the Word, Excel, PowerPoint and Outlook programs, which is a large part of their value beyond the assistant."
+}

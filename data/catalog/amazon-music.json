@@ -1,0 +1,238 @@
+{
+  "company": {
+    "slug": "amazon-music",
+    "name": "Amazon Music",
+    "category": "music",
+    "website": "https://www.amazon.com/music",
+    "pricingUrl": "https://www.amazon.com/music/unlimited",
+    "shortDescription": "Amazon's music service, with a free level, a level included with Prime, and a paid Unlimited level.",
+    "planHelp": "Go to amazon.com and sign in, then choose Account & Lists > Memberships & Subscriptions. Amazon Music Unlimited will be listed there if you pay for it. If it is not listed, you are on the free level or the level that comes with Prime."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.aboutamazon.com/news/entertainment/what-is-amazon-music",
+      "title": "What is Amazon Music? Here's everything you need to know – About Amazon",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.aboutamazon.com/news/entertainment/amazon-music-price",
+      "title": "Amazon Music: How much does it cost? – About Amazon",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "members",
+      "label": "People who get their own account",
+      "type": "number",
+      "question": "How many people will use this, each with their own account?",
+      "options": [
+        {
+          "label": "Just me",
+          "value": 1
+        },
+        {
+          "label": "2 people",
+          "value": 2
+        },
+        {
+          "label": "3 or 4 people",
+          "value": 4
+        },
+        {
+          "label": "5 or 6 people",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "key": "ad_free",
+      "label": "No advertisements",
+      "type": "boolean",
+      "question": "Do you want to listen without advertisements?",
+      "help": "The free level plays advertisements. The level that comes with Prime and the paid Unlimited level do not."
+    },
+    {
+      "key": "on_demand",
+      "label": "Play any song you want, when you want",
+      "type": "boolean",
+      "question": "Do you want to pick any song and play it right away?",
+      "help": "On the free level and the Prime level, most music plays in a random order and you can only choose songs inside certain playlists."
+    },
+    {
+      "key": "offline_access",
+      "label": "Save music to listen without internet",
+      "type": "boolean",
+      "question": "Do you want to save songs on your phone so you can listen where there is no internet?"
+    },
+    {
+      "key": "audio_quality",
+      "label": "Sound quality",
+      "type": "ordinal",
+      "levels": [
+        "standard",
+        "high",
+        "lossless"
+      ],
+      "levelLabels": {
+        "standard": "Normal sound",
+        "high": "Better sound for good headphones",
+        "lossless": "Best possible sound, the same as the original recording"
+      },
+      "question": "How important is sound quality to you?",
+      "options": [
+        {
+          "label": "Normal is fine",
+          "value": "standard"
+        },
+        {
+          "label": "I'd like better sound",
+          "value": "high"
+        },
+        {
+          "label": "I want the very best sound",
+          "value": "lossless"
+        }
+      ]
+    }
+  ],
+  "plans": [
+    {
+      "slug": "free",
+      "name": "Amazon Music Free",
+      "tier": 1,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 0
+        }
+      ],
+      "features": {
+        "members": 1,
+        "ad_free": false,
+        "on_demand": false,
+        "offline_access": false,
+        "audio_quality": null
+      },
+      "bestFor": "Someone who wants background music at no cost and does not mind advertisements.",
+      "notes": "Amazon describes this as a catalog of 100 million ad-supported tracks. You can pick songs inside 'All-Access Playlists', but other music plays in a random (shuffle) order. Sound quality for this level is not stated on any official page that could be read, so audio_quality is null."
+    },
+    {
+      "slug": "prime-included",
+      "name": "Amazon Music included with Prime",
+      "tier": 2,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 0
+        }
+      ],
+      "features": {
+        "members": 1,
+        "ad_free": true,
+        "on_demand": false,
+        "offline_access": true,
+        "audio_quality": null
+      },
+      "bestFor": "People who already pay for Amazon Prime and want advertisement-free background music at no extra cost.",
+      "notes": "Costs nothing extra, but you must already pay for an Amazon Prime membership, which is billed separately. Amazon states Prime members get over 100 million songs advertisement-free and can download All-Access Playlists, but most music still plays in a random order unless it is inside one of those playlists. The Prime membership price and this level's sound quality were not verified on an official page, so audio_quality is null."
+    },
+    {
+      "slug": "unlimited-individual",
+      "name": "Amazon Music Unlimited – Individual",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 12.99
+        }
+      ],
+      "features": {
+        "members": 1,
+        "ad_free": true,
+        "on_demand": true,
+        "offline_access": true,
+        "audio_quality": "lossless"
+      },
+      "bestFor": "One person who wants to choose any song at any time, in the best sound quality.",
+      "notes": "$12.99 a month for customers who are not Prime members. Prime members pay $11.99 a month or $119 a year. Includes the full catalog on demand, unlimited skips, lossless / HD / Ultra HD and Spatial Audio, and one Audible audiobook a month. An older official Amazon article (updated February 2025) still lists $11.99 non-Prime and $10.99 Prime, so prices rose during 2025–2026; the newer official article's figures are used here."
+    },
+    {
+      "slug": "unlimited-family",
+      "name": "Amazon Music Unlimited – Family",
+      "tier": 4,
+      "status": "active",
+      "confidence": "uncertain",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 19.99
+        },
+        {
+          "period": "annual",
+          "amount": 199
+        }
+      ],
+      "features": {
+        "members": 6,
+        "ad_free": true,
+        "on_demand": true,
+        "offline_access": true,
+        "audio_quality": "lossless"
+      },
+      "bestFor": "A household where several people each want their own music.",
+      "notes": "Marked uncertain: the only official Amazon page that states the Family price was last updated in February 2025, and the Individual price on a newer official page has since risen, so the Family price may also have increased. Amazon's own product and help pages could not be read directly because amazon.com blocks automated reading (robots.txt). The number of accounts (6) follows Amazon's standard family plan and was not re-verified on an official page during this check."
+    },
+    {
+      "slug": "unlimited-single-device",
+      "name": "Amazon Music Unlimited – Single Device",
+      "tier": 5,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": null
+        }
+      ],
+      "features": {
+        "members": 1,
+        "ad_free": true,
+        "on_demand": true,
+        "offline_access": null,
+        "audio_quality": null
+      },
+      "bestFor": "Someone who only listens on one Amazon Echo speaker or Fire TV device.",
+      "notes": "Could not be verified. Amazon's official help page that compares the Single-Device and Individual plans could not be read because amazon.com blocks automated reading (robots.txt), and neither official About Amazon article mentions this plan. Price and most features are therefore null. This plan should be re-checked by hand before it is shown to shoppers."
+    }
+  ],
+  "faq": [
+    {
+      "q": "I already pay for Amazon Prime. Do I get music for free?",
+      "a": "Yes, a limited version. Prime members get over 100 million songs with no advertisements, but most of the time the songs play in a random order. To choose any song whenever you like, you need Amazon Music Unlimited, which costs extra."
+    },
+    {
+      "q": "Do Prime members pay less for Amazon Music Unlimited?",
+      "a": "Yes. Amazon lists $11.99 a month (or $119 a year) for Prime members and $12.99 a month for everyone else."
+    },
+    {
+      "q": "Do I need a special speaker for Amazon Music?",
+      "a": "No. It works on a phone, tablet, computer, smart TV and Amazon Echo speakers. You do not need to own an Echo."
+    },
+    {
+      "q": "Why are some prices on other websites different?",
+      "a": "Amazon raised its music prices during 2025 and 2026, so older articles and comparison sites may show the old figures. Always check the price shown on Amazon's own sign-up screen before you agree to pay."
+    }
+  ],
+  "notes": "IMPORTANT LIMITATION: amazon.com blocks automated reading of its product and help pages (robots.txt), so the Amazon Music Unlimited pricing page and the Family / Single-Device help pages could not be read. All figures here come from Amazon's own news site, aboutamazon.com. The Individual price is from an article reflecting the current catalog; the Family price is from an article last updated February 2025 and is marked uncertain. A person should confirm Family and Single-Device pricing directly on amazon.com/music/unlimited before this data is published."
+}

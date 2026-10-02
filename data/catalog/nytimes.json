@@ -1,0 +1,150 @@
+{
+  "company": {
+    "slug": "nytimes",
+    "name": "The New York Times",
+    "category": "news",
+    "website": "https://www.nytimes.com",
+    "pricingUrl": "https://www.nytimes.com/subscription",
+    "shortDescription": "News from The New York Times, plus its puzzles, recipes, sports, and product reviews.",
+    "planHelp": "Sign in at nytimes.com, click your initials or photo at the top right, then Account, then Subscription overview. That page names your plan, the price and the next billing date. If you subscribed through Apple or Google, you must cancel in that app store instead."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.nytimes.com/subscription",
+      "title": "New York Times subscription page – BLOCKED: nytimes.com refused automated access on 2026-09-21",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://help.nytimes.com/hc/en-us/articles/360003809614-Subscription-options",
+      "title": "Subscription options – NYT Help – BLOCKED: help.nytimes.com refused automated access on 2026-09-21",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.nytco.com/products/",
+      "title": "The New York Times Company products – BLOCKED: nytco.com refused automated access on 2026-09-21",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "news_access",
+      "label": "The news itself",
+      "type": "boolean",
+      "question": "Do you want to read New York Times news articles?",
+      "help": "This is the main newspaper – news, opinion, and features. Every paid plan includes it."
+    },
+    {
+      "key": "games",
+      "label": "Puzzles and games",
+      "type": "boolean",
+      "question": "Do you play the crossword, Wordle, Spelling Bee or the other puzzles?",
+      "help": "The Times sells its puzzles on their own as well as inside the bigger subscription. If puzzles are the only thing you want, the separate Games subscription is much cheaper."
+    },
+    {
+      "key": "cooking",
+      "label": "Recipes",
+      "type": "boolean",
+      "question": "Would you use the recipe collection?",
+      "help": "Thousands of recipes with step-by-step instructions, and a place to save your favorites."
+    },
+    {
+      "key": "athletic",
+      "label": "Sports coverage (The Athletic)",
+      "type": "boolean",
+      "question": "Do you follow a sports team closely?",
+      "help": "The Athletic is a separate sports publication the Times owns, with reporters covering individual teams."
+    },
+    {
+      "key": "wirecutter",
+      "label": "Product reviews (Wirecutter)",
+      "type": "boolean",
+      "question": "Do you like to read reviews before buying appliances or gadgets?",
+      "help": "Wirecutter tests everyday products – kettles, mattresses, printers – and names a best pick."
+    },
+    {
+      "key": "audio",
+      "label": "Articles read aloud and podcasts",
+      "type": "boolean",
+      "question": "Would you rather listen to articles than read them on a screen?",
+      "help": "Articles can be played as audio, and there are subscriber-only podcasts. Helpful if reading on a screen is tiring."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "basic-digital-access",
+      "name": "Basic Digital Access",
+      "tier": 1,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": null
+        },
+        {
+          "period": "annual",
+          "amount": null
+        }
+      ],
+      "features": {
+        "news_access": null,
+        "games": null,
+        "cooking": null,
+        "athletic": null,
+        "wirecutter": null,
+        "audio": null
+      },
+      "bestFor": "Readers who only want the news and none of the puzzles, recipes or sport.",
+      "notes": "NOT VERIFIED – NO DATA RECORDED. Every New York Times web property (nytimes.com, help.nytimes.com and the corporate site nytco.com) refused automated access on 2026-09-21, so neither the price nor the contents of this plan could be read from an official source. Nothing has been filled in from memory or third-party sites. A human researcher must open nytimes.com/subscription in a normal browser while signed out, note the STANDARD rate shown in the small print (not the large introductory figure), and record which of news, games, cooking, sports, and reviews this plan includes."
+    },
+    {
+      "slug": "all-access",
+      "name": "All Access",
+      "tier": 2,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": null
+        },
+        {
+          "period": "annual",
+          "amount": null
+        }
+      ],
+      "features": {
+        "news_access": null,
+        "games": null,
+        "cooking": null,
+        "athletic": null,
+        "wirecutter": null,
+        "audio": null
+      },
+      "bestFor": "Readers who want the news plus the puzzles, recipes, sports, and product reviews in one payment.",
+      "notes": "NOT VERIFIED – NO DATA RECORDED, for the same reason as Basic Digital Access: all New York Times sites blocked automated access on 2026-09-21. The plan's name strongly suggests it bundles the separate products, but that has not been confirmed from an official page and so has not been entered as data."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Why does my New York Times bill suddenly go up?",
+      "a": "The Times advertises a low introductory rate – often for the first year – and then charges its standard rate automatically. Diary the date the introductory period ends. If the new price is more than you want to pay, telephoning or using the online chat to cancel very often produces an offer to keep you at a lower rate."
+    },
+    {
+      "q": "I only want the crossword. Do I need the full subscription?",
+      "a": "No. The Times sells its puzzles as a separate, much cheaper Games subscription, and sells recipes separately as a Cooking subscription. If puzzles or recipes are all you want, ask for those rather than the full package."
+    },
+    {
+      "q": "Why is the price shown per week?",
+      "a": "The Times quotes many of its prices as an amount per week but takes the money every four weeks, so you are billed thirteen times a year rather than twelve. Multiply the weekly figure by 52 to see what a year really costs."
+    },
+    {
+      "q": "Can I get it free through my library?",
+      "a": "Often, yes. Many American public libraries and universities give members free digital access to The New York Times. It is worth asking at your local library before paying."
+    }
+  ],
+  "notes": "THIS FILE IS INCOMPLETE AND MUST BE FINISHED BY A HUMAN. Every New York Times domain we tried – www.nytimes.com, help.nytimes.com and www.nytco.com – returned a hard block to automated fetching on 2026-09-21, so no price or feature could be taken from an official source. Under the research rules nothing was guessed: all amounts and all feature values are null and both plans are marked 'uncertain'. What still needs recording, from a normal browser, signed out, in the US: (1) the STANDARD non-introductory price of Basic Digital Access and of All Access, remembering that the Times quotes prices per week but bills every four weeks – so the yearly cost is the weekly figure times 52, not times 48; (2) exactly which products each plan includes among News, Games, Cooking, The Athletic, Wirecutter and audio; (3) the prices of the standalone Games and Cooking subscriptions, which are the cheapest way in for people who only want puzzles or recipes; (4) home-delivery plans, which include digital access and are priced separately. The intro-versus-standard gap is unusually large at the Times and is the single most important thing for a shopper to understand, which is why it is covered in the FAQ above even though no figures could be verified."
+}

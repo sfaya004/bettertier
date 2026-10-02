@@ -1,0 +1,195 @@
+{
+  "company": {
+    "slug": "surfshark",
+    "name": "Surfshark",
+    "category": "vpn",
+    "website": "https://surfshark.com",
+    "pricingUrl": "https://surfshark.com/pricing",
+    "shortDescription": "A private internet connection (VPN) for an unlimited number of devices, with optional antivirus and personal-data removal.",
+    "planHelp": "Sign in at surfshark.com and open your account page. Look for 'Subscription' or 'Plan' to see which plan you have, what you pay and when it renews."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://surfshark.com/pricing",
+      "title": "Surfshark pricing page",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://surfshark.com/blog/surfshark-vpn-plans",
+      "title": "Surfshark VPN plans explained: Starter vs. One vs. One+ (official blog, includes full price table)",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://support.surfshark.com/hc/en-us/articles/8958891462418-What-are-Surfshark-subscription-plan-options",
+      "title": "What are Surfshark subscription plan options? (official support)",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "devices",
+      "label": "Devices protected at the same time",
+      "type": "number",
+      "question": "How many devices (phones, computers, and tablets) do you want to protect?",
+      "help": "Unlimited. Every Surfshark plan covers as many devices as you like at the same time, so the whole family is covered.",
+      "options": [
+        {
+          "label": "Just 1",
+          "value": 1
+        },
+        {
+          "label": "2 to 5",
+          "value": 5
+        },
+        {
+          "label": "6 or more",
+          "value": 10
+        },
+        {
+          "label": "Unlimited",
+          "value": 999
+        }
+      ]
+    },
+    {
+      "key": "antivirus",
+      "label": "Virus protection",
+      "type": "boolean",
+      "question": "Do you want virus protection for your computer as well?",
+      "help": "The cheapest plan does not include it."
+    },
+    {
+      "key": "data_breach_alerts",
+      "label": "Warning if your details are stolen",
+      "type": "boolean",
+      "question": "Do you want to be told if your email address or card details turn up on a criminal website?",
+      "help": "Surfshark calls this \"Alert\"."
+    },
+    {
+      "key": "alternative_id",
+      "label": "A stand-in name and email address",
+      "type": "boolean",
+      "question": "Would you like a stand-in email address to give to shops and websites, so your real one stays private?",
+      "help": "Surfshark calls this \"Alternative ID\". It is included on every plan."
+    },
+    {
+      "key": "personal_data_removal",
+      "label": "Removing your details from data-selling companies",
+      "type": "boolean",
+      "question": "Would you like a service that asks companies to delete the personal information they hold about you?",
+      "help": "Surfshark calls this \"Incogni\". Only the most expensive plan includes it."
+    },
+    {
+      "key": "identity_theft_insurance",
+      "label": "Coverage if someone steals your identity",
+      "type": "boolean",
+      "question": "Do you want coverage and help if someone pretends to be you?",
+      "help": "Only the most expensive plan includes this, and only for eligible customers in the United States."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "starter",
+      "name": "Surfshark Starter",
+      "tier": 1,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 16.45
+        },
+        {
+          "period": "annual",
+          "amount": 40.68
+        }
+      ],
+      "features": {
+        "devices": 999,
+        "antivirus": false,
+        "data_breach_alerts": false,
+        "alternative_id": true,
+        "personal_data_removal": false,
+        "identity_theft_insurance": false
+      },
+      "bestFor": "Someone who just wants a private internet connection for as many devices as they own.",
+      "notes": "Month-by-month price $16.45 and 12-month price $3.39/month are taken from the price table in Surfshark's own blog article 'Surfshark VPN plans explained'. The annual figure of $40.68 is 12 x $3.39 calculated from that per-month rate; Surfshark does not publish a yearly total or a renewal price, so this plan is marked uncertain. PROMOTIONAL ONLY: the pricing page advertises $67.23 for the first 27 months (24 months + 3 free), shown as $2.49/month. Includes VPN, unlimited devices, Dynamic MultiHop, Bypasser, CleanWeb ad blocker, rotating IP and Alternative ID."
+    },
+    {
+      "slug": "one",
+      "name": "Surfshark One",
+      "tier": 2,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 18.95
+        },
+        {
+          "period": "annual",
+          "amount": 43.08
+        }
+      ],
+      "features": {
+        "devices": 999,
+        "antivirus": true,
+        "data_breach_alerts": true,
+        "alternative_id": true,
+        "personal_data_removal": false,
+        "identity_theft_insurance": false
+      },
+      "bestFor": "Most people: private internet plus virus protection and a warning if your details are leaked.",
+      "notes": "Month-by-month price $18.95 and 12-month price $3.59/month from Surfshark's official plans blog table. The $43.08 annual figure is 12 x $3.59; Surfshark publishes no yearly total or renewal price, so marked uncertain. PROMOTIONAL ONLY: $75.33 for the first 27 months ($2.79/month) on the pricing page. Adds Surfshark Antivirus with real-time protection, Surfshark Alert, scam protection for email and text, and content filtering."
+    },
+    {
+      "slug": "one-plus",
+      "name": "Surfshark One+",
+      "tier": 3,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 21.85
+        },
+        {
+          "period": "annual",
+          "amount": 89.88
+        }
+      ],
+      "features": {
+        "devices": 999,
+        "antivirus": true,
+        "data_breach_alerts": true,
+        "alternative_id": true,
+        "personal_data_removal": true,
+        "identity_theft_insurance": true
+      },
+      "bestFor": "Someone who also wants their personal details removed from the companies that buy and sell them.",
+      "notes": "Month-by-month price $21.85 and 12-month price $7.49/month from Surfshark's official plans blog table. The $89.88 annual figure is 12 x $7.49; no yearly total or renewal price is published, so marked uncertain. PROMOTIONAL ONLY: $121.23 for the first 27 months ($4.49/month). Adds Incogni personal-data removal and identity theft coverage for eligible US customers."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How many devices can I use with one Surfshark subscription?",
+      "a": "As many as you like. All three plans allow unlimited devices at the same time, so one subscription can cover the whole household."
+    },
+    {
+      "q": "Why is the advertised price so much lower than the monthly price?",
+      "a": "The headline price is for a 2-year introductory deal paid all at once. Paying month by month costs far more, and after the introductory term the subscription renews at Surfshark's standard price."
+    },
+    {
+      "q": "What is the difference between One and One+?",
+      "a": "One+ adds Incogni, a service that contacts data-selling companies and asks them to delete the information they hold about you, plus identity theft coverage for eligible US customers."
+    },
+    {
+      "q": "Can I get a refund?",
+      "a": "Surfshark advertises a 30-day money-back guarantee on all plans, and a 7-day free trial through the mobile app stores."
+    }
+  ],
+  "notes": "Prices come from the price table published in Surfshark's own blog article 'Surfshark VPN plans explained' (24-month, 12-month and 1-month columns), because the Surfshark pricing page itself only renders the 24-month introductory offer. CONFLICT NOTED: a separate official Surfshark blog article, 'VPN cost: how can you save?', gives a single monthly figure of $15.45 and a 1-year figure of $3.19/month without saying which plan those refer to, so the exact monthly prices should be re-checked at purchase. Surfshark does not publish renewal prices anywhere public; its terms only say 'Upon renewal, you will be charged the applicable renewal price'. All annual amounts here are the advertised 12-month per-month rate multiplied by 12 and are likely to be introductory. Dedicated IP and Alternative Number are paid add-ons on any plan."
+}

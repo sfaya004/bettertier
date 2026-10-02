@@ -1,0 +1,107 @@
+{
+  "company": {
+    "slug": "apple-fitness-plus",
+    "name": "Apple Fitness+",
+    "category": "fitness",
+    "website": "https://www.apple.com/apple-fitness-plus/",
+    "pricingUrl": "https://www.apple.com/apple-fitness-plus/",
+    "shortDescription": "Guided exercise and meditation videos from Apple, played on your iPhone, iPad or Apple TV.",
+    "planHelp": "On your iPhone open Settings, tap your name at the very top, then Subscriptions. Apple Fitness+ will be listed there with the price and renewal date, and you can cancel from the same screen."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.apple.com/apple-fitness-plus/",
+      "title": "Apple Fitness+ – Apple",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "family_sharing",
+      "label": "Sharing with family at no extra cost",
+      "type": "boolean",
+      "question": "Would other people in your family use it as well as you?",
+      "help": "One payment covers you plus up to five more family members, and each person gets their own workouts and their own progress. There is no higher-priced family plan – it is included."
+    },
+    {
+      "key": "members",
+      "label": "People who get their own account",
+      "type": "number",
+      "question": "How many people in your family would use it?",
+      "help": "Up to six people in total, including you, as long as they are set up in Apple's Family Sharing.",
+      "options": [
+        {
+          "label": "Just me",
+          "value": 1
+        },
+        {
+          "label": "Two of us",
+          "value": 2
+        },
+        {
+          "label": "Three or four",
+          "value": 4
+        },
+        {
+          "label": "Five or six",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "key": "offline_access",
+      "label": "Download workouts to use without internet",
+      "type": "boolean",
+      "question": "Do you ever exercise somewhere with no internet signal?",
+      "help": "Workouts can be downloaded in advance to an iPhone or iPad and played later."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "apple-fitness-plus",
+      "name": "Apple Fitness+",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 9.99
+        },
+        {
+          "period": "annual",
+          "amount": 79.99
+        }
+      ],
+      "features": {
+        "family_sharing": true,
+        "members": 6,
+        "offline_access": true
+      },
+      "bestFor": "Anyone with an iPhone who wants guided workouts at home – and especially families, since up to six people are covered by the one payment.",
+      "notes": "One plan only. Apple's page states '$9.99 per month or $79.99 annually' after the free trial. Paying for the year saves about $40 compared with paying monthly. Apple's page also states 'You can share Apple Fitness+ with up to five family members', which is six people in total including you, each with their own personalised experience. Apple regularly includes one to three free months with a new Apple Watch, iPhone or iPad; those are promotions, not the standard price."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I need an Apple Watch?",
+      "a": "No, not any more. Apple Fitness+ works on an iPhone, iPad or Apple TV on its own. An Apple Watch is optional – if you have one, it shows your heart rate and calories on screen during the workout."
+    },
+    {
+      "q": "Is it cheaper to pay by the year?",
+      "a": "Yes. $79.99 for a year works out at about $6.67 a month, compared with $9.99 paying month by month – a saving of roughly $40 a year."
+    },
+    {
+      "q": "Can my husband or wife use it too?",
+      "a": "Yes, at no extra cost. Up to six people in one family can each use it with their own account, as long as they are joined together in Apple's Family Sharing. You do not need to buy a separate family plan."
+    },
+    {
+      "q": "Is there a cheaper way to get it if I already pay for Apple Music or iCloud?",
+      "a": "Possibly. Apple sells a bundle called Apple One, and its top level includes Fitness+ along with Apple Music, Apple TV+, Apple Arcade, Apple News+ and extra iCloud storage for $39.95 a month for the whole family. If you already pay for two or three of those separately, the bundle can work out cheaper."
+    }
+  ],
+  "notes": "Bundle: Apple Fitness+ is included in the top Apple One bundle. Apple's page lists Apple One at $21.95, $27.95 or $39.95 a month depending on the level chosen, and states that the bundle combines Fitness+ with five other Apple subscriptions (Apple Music, Apple TV+, Apple News+, Apple Arcade and iCloud+). Only the $39.95 Premier level includes Fitness+. Anyone already paying for several Apple services should compare that bundle against paying separately. All Apple Fitness+ billing goes through the Apple account, so canceling is done in iPhone or iPad Settings rather than on a website. Apple Fitness+ requires an Apple device – it does not work on Android."
+}

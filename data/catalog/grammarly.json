@@ -1,0 +1,146 @@
+{
+  "company": {
+    "slug": "grammarly",
+    "name": "Grammarly",
+    "category": "productivity",
+    "website": "https://www.grammarly.com",
+    "pricingUrl": "https://www.grammarly.com/plans",
+    "shortDescription": "Checks your spelling, grammar and wording as you type in email, documents and the web.",
+    "planHelp": "Sign in at account.grammarly.com and choose Subscription. That page shows which plan you are on, what you pay and when the next payment is due."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.grammarly.com/plans",
+      "title": "Grammarly Prices and Plans",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://support.grammarly.com/hc/en-us/articles/115000090011-How-much-does-Grammarly-Pro-cost",
+      "title": "How much does Grammarly Pro cost? – Grammarly Support",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://support.grammarly.com/hc/en-us/articles/43053519199885-About-Grammarly-Plus",
+      "title": "About Grammarly Plus – Grammarly Support",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "usage_limit",
+      "label": "How much of the writing help you can use each month",
+      "type": "ordinal",
+      "levels": [
+        "limited",
+        "high"
+      ],
+      "levelLabels": {
+        "limited": "100 uses a month",
+        "high": "2,000 uses a month"
+      },
+      "question": "How often would you ask it to help rewrite or improve something?",
+      "help": "Each time you ask Grammarly to rewrite, shorten or reword something it counts as one use. Ordinary spelling and grammar underlining does not count and is never limited.",
+      "options": [
+        {
+          "label": "Now and then – a few times a week",
+          "value": "limited"
+        },
+        {
+          "label": "Most days, several times a day",
+          "value": "high"
+        }
+      ]
+    },
+    {
+      "key": "full_sentence_rewrites",
+      "label": "Rewrite a whole sentence for you",
+      "type": "boolean",
+      "question": "Would you like it to rewrite whole sentences, not just fix single words?",
+      "help": "The free version underlines mistakes and suggests small corrections. The paid version can rewrite a clumsy sentence from scratch."
+    },
+    {
+      "key": "tone_suggestions",
+      "label": "Tells you how your writing sounds",
+      "type": "boolean",
+      "question": "Would you like to be told whether your message sounds friendly, formal, or blunt?",
+      "help": "Useful before sending an email you are unsure about. A basic version of this is included even without paying."
+    },
+    {
+      "key": "plagiarism_check",
+      "label": "Checks whether text was copied from elsewhere",
+      "type": "boolean",
+      "question": "Do you need to check that writing is original and not copied from the internet?",
+      "help": "Mostly useful for students and anyone writing for publication. Most people do not need it."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "free",
+      "name": "Grammarly Free",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 0
+        }
+      ],
+      "features": {
+        "usage_limit": "limited",
+        "full_sentence_rewrites": false,
+        "tone_suggestions": true,
+        "plagiarism_check": false
+      },
+      "bestFor": "Most people – catching typos and grammar mistakes in everyday email and letters.",
+      "notes": "Grammarly's plans page lists the free plan at $0 with '100 prompts / month' of the rewriting help, basic spelling and grammar corrections, and tone suggestions. Full-sentence rewriting and the copied-text check are not included."
+    },
+    {
+      "slug": "pro",
+      "name": "Grammarly Pro",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 30
+        },
+        {
+          "period": "annual",
+          "amount": 144
+        }
+      ],
+      "features": {
+        "usage_limit": "high",
+        "full_sentence_rewrites": true,
+        "tone_suggestions": true,
+        "plagiarism_check": true
+      },
+      "bestFor": "People who write a great deal – long documents, reports or anything that needs to read well.",
+      "notes": "Grammarly's support page gives the exact rates: $30 per month if you pay monthly, $60 for three months, or $144 a year, which Grammarly describes as an average of $12 a month. The plans page advertises the $12 figure prominently, so shoppers often assume $12 is the monthly price – it is not; $12 is only available if you pay $144 up front for a whole year. Includes 2,000 rewriting uses per member per month. A free trial is offered ('Try for $0.00') with an email reminder two days before it ends. This plan was called Grammarly Premium until it was renamed Pro."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is the free version enough for me?",
+      "a": "For most people writing emails, letters and social posts, yes. The free version catches spelling and grammar mistakes and tells you how your message sounds. You only need the paid plan if you want whole sentences rewritten for you or you write very long documents."
+    },
+    {
+      "q": "Why do I see $12 a month advertised but get charged $30?",
+      "a": "The $12 figure is the yearly plan worked out per month. To get it you must pay $144 for the whole year in one go. If you choose to pay month by month the price is $30 a month."
+    },
+    {
+      "q": "Does Grammarly read everything I type?",
+      "a": "Grammarly checks the text in the places where you have switched it on – for example your web browser or Microsoft Word. You can turn it off for any particular website or program from the Grammarly icon, and it should be switched off for banking or medical sites if that worries you."
+    },
+    {
+      "q": "What is Grammarly Enterprise or Business?",
+      "a": "Those are versions sold to companies, with prices only available by contacting Grammarly's sales team. An ordinary household does not need them."
+    }
+  ],
+  "notes": "Consumer-relevant plans are only Free and Pro. Enterprise is priced by 'Contact Sales' and is excluded as a business plan. Grammarly also lists a 'Grammarly Plus' plan, but its support page says it is available only in select countries, with the price varying by region and tied to the billing country – it is not a standard US consumer plan, so it is not listed here. Grammarly Pro is priced per member and allows up to 149 seats, which is why Grammarly's own wording says '$30 USD/member/month'; for a single household user that is simply $30. A quarterly option of $60 for three months also exists but the schema has no quarterly period, so it is recorded here in notes only. Grammarly Premium was renamed Grammarly Pro; existing Premium subscribers were moved across."
+}

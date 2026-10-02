@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1790032279718,
+      "tag": "0000_serious_arachne",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1790037066955,
+      "tag": "0001_ai_recheck",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1790037680645,
+      "tag": "0002_drop_user_tier",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1790040333546,
+      "tag": "0003_answer_records",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1790047280799,
+      "tag": "0004_page_views",
+      "breakpoints": true
+    }
+  ]
+}

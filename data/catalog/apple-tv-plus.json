@@ -1,0 +1,120 @@
+{
+  "company": {
+    "slug": "apple-tv-plus",
+    "name": "Apple TV",
+    "category": "streaming-video",
+    "website": "https://tv.apple.com",
+    "pricingUrl": "https://www.apple.com/apple-tv-plus/",
+    "shortDescription": "Apple's own movies and series, with no advertisements. One plan only.",
+    "planHelp": "On an iPhone or iPad, open Settings, tap your name at the top, then Subscriptions – Apple TV will be listed there with its price. On a Mac, open the App Store, click your name, then Account Settings. On a computer without Apple devices, sign in at tv.apple.com and open Settings."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.apple.com/apple-tv-plus/",
+      "title": "Apple TV+ – Apple (price and features)",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://support.apple.com/en-us/118404",
+      "title": "Subscribe to Apple TV – Apple Support",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://support.apple.com/en-us/118239",
+      "title": "Download and stream shows from your Apple TV subscription – Apple Support",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "ad_free",
+      "label": "No advertisements",
+      "type": "boolean",
+      "question": "Do you want to watch without advertisements?",
+      "help": "Apple's own movies and series never have advertisements."
+    },
+    {
+      "key": "simultaneous_streams",
+      "label": "People who can watch at the same time",
+      "type": "number",
+      "question": "How many people watch at the same time?",
+      "help": "One subscription allows six people to watch at once for most programs.",
+      "options": [
+        {
+          "label": "Just one",
+          "value": 1
+        },
+        {
+          "label": "2 at the same time",
+          "value": 2
+        },
+        {
+          "label": "3 or 4 at the same time",
+          "value": 4
+        },
+        {
+          "label": "5 or 6 at the same time",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "key": "downloads",
+      "label": "Save shows to watch without internet",
+      "type": "boolean",
+      "question": "Do you save shows onto a phone or tablet to watch where there is no internet?"
+    },
+    {
+      "key": "family_sharing",
+      "label": "Share with your family",
+      "type": "boolean",
+      "question": "Do you want to share one subscription with family members who have their own accounts?",
+      "help": "Apple allows up to six family members to share one subscription at no extra cost."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "apple-tv",
+      "name": "Apple TV",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 14.99
+        }
+      ],
+      "features": {
+        "ad_free": true,
+        "simultaneous_streams": 6,
+        "downloads": true,
+        "family_sharing": true
+      },
+      "bestFor": "Anyone who wants Apple's own series and movies with no advertisements and no choice of tiers to worry about.",
+      "notes": "There is only one plan, 14.99 per month, after a seven-day free trial for new subscribers. Up to six family members can share it. Apple says one subscription allows six people to watch at the same time for most shows, though some titles allow fewer. Saved shows last up to 30 days, and some expire 48 hours after you start watching them."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is there a cheaper plan with advertisements?",
+      "a": "No. Apple TV has one plan at 14.99 a month and Apple's own programs never carry advertisements."
+    },
+    {
+      "q": "Can my family use my subscription?",
+      "a": "Yes. Up to six family members can share one subscription through Apple's Family Sharing, at no extra cost, and each keeps their own account and viewing history."
+    },
+    {
+      "q": "Is there a cheaper way to get it?",
+      "a": "Apple sells a bundle called Apple One that includes Apple TV along with Apple Music and iCloud storage, starting at 21.95 a month. Buying a new Apple device also usually comes with three months free."
+    },
+    {
+      "q": "Can I pay for a whole year?",
+      "a": "Apple has offered a yearly subscription in the past, but no yearly price is shown on the Apple TV page checked here, so ask Apple or check in Settings before assuming one is available."
+    }
+  ],
+  "notes": "The service is now branded simply Apple TV (it was Apple TV+). Only a monthly price of 14.99 is published on Apple's own page; no annual price is shown there, so none is recorded rather than guessed. Apple One bundle pricing starts at 21.95 per month and includes Apple TV; that bundle is not modelled as a plan here. There is also an Apple TV and Peacock bundle announced by Apple and NBCUniversal, starting at 17.99 per month."
+}

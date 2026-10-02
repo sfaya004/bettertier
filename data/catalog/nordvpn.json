@@ -1,0 +1,198 @@
+{
+  "company": {
+    "slug": "nordvpn",
+    "name": "NordVPN",
+    "category": "vpn",
+    "website": "https://nordvpn.com",
+    "pricingUrl": "https://nordvpn.com/pricing/",
+    "shortDescription": "A private internet connection (VPN), with optional antivirus, password manager and identity-theft help.",
+    "planHelp": "Sign in to your Nord Account on the NordVPN website and open the Billing or Subscriptions section. It shows the name of your plan, what you pay, and the date it renews."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://nordvpn.com/pricing/",
+      "title": "NordVPN pricing plans",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://nordvpn.com/blog/how-much-does-nordvpn-cost/",
+      "title": "NordVPN plans and pricing explained (official blog)",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "devices",
+      "label": "Devices protected at the same time",
+      "type": "number",
+      "question": "How many devices (phones, computers, and tablets) do you want to protect?",
+      "help": "Every NordVPN plan covers up to 10 devices at once, so most households are covered by any plan.",
+      "options": [
+        {
+          "label": "Just 1",
+          "value": 1
+        },
+        {
+          "label": "2 or 3",
+          "value": 3
+        },
+        {
+          "label": "4 to 6",
+          "value": 6
+        },
+        {
+          "label": "7 to 10",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "key": "threat_protection_pro",
+      "label": "Virus and scam protection",
+      "type": "boolean",
+      "question": "Do you want virus protection and blocking of dangerous websites and ads as well?",
+      "help": "The cheapest plan only warns you about scam links. The higher plans also scan downloads for viruses and block ads and trackers."
+    },
+    {
+      "key": "password_manager",
+      "label": "Password keeper",
+      "type": "boolean",
+      "question": "Would you like a safe place to store your passwords so you do not have to remember them?"
+    },
+    {
+      "key": "cloud_storage_gb",
+      "label": "Private online storage",
+      "type": "number",
+      "question": "How much private online storage do you want for photos and documents?",
+      "help": "This is space on the internet where your files are locked so only you can open them. 1,000 GB is about 200,000 photos.",
+      "options": [
+        {
+          "label": "I don't need any",
+          "value": 0
+        },
+        {
+          "label": "A large amount (1,000 GB)",
+          "value": 1000
+        }
+      ]
+    },
+    {
+      "key": "data_breach_scanner",
+      "label": "Warning if your details are stolen",
+      "type": "boolean",
+      "question": "Do you want to be told if your email address or card details turn up on a criminal website?"
+    },
+    {
+      "key": "identity_theft_insurance",
+      "label": "Insurance if someone steals your identity",
+      "type": "boolean",
+      "question": "Do you want insurance and expert help if someone pretends to be you and takes out credit in your name?",
+      "help": "Only the most expensive plan includes this. It also watches your credit record."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "basic",
+      "name": "Basic",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 14.99
+        },
+        {
+          "period": "annual",
+          "amount": 139.08
+        }
+      ],
+      "features": {
+        "devices": 10,
+        "threat_protection_pro": false,
+        "password_manager": false,
+        "cloud_storage_gb": 0,
+        "data_breach_scanner": false,
+        "identity_theft_insurance": false
+      },
+      "bestFor": "Someone who only wants a private internet connection and nothing else.",
+      "notes": "Standard prices: $14.99 if paid month by month; $139.08 a year is the ongoing (renewal) yearly price shown in the fine print on the pricing page. PROMOTIONAL ONLY: new customers are offered $65.88 for the first year, or $94.23 for the first two years (2-year plan), after which it renews at $139.08/year."
+    },
+    {
+      "slug": "complete",
+      "name": "Complete",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 19.99
+        },
+        {
+          "period": "annual",
+          "amount": 219.48
+        }
+      ],
+      "features": {
+        "devices": 10,
+        "threat_protection_pro": true,
+        "password_manager": true,
+        "cloud_storage_gb": 1000,
+        "data_breach_scanner": true,
+        "identity_theft_insurance": false
+      },
+      "bestFor": "Most people: private internet, virus protection, a password keeper and plenty of private online storage in one bill.",
+      "notes": "Standard prices: $19.99 month by month; $219.48 is the ongoing yearly renewal price from the pricing-page fine print. PROMOTIONAL ONLY: $77.88 for a first year, or $121.23 for a first 2-year term. Adds next-generation antivirus, ad and tracker blocking, email/call/message scam protection, NordPass password manager, 1 TB of NordLocker encrypted storage, Dark Web Monitor Pro and bank transaction monitoring."
+    },
+    {
+      "slug": "prime",
+      "name": "Prime",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 29.99
+        },
+        {
+          "period": "annual",
+          "amount": 296.28
+        }
+      ],
+      "features": {
+        "devices": 10,
+        "threat_protection_pro": true,
+        "password_manager": true,
+        "cloud_storage_gb": 1000,
+        "data_breach_scanner": true,
+        "identity_theft_insurance": true
+      },
+      "bestFor": "Someone who is worried about identity theft and wants insurance, credit monitoring and a person to help if the worst happens.",
+      "notes": "Standard prices: $29.99 month by month; $296.28 is the ongoing yearly renewal price from the pricing-page fine print. PROMOTIONAL ONLY: $113.88 for a first year, or $202.23 for a first 2-year term. Adds credit-freeze assistance, up to $1,000,000 identity theft insurance, $100,000 cyber extortion insurance, 1-bureau credit monitoring and a VantageScore credit score."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Why is the first year so much cheaper than later years?",
+      "a": "The low prices NordVPN advertises are introductory offers for new customers. When that first term ends the subscription renews automatically at the standard price shown here, which is a lot higher. Put a note in your diary before the renewal date if you want to cancel or change."
+    },
+    {
+      "q": "How many devices does one NordVPN subscription cover?",
+      "a": "Ten devices at the same time, on every plan. That can be any mix of phones, tablets, laptops and computers."
+    },
+    {
+      "q": "Is there a plan called 'Plus'?",
+      "a": "NordVPN used to sell a 'Plus' plan. On the pricing page checked in September 2026 only Basic, Complete and Prime are offered to new customers, so Plus is not listed here."
+    },
+    {
+      "q": "Can I get my money back if I don't like it?",
+      "a": "Yes. NordVPN advertises a 30-day money-back guarantee on all plans."
+    }
+  ],
+  "notes": "The current official pricing page (checked 2026-09-21) lists THREE tiers only: Basic, Complete and Prime. NordVPN's own blog article 'NordVPN plans and pricing explained' still shows four tiers including 'Plus' with different prices, but that article states it was last checked on 24 October 2025, so it is out of date. The advertised 1-year and 2-year prices are first-term introductory prices; the renewal prices stored in the 'annual' field are taken from the pricing-page fine print ('Renews at $X/year'). Sales tax may be added at checkout."
+}

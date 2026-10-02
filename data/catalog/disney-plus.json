@@ -1,0 +1,189 @@
+{
+  "company": {
+    "slug": "disney-plus",
+    "name": "Disney+",
+    "category": "streaming-video",
+    "website": "https://www.disneyplus.com",
+    "pricingUrl": "https://www.disneyplus.com/welcome/stream",
+    "shortDescription": "Disney, Pixar, Marvel, Star Wars and National Geographic movies and series.",
+    "planHelp": "On a computer go to disneyplus.com, sign in, click your profile picture in the top right corner and choose Account. Your plan name (Disney+ With Ads or Disney+ Premium) and price are listed under Subscription. If you pay through Apple, Amazon or your TV provider, the plan is shown there instead."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.disneyplus.com/welcome/stream",
+      "title": "Disney+ | Stream Movies, TV Shows, Documentaries & More – US site",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.disneyplus.com/welcome/disney-basic",
+      "title": "Disney+ (With Ads) plan page",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.disneyplus.com/explore/articles/disney-plus-downloads-watch-offline",
+      "title": "Disney+ Downloads: How to Watch Movies & Shows Offline",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.disneyplus.com/explore/articles/disney-plus-extra-member",
+      "title": "Disney+ Extra Member: About, Cost & How To Add",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.disneyplus.com/welcome/filter-plans",
+      "title": "Disney+ Subscriptions, Plans & Pricing (bundles)",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "ad_free",
+      "label": "No advertisements",
+      "type": "boolean",
+      "question": "Do you want to watch without advertisements?",
+      "help": "The cheaper plan plays short advertisements before and during most shows."
+    },
+    {
+      "key": "downloads",
+      "label": "Save shows to watch without internet",
+      "type": "boolean",
+      "question": "Do you save shows onto a phone or tablet to watch where there is no internet?",
+      "help": "Only the more expensive Disney+ Premium plan allows this, and only on phones and tablets."
+    },
+    {
+      "key": "simultaneous_streams",
+      "label": "People who can watch at the same time",
+      "type": "number",
+      "question": "How many people in your home watch at the same time?",
+      "help": "Disney+ allows four at once on every plan, so this rarely decides which plan you need.",
+      "options": [
+        {
+          "label": "Just one",
+          "value": 1
+        },
+        {
+          "label": "2 at the same time",
+          "value": 2
+        },
+        {
+          "label": "3 or 4 at the same time",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "key": "extra_member_slots",
+      "label": "Extra people outside your home",
+      "type": "number",
+      "question": "How many people who do NOT live in your home use your account?",
+      "help": "Disney+ allows one such person, for an extra monthly fee.",
+      "options": [
+        {
+          "label": "Nobody outside my home",
+          "value": 0
+        },
+        {
+          "label": "1 person",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "key": "video_quality",
+      "label": "Picture quality",
+      "type": "ordinal",
+      "levels": [
+        "full_hd",
+        "4k"
+      ],
+      "levelLabels": {
+        "full_hd": "Full HD (1080p)",
+        "4k": "4K Ultra HD"
+      },
+      "question": "What picture quality do you need?",
+      "help": "Full HD looks sharp on almost every television. 4K only makes a difference on a 4K television with fast internet.",
+      "options": [
+        {
+          "label": "Full HD is fine",
+          "value": "full_hd"
+        },
+        {
+          "label": "4K (I have a 4K television and use it)",
+          "value": "4k"
+        }
+      ]
+    }
+  ],
+  "plans": [
+    {
+      "slug": "with-ads",
+      "name": "Disney+ (With Ads)",
+      "tier": 1,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 12.49
+        }
+      ],
+      "features": {
+        "ad_free": false,
+        "downloads": false,
+        "simultaneous_streams": 4,
+        "extra_member_slots": 1,
+        "video_quality": null
+      },
+      "bestFor": "People who mainly want Disney, Marvel and Star Wars movies at the lowest monthly price and do not mind advertisements.",
+      "notes": "Price 12.49 per month is confirmed on Disney's own plan page. Marked uncertain because Disney does not state on its public pages what the top picture quality is on this plan, so video quality is recorded as null rather than guessed. Disney's Downloads article says ad-supported plans do not include downloads; a separate Disney+ page says downloads are available with restrictions, so treat downloads on this plan with care. Disney does not appear to sell an annual version of this plan."
+    },
+    {
+      "slug": "premium",
+      "name": "Disney+ Premium (No Ads)",
+      "tier": 2,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 21.49
+        },
+        {
+          "period": "annual",
+          "amount": 214.99
+        }
+      ],
+      "features": {
+        "ad_free": true,
+        "downloads": true,
+        "simultaneous_streams": 4,
+        "extra_member_slots": 1,
+        "video_quality": null
+      },
+      "bestFor": "People who want no advertisements and want to save shows onto a phone or tablet for journeys.",
+      "notes": "Prices 21.49 per month and 214.99 per year are confirmed on Disney's own pages; paying yearly saves about 16 percent. Marked uncertain only because Disney does not state the top picture quality plan by plan on the pages that could be read, so video quality is null. Disney+ does advertise 4K Ultra HD and Dolby Atmos on supported titles and devices."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can I pay for a whole year at once?",
+      "a": "Yes, but only on the Disney+ Premium (no advertisements) plan. It costs 214.99 for twelve months, which saves about 16 percent compared with paying monthly."
+    },
+    {
+      "q": "Can I add my grown-up child who lives elsewhere?",
+      "a": "Yes. Disney+ calls this an Extra Member, and each account may add one. They get their own sign-in but can only watch on one device at a time. Disney charges an extra monthly fee that depends on your plan."
+    },
+    {
+      "q": "What are the Disney+ and Hulu bundles?",
+      "a": "They are packages that include more than one service for one monthly price, for example Disney+ and Hulu together for 12.99 a month with advertisements, or 19.99 a month without. They usually cost less than paying for each service on its own."
+    },
+    {
+      "q": "How many people can watch at the same time?",
+      "a": "Up to four devices in your household can watch at once, on either plan."
+    }
+  ],
+  "notes": "Bundles are recorded here for information only and are NOT modelled as plans: Disney+ and Hulu (both with ads) 12.99 per month; Disney+ and Hulu Premium (both without ads) 19.99 per month; Disney+, Hulu and HBO Max with ads 19.99 per month and without ads 32.99 per month; Disney+, Hulu and ESPN Unlimited 35.99 per month, premium version 44.99 per month; Disney+ and Hulu student bundle 6.49 per month for verified US college students. Some bundle prices are introductory for the first six months. The Extra Member add-on price is not published as a single figure on Disney's site (it depends on the plan), so it is not recorded as a number."
+}

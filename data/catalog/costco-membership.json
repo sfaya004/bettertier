@@ -1,0 +1,157 @@
+{
+  "company": {
+    "slug": "costco-membership",
+    "name": "Costco Membership",
+    "category": "other",
+    "website": "https://www.costco.com",
+    "pricingUrl": "https://www.costco.com/join-costco.html",
+    "shortDescription": "The yearly membership card you need to shop at Costco warehouses and on costco.com.",
+    "planHelp": "Your membership type is printed on the card itself – an Executive card is black and says Executive, a Gold Star card is white. You can also sign in at costco.com and choose Account, then Membership, or ask at the membership desk in any warehouse."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://investor.costco.com/news/news-details/2024/Costco-Wholesale-Corporation-Reports-June-Sales-Results-and-Announces-Quarterly-Cash-Dividend-and-Plans-for-Membership-Fee-Increase/default.aspx",
+      "title": "Costco Wholesale Corporation announces membership fee increase (official investor news release)",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.costco.com/my-life-executive-membership-benefits.html",
+      "title": "Executive Membership Benefits | Costco",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.costco.com/executive-rewards.html",
+      "title": "Executive Rewards | Costco",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.costco.com/join-costco.html",
+      "title": "Join Costco",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.costco.com/f/-/upgrade-membership",
+      "title": "Executive Member Benefits | Costco",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.costco.com/membership.html",
+      "title": "Costco Membership",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "cashback_reward",
+      "label": "Money back at the end of the year",
+      "type": "number",
+      "question": "Would you like to get a percentage of your Costco spending back once a year?",
+      "help": "The more expensive membership pays you back 2 cents for every dollar you spend at Costco. It arrives once a year as a reward certificate you spend in the warehouse, not as cash into your bank.",
+      "options": [
+        {
+          "label": "No, I don't spend enough for that to matter",
+          "value": 0
+        },
+        {
+          "label": "Yes, 2% back on what I spend",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "key": "executive_hours",
+      "label": "Getting in before the doors open to everyone else",
+      "type": "boolean",
+      "question": "Would you like to shop earlier in the morning, before the warehouse gets busy?",
+      "help": "Costco gives its Executive members extra early shopping time at some warehouses. Check with your local warehouse, as the hours vary from store to store."
+    },
+    {
+      "key": "household_cards",
+      "label": "Cards for other people in your home",
+      "type": "number",
+      "question": "Does anyone else in your household need their own card?",
+      "help": "One extra card for another adult living at the same address is included at no extra cost with every membership. They will need to bring proof of their address.",
+      "options": [
+        {
+          "label": "Just me",
+          "value": 1
+        },
+        {
+          "label": "Me and one other adult at home",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "key": "annual_reward_cap",
+      "label": "Most you can earn back in a year",
+      "type": "info"
+    }
+  ],
+  "plans": [
+    {
+      "slug": "gold-star",
+      "name": "Gold Star Membership",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "annual",
+          "amount": 65
+        }
+      ],
+      "features": {
+        "cashback_reward": 0,
+        "executive_hours": false,
+        "household_cards": 2,
+        "annual_reward_cap": 0
+      },
+      "bestFor": "Anyone who shops at Costco occasionally – under roughly $3,250 of spending a year, this is the cheaper choice.",
+      "notes": "Costco's official investor announcement states that from 1 September 2024 'all U.S. and Canada Gold Star, Business and Business add-on members will pay an annual fee of $65', a $5 increase. Yearly payment only – Costco does not sell a monthly membership. The fee includes one free household card for another adult at the same address. Costco's guarantee lets you cancel at any time during the year and get the whole fee back."
+    },
+    {
+      "slug": "executive",
+      "name": "Executive Membership",
+      "tier": 2,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "annual",
+          "amount": 130
+        }
+      ],
+      "features": {
+        "cashback_reward": 2,
+        "executive_hours": null,
+        "household_cards": 2,
+        "annual_reward_cap": 1250
+      },
+      "bestFor": "Regular Costco shoppers – once you spend more than about $3,250 a year, the 2% back more than covers the extra $65.",
+      "notes": "PRICE VERIFIED, ONE FEATURE NOT. Costco's investor announcement states Executive fees rose to $130 a year from 1 September 2024, 'structured as a $65 primary membership plus a $65 Executive upgrade', and that the maximum annual 2% Reward rose from $1,000 to $1,250. Costco's own Executive benefits page confirms 'Executive Members can earn up to $1,250 every year on qualified Costco, Costco.com and Costco Travel purchases' and that the reward never expires. The extra early shopping hours that Costco has given Executive members could NOT be confirmed on any readable official Costco page, so that value is left blank and this plan is marked 'uncertain' for that reason alone – the $130 price and the 2% reward are solidly sourced. Note that Costco's executive-rewards.html page was still showing older figures ($55 upgrade, $110 total, $750 cap) when checked, which contradicts Costco's own press release; the press release figures are used here as the more recent and more authoritative source, and this discrepancy should be re-checked."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which membership is right for me?",
+      "a": "It comes down to how much you spend. The Executive card costs $65 more but pays back 2% of what you spend at Costco. So if you spend more than about $3,250 a year – roughly $270 a month – the Executive card pays for itself. Below that, stick with Gold Star."
+    },
+    {
+      "q": "How do I get the 2% back?",
+      "a": "Costco posts you a certificate once a year, usually with your renewal notice. You take it into the warehouse and it comes off your bill, or you can ask for it in cash at the membership desk. It is capped at $1,250 a year and it never expires."
+    },
+    {
+      "q": "Can I change my mind?",
+      "a": "Yes. Costco will refund the whole membership fee at any time if you are not satisfied, and if you upgrade to Executive and your 2% reward does not cover the extra $65, Costco will refund the difference. So there is little risk in trying the Executive card for a year."
+    },
+    {
+      "q": "Can my wife or husband use my card?",
+      "a": "They need their own card, but one extra card for another adult at your address is included in the fee at no extra charge. Take them to the membership desk with proof that they live with you and they will be issued a card on the spot."
+    }
+  ],
+  "notes": "Included as the catalog's example of the 'other' category – a shop membership rather than a media or software subscription. Both memberships are sold by the year only; there is no monthly option. Current US fees: Gold Star $65, Executive $130, both effective 1 September 2024 per Costco's own investor news release, which also confirms the Executive 2% reward cap rising from $1,000 to $1,250. Costco Business memberships ($65) exist but are aimed at businesses buying for resale and are excluded from this consumer catalog. IMPORTANT DATA-QUALITY NOTE: Costco's customer service site (customerservice.costco.com) blocks automated reading, and two Costco pages disagree with each other – costco.com/executive-rewards.html was still quoting the pre-2024 figures ($55 upgrade, $110 renewal, $750 cap) at the time of checking, while costco.com/my-life-executive-membership-benefits.html and the investor release give $65, $130 and $1,250. The newer figures are recorded. The extra early-morning shopping hours for Executive members could not be confirmed from any page that would load, so that feature is blank rather than guessed."
+}

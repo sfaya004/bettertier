@@ -1,0 +1,294 @@
+{
+  "company": {
+    "slug": "google-ai",
+    "name": "Google AI (Gemini plans)",
+    "category": "ai-tools",
+    "website": "https://gemini.google.com",
+    "pricingUrl": "https://one.google.com/about/google-ai-plans/",
+    "shortDescription": "Google's paid Gemini plans. More use of Gemini, tools for making pictures and videos, and extra online storage.",
+    "planHelp": "Go to one.google.com and sign in, then look at the top of the page. It names your plan, for example Google AI Pro. On an Android phone you can also open the Google One app."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://one.google.com/about/google-ai-plans/",
+      "title": "Google AI plans with Cloud Storage – Google One",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://blog.google/products-and-platforms/products/google-one/google-ai-plus-availability/",
+      "title": "Google AI Plus is now available everywhere our AI plans are available, including the U.S. – Google Blog",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://gemini.google/students/",
+      "title": "Gemini for Students – Google",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/",
+      "title": "Everything new in our Google AI subscriptions, fresh from I/O 2026 – Google Blog",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://support.google.com/googleone/answer/14534406?hl=en",
+      "title": "Use Google AI Pro benefits – Google One Help",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://support.google.com/googleone/answer/16286513?hl=en",
+      "title": "Get Google AI Ultra benefits – Google One Help",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "usage_limit",
+      "label": "How much you can use Gemini before it makes you wait",
+      "type": "ordinal",
+      "levels": [
+        "limited",
+        "standard",
+        "high",
+        "very_high"
+      ],
+      "levelLabels": {
+        "limited": "The free amount",
+        "standard": "Twice the free amount",
+        "high": "Four times the free amount",
+        "very_high": "The most Google offers"
+      },
+      "question": "How often do you use it?",
+      "help": "Google describes these plans as giving you 2 times, 4 times or up to 20 times as much use as the free version.",
+      "options": [
+        {
+          "label": "Once in a while",
+          "value": "standard"
+        },
+        {
+          "label": "Most days",
+          "value": "high"
+        },
+        {
+          "label": "Many hours every day",
+          "value": "very_high"
+        }
+      ]
+    },
+    {
+      "key": "model_access",
+      "label": "How smart the answers are",
+      "type": "ordinal",
+      "levels": [
+        "basic",
+        "advanced",
+        "frontier"
+      ],
+      "levelLabels": {
+        "basic": "The everyday version",
+        "advanced": "The main Gemini Pro version",
+        "frontier": "Adds the slow, extra-careful thinking mode"
+      },
+      "question": "Do you need it to work slowly and carefully through hard problems?",
+      "help": "The extra-careful mode is called Deep Think and is only on the most expensive plans.",
+      "options": [
+        {
+          "label": "Everyday questions are all I need",
+          "value": "advanced"
+        },
+        {
+          "label": "I need the extra-careful thinking mode",
+          "value": "frontier"
+        }
+      ]
+    },
+    {
+      "key": "storage_gb",
+      "label": "Online storage for photos, email and files",
+      "type": "number",
+      "question": "How much online storage do you need for your photos, Gmail and files?",
+      "help": "This storage is shared across Gmail, Google Drive and Google Photos. A free Google account gets 15 GB. A thousand gigabytes is one terabyte.",
+      "options": [
+        {
+          "label": "A few hundred gigabytes",
+          "value": 400
+        },
+        {
+          "label": "About 5 terabytes",
+          "value": 5120
+        },
+        {
+          "label": "20 terabytes or more",
+          "value": 20480
+        }
+      ]
+    },
+    {
+      "key": "video_generation",
+      "label": "Making videos from a written description",
+      "type": "ordinal",
+      "levels": [
+        "standard",
+        "high",
+        "highest"
+      ],
+      "levelLabels": {
+        "standard": "Some videos",
+        "high": "More videos",
+        "highest": "The most Google allows"
+      },
+      "question": "Do you want to make videos by describing them in words?",
+      "help": "Google's video tool is called Flow. Google does not publish how many videos each plan allows, only that higher plans allow more.",
+      "options": [
+        {
+          "label": "I don't make videos",
+          "value": "standard"
+        },
+        {
+          "label": "A few now and then",
+          "value": "high"
+        },
+        {
+          "label": "Lots, it's what I'm paying for",
+          "value": "highest"
+        }
+      ]
+    },
+    {
+      "key": "deep_think",
+      "label": "The extra-careful thinking mode",
+      "type": "boolean",
+      "question": "Do you need the mode that takes much longer but thinks much harder about a problem?",
+      "help": "Google calls this Deep Think. It is only on the Ultra plans."
+    },
+    {
+      "key": "notebook_notes",
+      "label": "Gemini Notebook (research notebook) allowance",
+      "type": "info"
+    },
+    {
+      "key": "youtube_benefit",
+      "label": "YouTube benefit included",
+      "type": "info"
+    }
+  ],
+  "plans": [
+    {
+      "slug": "ai-plus",
+      "name": "Google AI Plus",
+      "tier": 1,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 7.99
+        }
+      ],
+      "features": {
+        "usage_limit": "standard",
+        "model_access": "advanced",
+        "storage_gb": 400,
+        "video_generation": "standard",
+        "deep_think": false,
+        "notebook_notes": "Gemini Notebook included",
+        "youtube_benefit": "None stated"
+      },
+      "bestFor": "Someone who wants more Gemini than the free version gives, at the lowest price.",
+      "notes": "Marked uncertain on price only. Google's own announcement says \"In the U.S., Google AI Plus is available for $7.99/month\", but that post also says the plan includes 200 GB while the current Google One plans page now shows 400 GB, so the storage was raised after that post and the price may have moved too. The Google One plans page draws its prices in the browser and did not return a figure when fetched, so $7.99 could not be re-confirmed on 21 September 2026. Storage of 400 GB is taken from the current plans page. Benefits can be shared with up to five other family members."
+    },
+    {
+      "slug": "ai-pro",
+      "name": "Google AI Pro",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 19.99
+        }
+      ],
+      "features": {
+        "usage_limit": "high",
+        "model_access": "advanced",
+        "storage_gb": 5120,
+        "video_generation": "high",
+        "deep_think": false,
+        "notebook_notes": "Gemini Notebook with higher limits, up to 300 sources per notebook",
+        "youtube_benefit": "YouTube Premium Lite in select countries"
+      },
+      "bestFor": "Most paying users: plenty of Gemini, 5 terabytes of storage and the video tool.",
+      "notes": "Price confirmed on Google's own students page: \"Google AI Pro will automatically charge $19.99/month after the trial ends.\" Google One help states Pro comes with \"5 TB or 10 TB of storage based on your specific Google AI Pro membership plan\", so a larger-storage Pro variant exists; the figure here is the 5 TB version shown on the main plans page. Includes expanded Deep Research in Gemini, Google Flow video making, Gemini Spark, and $10 a month in Google Cloud credits. Google says paid AI Pro subscribers in select countries get a YouTube Premium Lite plan at no extra charge; whether the United States is one of those countries is not stated."
+    },
+    {
+      "slug": "ai-ultra-100",
+      "name": "Google AI Ultra ($100)",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 100
+        }
+      ],
+      "features": {
+        "usage_limit": "very_high",
+        "model_access": "frontier",
+        "storage_gb": 20480,
+        "video_generation": "highest",
+        "deep_think": true,
+        "notebook_notes": "Highest Gemini Notebook limits",
+        "youtube_benefit": "YouTube Premium Individual plan included (limited availability)"
+      },
+      "bestFor": "People who use Gemini for hours a day, or who make a lot of video.",
+      "notes": "Announced at Google I/O 2026 as a new $100 a month Ultra tier with \"5X higher usage limits in the Gemini app and Antigravity than our AI Pro plan\" and \"20TB of cloud storage\". Also includes the Deep Think thinking mode, priority access to Google Antigravity, Gemini Spark (US only), $40 a month in Google Cloud credits and the Google Home Premium Advanced plan at no cost."
+    },
+    {
+      "slug": "ai-ultra-200",
+      "name": "Google AI Ultra ($200)",
+      "tier": 4,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 200
+        }
+      ],
+      "features": {
+        "usage_limit": "very_high",
+        "model_access": "frontier",
+        "storage_gb": 30720,
+        "video_generation": "highest",
+        "deep_think": true,
+        "notebook_notes": "Highest Gemini Notebook limits",
+        "youtube_benefit": "YouTube Premium Individual plan included (limited availability)"
+      },
+      "bestFor": "Professionals and creators who need the very highest allowances.",
+      "notes": "Google's I/O 2026 post describes this tier as giving \"20X higher usage limit than Pro plan in Gemini app and Google Antigravity\" and adding Project Genie (worldwide, age 18 and over). Google One help confirms the two Ultra tiers: \"20 TB or 30 TB Storage, depending on your specific Google AI Ultra plan\" and \"5x or 20x usage quota\"."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is this the same thing as Google One?",
+      "a": "It is sold through Google One, but these are the AI plans. Google One also sells plain storage plans with no AI included, which are cheaper. If all you want is somewhere to keep photos, you do not need one of these."
+    },
+    {
+      "q": "Do I need a paid plan to use Gemini at all?",
+      "a": "No. Gemini is free to use with a Google account. A paid plan gives you more use before it stops you, better tools for making pictures and videos, and more storage."
+    },
+    {
+      "q": "Can my family use my plan?",
+      "a": "Google says the benefits of the AI Plus plan can be shared with up to five other family members. Sharing arrangements on the other plans are not spelled out on the pages checked."
+    },
+    {
+      "q": "Why are there two Ultra plans at different prices?",
+      "a": "They are the same plan with different amounts of use and storage. The $100 one gives five times as much Gemini use as AI Pro and 20 terabytes of storage; the $200 one gives twenty times as much and 30 terabytes."
+    }
+  ],
+  "notes": "Checked 21 September 2026. Google One's plan pages draw their prices in the browser, so no price could be read directly from one.google.com; every price here comes from another official Google page (a Google blog announcement or a Google product page). Google does not publish exact counts for video generations, research reports or notebook limits on any plan, so those are recorded as Google's own relative wording (\"expanded\", \"highest limits\") rather than numbers. A Google AI Pro variant with 10 TB of storage exists but was not priced on any page checked. The free Gemini tier is not listed here because it is not sold as a Google One plan. Storage-only Google One plans are covered separately under the google-one slug by another researcher; this file deliberately covers only the AI plans."
+}

@@ -1,0 +1,176 @@
+{
+  "company": {
+    "slug": "siriusxm",
+    "name": "SiriusXM",
+    "category": "music",
+    "website": "https://www.siriusxm.com",
+    "pricingUrl": "https://www.siriusxm.com/plans",
+    "shortDescription": "Hundreds of radio channels – music without ads, sports commentary, comedy, and talk – in the car or on your phone.",
+    "planHelp": "Sign in at siriusxm.com and choose Account, then My subscriptions. It names your package, the monthly total including fees, and the renewal date. You can also call SiriusXM on 1-800-689-6881, which is often quicker for changing or canceling a plan."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.siriusxm.com/packages",
+      "title": "SiriusXM packages and pricing",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.siriusxm.com/plans",
+      "title": "Packages, Plans & Price | SiriusXM",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.siriusxm.com/plans/streaming",
+      "title": "Get the All Access (App Only) Plan from SiriusXM",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.siriusxm.com/help/allmusic",
+      "title": "Have questions about our All Music or All Access plan? | SiriusXM Help",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/pdf/corporate-pdf/FINAL-MRF-Chart-for-Price-Increase-2026-12-16-25.pdf",
+      "title": "SiriusXM U.S. Music Royalty Fee chart (official PDF), fees effective March 4 2025 and February 24 2026",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "in_car",
+      "label": "Plays through the radio built into your car",
+      "type": "boolean",
+      "question": "Do you want it to play on the radio built into your car?",
+      "help": "Some plans only work through the app on a phone, tablet or smart speaker. To listen on the car's own satellite radio you need a plan that says \"Car + App\". Your car must have a SiriusXM radio built in."
+    },
+    {
+      "key": "ad_free_music",
+      "label": "Music without ads",
+      "type": "boolean",
+      "question": "Do you want music channels with no advertisements?",
+      "help": "All the music channels play without commercial breaks. Talk and sports channels can still carry ads."
+    },
+    {
+      "key": "howard_stern",
+      "label": "Howard Stern's channels",
+      "type": "boolean",
+      "question": "Do you listen to Howard Stern?",
+      "help": "His channels are only on the bigger packages, not on the music-only plan."
+    },
+    {
+      "key": "sports_play_by_play",
+      "label": "Live play-by-play of games",
+      "type": "boolean",
+      "question": "Do you want to listen to live play-by-play of games?",
+      "help": "Covers live NFL, MLB, NBA, NHL and college games plus NASCAR and golf. On the music-only plan this can be added on for an extra charge instead."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "sports-pass",
+      "name": "SiriusXM Sports Pass",
+      "tier": 1,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 5
+        }
+      ],
+      "features": {
+        "in_car": null,
+        "ad_free_music": false,
+        "howard_stern": false,
+        "sports_play_by_play": true
+      },
+      "bestFor": "Sports fans who only want live games and sports talk, and no music.",
+      "notes": "SiriusXM's plans page lists 'SiriusXM Sports Pass' at '1 month Free then only $5/mo.' It carries live games and sports talk. Whether it plays through a car's built-in satellite radio or only through the app could not be confirmed on an official page, so that value is blank and confidence is 'uncertain'. Because it has no music channels it should not attract the Music Royalty Fee – SiriusXM's fee chart states that plans for news, sports, talk and weather are not charged that fee."
+    },
+    {
+      "slug": "all-music",
+      "name": "All Music (Car + App)",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 11.99
+        }
+      ],
+      "features": {
+        "in_car": true,
+        "ad_free_music": true,
+        "howard_stern": false,
+        "sports_play_by_play": false
+      },
+      "bestFor": "Someone who mainly wants music in the car and does not care about sport or Howard Stern.",
+      "notes": "SiriusXM's page gives '$1 for 3 months then $11.99/mo.' – the $1 is a promotion, $11.99 is the standard price. Gives all of SiriusXM's music channels plus over 100 ad-free Xtra channels, in the car and in the app. Sports, news, or talk can be added on for an extra $8, $5 and $5 a month respectively. A U.S. Music Royalty Fee (about $2.00 a month for All Music from 24 February 2026) is added on top of the advertised price."
+    },
+    {
+      "slug": "all-access-app-only",
+      "name": "All Access (App Only)",
+      "tier": 3,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 11.99
+        }
+      ],
+      "features": {
+        "in_car": false,
+        "ad_free_music": true,
+        "howard_stern": null,
+        "sports_play_by_play": true
+      },
+      "bestFor": "People who listen on a phone, smart speaker or smart TV rather than in a car – the full range of content for less than half the car price.",
+      "notes": "This is the streaming-only plan. SiriusXM's page gives '$1 for 3 months then $11.99/mo.' and says it plays 'on your phone and mobile devices' plus 'smart TV, speakers and displays', with a separate link for people who want it in the car – so it does not work through a car's built-in satellite radio. Includes ad-free music, live NFL, MLB, NBA, NCAA, NHL and NASCAR commentary, talk, comedy and podcasts. Whether Howard Stern's channels are included was not stated on the streaming page, so that value is blank and confidence is 'uncertain'. You can still play it in a car by connecting your phone by Bluetooth or cable."
+    },
+    {
+      "slug": "all-access",
+      "name": "All Access (Car + App)",
+      "tier": 4,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 25.99
+        }
+      ],
+      "features": {
+        "in_car": true,
+        "ad_free_music": true,
+        "howard_stern": true,
+        "sports_play_by_play": true
+      },
+      "bestFor": "People who want everything on the car radio – music, live sports and Howard Stern.",
+      "notes": "SiriusXM's page gives '$1 for 3 months then $25.99/mo.' Includes every music channel, live NFL, MLB, NBA, NHL and college games plus NASCAR and the PGA TOUR, premium sports talk, news, celebrity talk shows and Howard Stern's Howard 100. A U.S. Music Royalty Fee is added on top of this price."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Why is my bill higher than the price I was quoted?",
+      "a": "SiriusXM adds a U.S. Music Royalty Fee every month on top of the advertised price, as well as sales tax. The fee depends on the package – SiriusXM's own chart shows figures such as about $2.00 a month for All Music and about $5.33 for the older Platinum package. Always ask for the total you will actually be charged."
+    },
+    {
+      "q": "What happens when my $1 offer or free trial ends?",
+      "a": "The price jumps automatically to the standard rate – $11.99 or $25.99 a month depending on the package – and it will keep renewing until you stop it. Write the end date in your diary. If the full price is too much, ringing SiriusXM to cancel very often produces an offer of a much lower rate to stay."
+    },
+    {
+      "q": "Do I need it in the car, or is the app enough?",
+      "a": "If you mostly listen while driving and your car has a SiriusXM radio built in, choose a \"Car + App\" plan. If you listen at home or you are happy to play your phone through the car by Bluetooth, the App Only plan gives you the full range of channels for $11.99 instead of $25.99."
+    },
+    {
+      "q": "Does one subscription cover my second car?",
+      "a": "No. Each car radio needs its own subscription, although SiriusXM usually discounts the second one. The app is included with a car subscription so you can also listen on your phone."
+    }
+  ],
+  "notes": "Plan names verified as current on SiriusXM's own plans and packages pages: 'All Music (Car + App)' $11.99, 'All Access (Car + App)' $25.99, 'All Access (App Only)' $11.99 and 'SiriusXM Sports Pass' $5. The streaming-only plan is NOT called 'Streaming Platinum' or similar – it is simply All Access (App Only). No plan called 'Platinum' appears on the current plans page, but SiriusXM still lists a 'Platinum VIP' offer page at siriusxm.com/offers/platinum-vip and its official Music Royalty Fee chart still shows a 'Platinum Plan', so Platinum survives as a legacy or promotional package for existing subscribers; it was not added as a plan here because no standard price for it could be read. IMPORTANT FOR SHOPPERS: SiriusXM adds a U.S. Music Royalty Fee on top of every advertised price for any package containing music – its official chart lists fees from $0.35 to $7.93 a month depending on package, with a new set of amounts effective 24 February 2026 – so the real monthly cost is always higher than the headline. Every plan is currently advertised with a heavy introductory offer ($1 for 3 months, or one month free for Sports Pass); the figures recorded here are the standard rates that apply afterwards. Add-ons to the All Music plan: Sports $8/month, News $5/month, Talk $5/month."
+}

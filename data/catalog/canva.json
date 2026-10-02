@@ -1,0 +1,208 @@
+{
+  "company": {
+    "slug": "canva",
+    "name": "Canva",
+    "category": "creative",
+    "website": "https://www.canva.com",
+    "pricingUrl": "https://www.canva.com/pricing/",
+    "shortDescription": "An easy website for making cards, invitations, posters and social media posts from ready-made designs.",
+    "planHelp": "Go to canva.com and sign in, click your picture in the top right corner, then choose Settings and look at Billing & plans. It shows whether you are on Free, Pro or Business and when the next payment is due."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.canva.com/pricing/",
+      "title": "Canva Pricing: Compare Free, Pro, Business and Enterprise plans",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.canva.com/pro/",
+      "title": "Canva Pro – Canva",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.canva.com/help/subscription-options/",
+      "title": "Learn about billing frequency for Canva plans – Canva Help Center",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "members",
+      "label": "People who get their own account",
+      "type": "number",
+      "question": "How many people will use this, each with their own account?",
+      "help": "The Free and Pro plans are for one person. The Business plan charges for every person you add.",
+      "options": [
+        {
+          "label": "Just me",
+          "value": 1
+        },
+        {
+          "label": "2 people",
+          "value": 2
+        },
+        {
+          "label": "3 or 4 people",
+          "value": 4
+        },
+        {
+          "label": "5 or more people",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "key": "storage_gb",
+      "label": "Storage space for your designs and pictures",
+      "type": "number",
+      "question": "How much space do you need for the pictures and designs you save?",
+      "options": [
+        {
+          "label": "Just a little (5 GB)",
+          "value": 5
+        },
+        {
+          "label": "Mostly documents and a few photos (100 GB)",
+          "value": 100
+        },
+        {
+          "label": "A lot (500 GB)",
+          "value": 500
+        }
+      ]
+    },
+    {
+      "key": "premium_content",
+      "label": "The full library of pictures and designs",
+      "type": "boolean",
+      "question": "Do you want to use all the pictures and designs, not just the free ones?",
+      "help": "On the free plan many of the nicest templates and photos have a little crown on them and cannot be used."
+    },
+    {
+      "key": "usage_limit",
+      "label": "How much you can use the AI tools",
+      "type": "ordinal",
+      "levels": [
+        "limited",
+        "standard",
+        "high"
+      ],
+      "levelLabels": {
+        "limited": "A small number of tries",
+        "standard": "About ten times more than free",
+        "high": "About twenty times more than free"
+      },
+      "question": "How often would you use Canva's AI tools, such as removing the background from a photo?",
+      "options": [
+        {
+          "label": "Hardly ever",
+          "value": "limited"
+        },
+        {
+          "label": "Now and then",
+          "value": "standard"
+        },
+        {
+          "label": "Very often",
+          "value": "high"
+        }
+      ]
+    },
+    {
+      "key": "social_scheduling",
+      "label": "Plan social media posts ahead of time",
+      "type": "boolean",
+      "question": "Do you want to set up Facebook or Instagram posts in advance so they appear later?"
+    }
+  ],
+  "plans": [
+    {
+      "slug": "free",
+      "name": "Canva Free",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 0
+        }
+      ],
+      "features": {
+        "members": 1,
+        "storage_gb": 5,
+        "premium_content": false,
+        "usage_limit": "limited",
+        "social_scheduling": false
+      },
+      "bestFor": "Someone making the occasional birthday card, invitation or flyer.",
+      "notes": "Free forever. Includes the drag-and-drop editor, 1,000+ design types, more than 4.7 million photos, videos, graphics and sounds, 1 Brand Kit limited to 3 colors, and up to 20 uses of the AI tools."
+    },
+    {
+      "slug": "pro",
+      "name": "Canva Pro",
+      "tier": 2,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "annual",
+          "amount": 144
+        }
+      ],
+      "features": {
+        "members": 1,
+        "storage_gb": 100,
+        "premium_content": true,
+        "usage_limit": "standard",
+        "social_scheduling": true
+      },
+      "bestFor": "One person who makes designs regularly and wants the full library of pictures and templates.",
+      "notes": "Marked uncertain only because the monthly price could not be read: Canva's pricing page shows a Monthly / Yearly switch, but only the yearly figure of $144 for one person appears in the readable page content. The monthly amount is therefore not recorded rather than guessed. Pro includes 3.6 million+ templates, 141 million+ premium photos, videos, graphics and sounds, 5 Brand Kits, 100 GB of storage, background removal and other AI tools at about ten times the free allowance, and scheduling social media posts."
+    },
+    {
+      "slug": "business",
+      "name": "Canva Business",
+      "tier": 3,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "annual",
+          "amount": 250
+        }
+      ],
+      "features": {
+        "members": 1,
+        "storage_gb": 500,
+        "premium_content": true,
+        "usage_limit": "high",
+        "social_scheduling": true
+      },
+      "bestFor": "A small team who need to work on the same designs and keep a shared set of logos and colors.",
+      "notes": "Marked uncertain because the monthly price could not be read; only the yearly figure of $250 per person appears in the readable page content. The price is charged for each person on the team, so a team of three costs three times as much. This is a business plan, listed here only so shoppers understand what is above Pro. Includes 500 GB of storage, 100 Brand Kits with approvals, team admin tools, about twenty times the free AI allowance, and 10% off printing."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is Canva really free?",
+      "a": "Yes, the free plan has no time limit and no credit card is needed. You can make cards, posters and posts with it. The paid plan mainly adds the fancier templates and photos, which have a small crown symbol on the free plan."
+    },
+    {
+      "q": "How do I know if I need Canva Pro?",
+      "a": "If you keep finding that the design you like has a crown on it, or you want to remove the background from photos often, Pro is worth it. If you make something only a few times a year, the free plan is usually enough."
+    },
+    {
+      "q": "Can my family share one Canva Pro account?",
+      "a": "Canva Pro is sold as an individual plan for one person. For several people working together Canva sells the Business plan, which is charged for every person added."
+    },
+    {
+      "q": "What happens to my designs if I stop paying for Pro?",
+      "a": "Your designs stay in your account and you can still open them, but anything that used a paid picture or template will show a watermark until you either buy that item or pay for Pro again."
+    }
+  ],
+  "notes": "Canva's pricing page shows a Monthly / Yearly switch but only the yearly prices appear in the page content that could be read, so monthly prices for Pro and Business are not recorded and both plans are marked uncertain for that reason. Canva also sells an Enterprise plan at custom pricing (not a consumer product) and offers free Pro accounts to eligible non-profits and to teachers and students through Canva for Education; those programs were not verified during this check."
+}

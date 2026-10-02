@@ -1,0 +1,218 @@
+{
+  "company": {
+    "slug": "microsoft-365",
+    "name": "Microsoft 365",
+    "category": "productivity",
+    "website": "https://www.microsoft.com/en-us/microsoft-365",
+    "pricingUrl": "https://www.microsoft.com/en-us/microsoft-365/explore-microsoft-365-for-individuals",
+    "shortDescription": "Word, Excel, PowerPoint and Outlook, plus online storage and Microsoft's AI helper, Copilot.",
+    "planHelp": "Go to account.microsoft.com and sign in with the email address you use for Microsoft, then click Services & subscriptions. Your plan name (Basic, Personal, Family or Premium) is listed there along with the renewal date."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.microsoft.com/en-us/microsoft-365/explore-microsoft-365-for-individuals",
+      "title": "Microsoft 365 for Individuals – Plans and Pricing",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products",
+      "title": "Compare All Microsoft 365 Products",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "storage_gb",
+      "label": "Storage space for each person",
+      "type": "number",
+      "question": "How much space do you need for your files and photos?",
+      "help": "This is the space each person gets in OneDrive. Documents take very little room; photos and videos take a lot.",
+      "options": [
+        {
+          "label": "Mostly documents and a few photos (under 100 GB)",
+          "value": 100
+        },
+        {
+          "label": "Lots of photos and videos (1 TB)",
+          "value": 1000
+        }
+      ]
+    },
+    {
+      "key": "members",
+      "label": "People who get their own account",
+      "type": "number",
+      "question": "How many people will use this, each with their own account?",
+      "help": "On the family plans each person gets their own storage space and their own copy of the programs.",
+      "options": [
+        {
+          "label": "Just me",
+          "value": 1
+        },
+        {
+          "label": "2 people",
+          "value": 2
+        },
+        {
+          "label": "3 or 4 people",
+          "value": 4
+        },
+        {
+          "label": "5 or 6 people",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "key": "desktop_apps",
+      "label": "Word, Excel and PowerPoint installed on your computer",
+      "type": "boolean",
+      "question": "Do you want the full programs installed on your computer, or is working in a web browser enough for you?",
+      "help": "The cheapest plan only lets you use these in a web browser or on a phone. The other plans install them on your PC or Mac."
+    },
+    {
+      "key": "ad_free",
+      "label": "Email with no advertisements",
+      "type": "boolean",
+      "question": "Do you want your Outlook email to be free of advertisements?",
+      "help": "Every paid plan removes the advertisements from Outlook.com email."
+    },
+    {
+      "key": "ai_assistant",
+      "label": "Microsoft's AI helper (Copilot)",
+      "type": "boolean",
+      "question": "Would you like an AI helper that can write and summarize things for you inside Word and Excel?",
+      "help": "On the family plans this is only for the person who pays, not for everyone sharing the plan."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "basic",
+      "name": "Microsoft 365 Basic",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 1.99
+        },
+        {
+          "period": "annual",
+          "amount": 19.99
+        }
+      ],
+      "features": {
+        "storage_gb": 100,
+        "members": 1,
+        "desktop_apps": false,
+        "ad_free": true,
+        "ai_assistant": false
+      },
+      "bestFor": "Someone who mainly wants more email storage and no advertisements in Outlook.",
+      "notes": "100 GB of storage for one person. Word, Excel and PowerPoint are available only in a web browser and on phones and tablets, not installed on a computer."
+    },
+    {
+      "slug": "personal",
+      "name": "Microsoft 365 Personal",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 9.99
+        },
+        {
+          "period": "annual",
+          "amount": 99.99
+        }
+      ],
+      "features": {
+        "storage_gb": 1000,
+        "members": 1,
+        "desktop_apps": true,
+        "ad_free": true,
+        "ai_assistant": true
+      },
+      "bestFor": "One person who wants Word, Excel and PowerPoint installed on their own computer.",
+      "notes": "1 TB of storage. Includes Word, Excel, PowerPoint, Outlook and OneNote installed on PC, Mac, phone and tablet, plus Microsoft Defender and Copilot AI features with higher usage limits than the free version. Paying yearly costs $99.99 instead of about $119.88."
+    },
+    {
+      "slug": "family",
+      "name": "Microsoft 365 Family",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 12.99
+        },
+        {
+          "period": "annual",
+          "amount": 129.99
+        }
+      ],
+      "features": {
+        "storage_gb": 1000,
+        "members": 6,
+        "desktop_apps": true,
+        "ad_free": true,
+        "ai_assistant": true
+      },
+      "bestFor": "A household of two or more people. Almost always better value than two Personal plans.",
+      "notes": "Up to 6 people, each with their own 1 TB of storage (6 TB in total) and their own installed programs. IMPORTANT: the Copilot AI features are only for the person who bought the plan, not for the other five people."
+    },
+    {
+      "slug": "premium",
+      "name": "Microsoft 365 Premium",
+      "tier": 4,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 19.99
+        },
+        {
+          "period": "annual",
+          "amount": 199.99
+        }
+      ],
+      "features": {
+        "storage_gb": 1000,
+        "members": 6,
+        "desktop_apps": true,
+        "ad_free": true,
+        "ai_assistant": true
+      },
+      "bestFor": "People who want the most advanced AI features and do not mind paying more.",
+      "notes": "Same storage and number of people as Family (6 people, 1 TB each). The difference is more advanced AI features. As with Family, the AI is for the plan owner only. More than most households need."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can I use Word and Excel without paying anything?",
+      "a": "Yes, in a limited way. Microsoft offers free versions of Word, Excel and PowerPoint that run in a web browser. You only need a paid plan if you want the full programs installed on your computer."
+    },
+    {
+      "q": "Is the Family plan better value than Personal?",
+      "a": "Almost always, if more than one person will use it. Family is $12.99 a month for up to 6 people, only $3 a month more than Personal for one person. Watch out for one thing: the AI helper is only for the person who pays."
+    },
+    {
+      "q": "Should I pay monthly or yearly?",
+      "a": "Yearly is cheaper if you are sure you will keep it. Family costs $129.99 a year instead of about $155.88 if paid monthly, a saving of roughly $26."
+    },
+    {
+      "q": "What happens to my files if I stop paying?",
+      "a": "Your files are not deleted, but the installed programs become read-only and your OneDrive storage drops back to the free 5 GB. If you are storing more than that, Microsoft stops syncing new files until you free up space or resubscribe."
+    }
+  ],
+  "notes": "Prices read from Microsoft's official US pages on 2026-09-21. Storage is recorded per person; Family and Premium advertise 6 TB total, which is 1 TB each for up to 6 people. Copilot AI is included with Personal, Family and Premium but on the shared plans it is limited to the subscription owner."
+}

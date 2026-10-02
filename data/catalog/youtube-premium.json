@@ -1,0 +1,206 @@
+{
+  "company": {
+    "slug": "youtube-premium",
+    "name": "YouTube Premium",
+    "category": "streaming-video",
+    "website": "https://www.youtube.com",
+    "pricingUrl": "https://www.youtube.com/premium",
+    "shortDescription": "Removes advertisements from YouTube videos and adds music and offline saving.",
+    "planHelp": "On a computer go to youtube.com, click your picture in the top right corner and choose Purchases and memberships. Your membership type – Individual, Family, Student or Premium Lite – and what you pay are shown there. In the YouTube app, tap your picture, then Purchases and memberships."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://support.google.com/youtube/answer/16475192?hl=en",
+      "title": "Join YouTube Premium – YouTube Help (membership types)",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://blog.youtube/news-and-events/introducing-premium-lite/",
+      "title": "YouTube Premium Lite: Ad-Free Viewing for $7.99/Month – YouTube Blog",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://support.google.com/youtube/answer/15968883?hl=en",
+      "title": "Get a Premium Lite membership on YouTube – YouTube Help",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.youtube.com/go/terms/premiumoffers/",
+      "title": "Offers Available for YouTube Premium Subscribers (states standard price $13.99)",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://support.google.com/fi/answer/12999259?hl=en",
+      "title": "Get 6 months of YouTube Premium with Unlimited Premium – Google Fi Help (states $13.99 USD monthly)",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://support.google.com/youtube/answer/9158808?hl=en",
+      "title": "Get a student discount for YouTube Premium – YouTube Help",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "members",
+      "label": "People who get their own sign-in",
+      "type": "number",
+      "question": "How many people in your home would use this?",
+      "help": "The family membership covers up to six people who live at the same address, each with their own account.",
+      "options": [
+        {
+          "label": "Just me",
+          "value": 1
+        },
+        {
+          "label": "2 people",
+          "value": 2
+        },
+        {
+          "label": "3 to 6 people in my home",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "key": "ad_free",
+      "label": "No advertisements on videos",
+      "type": "boolean",
+      "question": "Do you want YouTube videos without advertisements?",
+      "help": "All of these memberships remove advertisements from most videos. The cheapest one still shows advertisements on music videos, Shorts and search results."
+    },
+    {
+      "key": "music_included",
+      "label": "YouTube Music without advertisements",
+      "type": "boolean",
+      "question": "Do you listen to music on YouTube or YouTube Music?",
+      "help": "The cheapest Premium Lite membership does NOT include advertisement-free music."
+    },
+    {
+      "key": "downloads",
+      "label": "Save videos to watch without internet",
+      "type": "boolean",
+      "question": "Do you save videos onto a phone or tablet to watch where there is no internet?"
+    },
+    {
+      "key": "background_play",
+      "label": "Keeps playing when you close the app",
+      "type": "boolean",
+      "question": "Do you want sound to keep playing after you lock your phone or switch to another app?",
+      "help": "Useful if you listen to talks or music on YouTube while doing something else."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "premium-lite",
+      "name": "Premium Lite",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 7.99
+        }
+      ],
+      "features": {
+        "members": 1,
+        "ad_free": true,
+        "music_included": false,
+        "downloads": true,
+        "background_play": true
+      },
+      "bestFor": "People who only want the advertisements gone from ordinary YouTube videos and do not use it for music.",
+      "notes": "YouTube's own blog states 7.99 per month in the United States. It removes advertisements from most videos, but NOT from music videos, Shorts, or search and browse pages, and it does not include YouTube Music without advertisements or the highest sound and picture quality options. Saving videos and background play do not work for Shorts or official music videos. Premium Lite is also included with a Google AI Pro membership."
+    },
+    {
+      "slug": "individual",
+      "name": "Individual",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 13.99
+        }
+      ],
+      "features": {
+        "members": 1,
+        "ad_free": true,
+        "music_included": true,
+        "downloads": true,
+        "background_play": true
+      },
+      "bestFor": "One person who watches a lot of YouTube and also listens to music there.",
+      "notes": "13.99 per month is stated as the standard price on YouTube's own offers terms page and on Google's Fi help page. YouTube also sells prepaid periods (paid in advance, up to 24 months, no automatic renewal) for one person, but the prepaid prices are not published on a page that could be read, so no annual figure is recorded here. Meant for one person only and not to be shared."
+    },
+    {
+      "slug": "student",
+      "name": "Student",
+      "tier": 2,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": null
+        }
+      ],
+      "features": {
+        "members": 1,
+        "ad_free": true,
+        "music_included": true,
+        "downloads": true,
+        "background_play": true
+      },
+      "bestFor": "Full-time students at an approved college or university.",
+      "notes": "Price recorded as null. Google's help page confirms the student membership exists, is for full-time students at approved higher-education institutions, lasts up to four years and must be re-verified each year, but it states only that it is a discounted rate and gives no dollar figure. YouTube's own pricing pages could not be read outside a web browser, so no price is guessed."
+    },
+    {
+      "slug": "family",
+      "name": "Family",
+      "tier": 3,
+      "status": "active",
+      "confidence": "uncertain",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": null
+        }
+      ],
+      "features": {
+        "members": 6,
+        "ad_free": true,
+        "music_included": true,
+        "downloads": true,
+        "background_play": true
+      },
+      "bestFor": "A household where several people want advertisement-free YouTube and music on their own accounts.",
+      "notes": "Price recorded as null. Google's help page confirms the Family plan covers up to six people aged 13 or over who live at the same address, and that a separate two-person plan also exists, but it publishes no price. YouTube's pricing pages load their text only inside a web browser, so no price is guessed. Check youtube.com/premium for the current family price."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the difference between Premium Lite and the full Premium membership?",
+      "a": "Premium Lite is cheaper and takes the advertisements off most ordinary videos. The full membership also removes advertisements from music videos and YouTube Music, and gives better sound and picture options."
+    },
+    {
+      "q": "Can I share one membership with my family?",
+      "a": "Only with the Family membership, which covers up to six people aged 13 or over who live at the same address. The Individual membership is for one person and must not be shared."
+    },
+    {
+      "q": "Will it remove advertisements the creators read out themselves?",
+      "a": "No. It removes the advertisements YouTube plays before and during videos. If the person in the video talks about a sponsor, that stays."
+    },
+    {
+      "q": "Why can I not see the price for the Family or Student plan here?",
+      "a": "YouTube does not publish those prices on a plain page that can be checked automatically. Sign in and visit youtube.com/premium to see exactly what you would pay."
+    }
+  ],
+  "notes": "Only the Individual price (13.99 per month) and Premium Lite price (7.99 per month) could be confirmed on official Google or YouTube pages on 2026-09-21. The Family and Student prices are deliberately left as null: youtube.com/premium and its family and student pages return no readable text outside a web browser, and Google's help pages describe those memberships without stating a price. A two-person household plan is also mentioned in Google's help center but no price is published for it either. YouTube TV is a separate, much more expensive live-television service and is not covered here."
+}

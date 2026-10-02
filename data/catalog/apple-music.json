@@ -1,0 +1,187 @@
+{
+  "company": {
+    "slug": "apple-music",
+    "name": "Apple Music",
+    "category": "music",
+    "website": "https://www.apple.com/apple-music/",
+    "pricingUrl": "https://www.apple.com/apple-music/",
+    "shortDescription": "Apple's music service with over 100 million songs, with no advertisements.",
+    "planHelp": "On an iPhone or iPad, open Settings, tap your name at the very top, then tap Subscriptions. Apple Music will be listed with the plan you have. On a Mac, open the Music app, then choose Account > Settings."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.apple.com/apple-music/",
+      "title": "Apple Music – Apple",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "members",
+      "label": "People who get their own account",
+      "type": "number",
+      "question": "How many people will use this, each with their own music library?",
+      "help": "On the Family plan each person keeps their own playlists and suggestions, separate from everyone else's.",
+      "options": [
+        {
+          "label": "Just me",
+          "value": 1
+        },
+        {
+          "label": "2 people",
+          "value": 2
+        },
+        {
+          "label": "3 or 4 people",
+          "value": 4
+        },
+        {
+          "label": "5 or 6 people",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "key": "family_sharing",
+      "label": "Can be shared with family members",
+      "type": "boolean",
+      "question": "Do you want to share one subscription with family members?",
+      "help": "Apple calls this Family Sharing. One person pays and up to five others are invited to join."
+    },
+    {
+      "key": "offline_access",
+      "label": "Save music to listen without internet",
+      "type": "boolean",
+      "question": "Do you want to save songs on your phone so you can listen where there is no internet?"
+    },
+    {
+      "key": "audio_quality",
+      "label": "Sound quality",
+      "type": "ordinal",
+      "levels": [
+        "standard",
+        "high",
+        "lossless"
+      ],
+      "levelLabels": {
+        "standard": "Normal sound",
+        "high": "Better sound for good headphones",
+        "lossless": "Best possible sound, the same as the original recording"
+      },
+      "question": "How important is sound quality to you?",
+      "help": "Every paid Apple Music plan already includes the best quality, so this will not change which plan you need.",
+      "options": [
+        {
+          "label": "Normal is fine",
+          "value": "standard"
+        },
+        {
+          "label": "I'd like better sound",
+          "value": "high"
+        },
+        {
+          "label": "I want the very best sound",
+          "value": "lossless"
+        }
+      ]
+    },
+    {
+      "key": "apple_tv_included",
+      "label": "Apple TV shows and movies included",
+      "type": "boolean",
+      "question": "Would you also like Apple's TV and movie service at no extra cost?",
+      "help": "Only the student plan includes this."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "student",
+      "name": "Student",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 6.99
+        }
+      ],
+      "features": {
+        "members": 1,
+        "family_sharing": false,
+        "offline_access": true,
+        "audio_quality": "lossless",
+        "apple_tv_included": true
+      },
+      "bestFor": "A college student who can prove they are enrolled.",
+      "notes": "Requires verification of enrollment at a college or university. Includes Apple TV at no extra cost. New subscribers get one month free; that is a promotion, not the standard price."
+    },
+    {
+      "slug": "individual",
+      "name": "Individual",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 11.99
+        }
+      ],
+      "features": {
+        "members": 1,
+        "family_sharing": false,
+        "offline_access": true,
+        "audio_quality": "lossless",
+        "apple_tv_included": false
+      },
+      "bestFor": "One person who mainly uses Apple devices.",
+      "notes": "Includes lossless audio, Spatial Audio with Dolby Atmos, downloads for offline listening, and the Apple Music Classical app. Apple also sells a yearly Individual subscription, but the yearly price was not shown on the official page checked, so it is not recorded here."
+    },
+    {
+      "slug": "family",
+      "name": "Family",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 19.99
+        }
+      ],
+      "features": {
+        "members": 6,
+        "family_sharing": true,
+        "offline_access": true,
+        "audio_quality": "lossless",
+        "apple_tv_included": false
+      },
+      "bestFor": "A household of two or more people who each want their own music library.",
+      "notes": "Up to 6 people through Apple Family Sharing. Each person gets their own library, recommendations and playlists."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is there a free version of Apple Music?",
+      "a": "No. Apple Music has no permanently free plan. New subscribers get a free trial month, and after that you must pay one of the three prices above."
+    },
+    {
+      "q": "Do I get the best sound on the cheapest plan?",
+      "a": "Yes. Lossless audio and Spatial Audio with Dolby Atmos are included on every paid Apple Music plan, including the $6.99 student plan. You do not pay extra for better sound."
+    },
+    {
+      "q": "Is the Family plan worth it for two people?",
+      "a": "Yes, in most cases. Two Individual plans cost about $23.98 a month, while Family costs $19.99 a month and covers up to six people, each with their own library."
+    },
+    {
+      "q": "How do I stop paying for Apple Music?",
+      "a": "On an iPhone or iPad open Settings, tap your name, tap Subscriptions, tap Apple Music, then tap Cancel Subscription. You keep the service until the end of the month you already paid for."
+    }
+  ],
+  "notes": "All three paid plans include lossless audio, Spatial Audio with Dolby Atmos, offline downloads and Apple Music Classical, so sound quality does not vary between plans. Apple Music is also included in the Apple One bundle; bundle pricing was not on the page checked and is not recorded here."
+}

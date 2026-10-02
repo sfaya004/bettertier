@@ -1,0 +1,221 @@
+{
+  "company": {
+    "slug": "lastpass",
+    "name": "LastPass",
+    "category": "password-manager",
+    "website": "https://www.lastpass.com",
+    "pricingUrl": "https://www.lastpass.com/pricing",
+    "shortDescription": "A safe place to keep all your passwords, with a free plan that works on either your computers or your phones, but not both.",
+    "planHelp": "Sign in at lastpass.com, open the menu and choose 'Account Settings'. The account page shows whether you are on Free, Premium or Families and when it renews."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.lastpass.com/pricing",
+      "title": "LastPass pricing",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.lastpass.com/pricing/lastpass-premium-vs-free",
+      "title": "LastPass Free vs. Premium comparison",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.lastpass.com/pricing/lastpass-premium-vs-families",
+      "title": "LastPass Premium vs Families comparison",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://blog.lastpass.com/posts/changes-to-lastpass-free",
+      "title": "Changes to LastPass Free (official blog, states the regular Premium price)",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "members",
+      "label": "People with their own private account",
+      "type": "number",
+      "question": "How many people need their own private password store?",
+      "help": "The Families plan gives 6 people their own separate account. Nobody, not even the family manager, can see another person's passwords.",
+      "options": [
+        {
+          "label": "Just me",
+          "value": 1
+        },
+        {
+          "label": "2 people",
+          "value": 2
+        },
+        {
+          "label": "3 or 4 people",
+          "value": 4
+        },
+        {
+          "label": "5 or 6 people",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "key": "device_types",
+      "label": "Which kinds of device you can use",
+      "type": "ordinal",
+      "levels": [
+        "one_type",
+        "all"
+      ],
+      "levelLabels": {
+        "one_type": "Either computers OR phones and tablets, not both",
+        "all": "Computers, phones and tablets together"
+      },
+      "question": "Do you want your passwords on your computer AND your phone, or is one of those enough?",
+      "help": "This is the big catch with the free LastPass plan. Free lets you choose ONE type: computers (including all web browsers on desktops and laptops) or mobile (phones, tablets, and smartwatches). To use both, you need Premium.",
+      "options": [
+        {
+          "label": "Just my computer, or just my phone",
+          "value": "one_type"
+        },
+        {
+          "label": "Both my computer and my phone",
+          "value": "all"
+        }
+      ]
+    },
+    {
+      "key": "storage_gb",
+      "label": "Storage for documents and files",
+      "type": "number",
+      "question": "Do you also need somewhere safe to keep scanned documents such as your passport?",
+      "help": "The free plan gives a very small amount (50 MB). The paid plans give 1 GB.",
+      "options": [
+        {
+          "label": "I don't need any",
+          "value": 0
+        },
+        {
+          "label": "A small amount",
+          "value": 0.05
+        },
+        {
+          "label": "1 GB",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "key": "emergency_access",
+      "label": "Letting someone in if something happens to you",
+      "type": "boolean",
+      "question": "Would you like to name a trusted person who could get into your passwords if you were unwell or passed away?"
+    },
+    {
+      "key": "one_to_many_sharing",
+      "label": "Sharing a password with several people at once",
+      "type": "boolean",
+      "question": "Do you need to share the same password with several people at the same time?",
+      "help": "On the free plan you can only share with one person at a time."
+    },
+    {
+      "key": "family_sharing",
+      "label": "Shared folders for the household",
+      "type": "boolean",
+      "question": "Do you want shared folders so the household can all reach the same passwords, such as the Wi-Fi password or the TV services?"
+    }
+  ],
+  "plans": [
+    {
+      "slug": "free",
+      "name": "Free",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 1,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 0
+        }
+      ],
+      "features": {
+        "members": 1,
+        "device_types": "one_type",
+        "storage_gb": 0.05,
+        "emergency_access": false,
+        "one_to_many_sharing": false,
+        "family_sharing": false
+      },
+      "bestFor": "Someone who only uses one kind of device – either a computer or a phone, but not both.",
+      "notes": "Free forever for one person, with unlimited passwords, autofill, dark web monitoring and the security dashboard. THE CATCH: you must choose ONE device type. LastPass defines a device type as 'computer (including all browsers running on desktops and laptops) or mobile (including mobile phones, smartwatches, and tablets)'. File storage is 50 MB. Sharing is one person at a time only. New accounts get a 30-day trial of Premium."
+    },
+    {
+      "slug": "premium",
+      "name": "Premium",
+      "tier": 2,
+      "status": "active",
+      "confidence": "uncertain",
+      "seatsIncluded": 1,
+      "prices": [
+        {
+          "period": "annual",
+          "amount": 36
+        }
+      ],
+      "features": {
+        "members": 1,
+        "device_types": "all",
+        "storage_gb": 1,
+        "emergency_access": true,
+        "one_to_many_sharing": true,
+        "family_sharing": false
+      },
+      "bestFor": "One person who wants their passwords on their computer AND their phone.",
+      "notes": "PRICE ONLY PARTLY VERIFIED. LastPass's current pricing pages display prices as an unfilled placeholder ('{LPPremium}/month billed annually'), so no price could be read from them on 2026-09-21. The $36 a year figure is 12 x $3, taken from LastPass's own blog post 'Changes to LastPass Free', which states the regular price as '$3 per month (billed annually)'. That post is several years old, so the amount should be re-checked at purchase. Adds use on all device types, 1 GB of file storage, emergency access, one-to-many sharing, advanced multi-factor options, personal support and watch app support."
+    },
+    {
+      "slug": "families",
+      "name": "Families",
+      "tier": 3,
+      "status": "active",
+      "confidence": "uncertain",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "annual",
+          "amount": null
+        }
+      ],
+      "features": {
+        "members": 6,
+        "device_types": "all",
+        "storage_gb": 1,
+        "emergency_access": true,
+        "one_to_many_sharing": true,
+        "family_sharing": true
+      },
+      "bestFor": "A household of up to 6 people who each want their own private store plus some shared folders.",
+      "notes": "PRICE NOT VERIFIED. LastPass's pricing pages show only the placeholder '{LPFamilies}/month billed annually'. The official Premium vs Families comparison page says Families costs about '$1 more a month' than Premium when billed annually, which would suggest roughly $4 a month, but no official page states the actual figure, so the price is left null rather than guessed. Covers 6 separate accounts, each with all the Premium features, plus unlimited shared folders and a family manager dashboard. The family manager cannot see other members' private vaults."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the catch with the free LastPass plan?",
+      "a": "You have to pick ONE kind of device. If you choose computers, your passwords will not work on your phone or tablet, and if you choose mobile they will not work on your computer. To use both you need the Premium plan."
+    },
+    {
+      "q": "Why are the prices missing or uncertain?",
+      "a": "LastPass's website fills its prices in after the page loads in a browser, so they could not be read from the official pages when this was checked. Please look at lastpass.com/pricing for the current amount before buying."
+    },
+    {
+      "q": "Can the family manager see my passwords?",
+      "a": "No. On the Families plan each of the 6 people has their own private vault. The family manager can add and remove members, but cannot look inside another member's vault."
+    },
+    {
+      "q": "What is 'emergency access'?",
+      "a": "You name a trusted person. If something happened to you they can ask for access to your passwords, after a waiting period that you set."
+    }
+  ],
+  "notes": "Features are well verified from official LastPass comparison pages; prices are not. Every LastPass pricing page checked on 2026-09-21 renders its prices from unfilled template variables ({LPPremium}, {LPFamilies}), the LastPass support site blocks automated fetching (robots.txt), and the checkout page requires JavaScript. The Premium figure of $36 a year comes from an older official LastPass blog post stating the regular price is $3 a month billed annually; the Families figure could not be established at all. Both paid plans are therefore marked uncertain. LastPass also sells Teams, Business and Business Max plans, which are work plans and are excluded from this consumer file."
+}

@@ -1,0 +1,241 @@
+{
+  "company": {
+    "slug": "peloton-app",
+    "name": "Peloton",
+    "category": "fitness",
+    "website": "https://www.onepeloton.com",
+    "pricingUrl": "https://www.onepeloton.com/membership",
+    "shortDescription": "Live and recorded exercise classes – cycling, running, strength, yoga – on your phone, tablet, TV or Peloton machine.",
+    "planHelp": "Sign in at members.onepeloton.com on a computer, click your picture, then Membership. It shows which membership you have and the next payment date. If you signed up in the app on an iPhone, the charge is handled by Apple – check iPhone Settings, your name, then Subscriptions."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://investor.onepeloton.com/news-releases/news-release-details/peloton-enters-new-era-ai-powered-peloton-iq-and-new-product",
+      "title": "Peloton Enters New Era with AI-Powered Peloton IQ and New Product Portfolio – Peloton Interactive press release (states the October 2025 membership prices)",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://investor.onepeloton.com/news-releases/news-release-details/peloton-reintroduces-itself-anyone-anywhere",
+      "title": "Peloton Reintroduces Itself For Anyone, Anywhere – Peloton press release introducing App Free, App One and App+",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.onepeloton.com/membership",
+      "title": "Compare Membership Tiers For Apps and Equipment | Peloton",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.onepeloton.com/app-membership",
+      "title": "Choose Your Peloton App Fitness Membership | Peloton",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.onepeloton.com/blog/peloton-app-membership",
+      "title": "Work Out Where You Want, When You Want with the All New Peloton App – Peloton blog",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "classes",
+      "label": "How much of the class library you get",
+      "type": "ordinal",
+      "levels": [
+        "sample",
+        "strength_only",
+        "most_classes",
+        "all_classes"
+      ],
+      "levelLabels": {
+        "sample": "A small free taster of about 50 classes",
+        "strength_only": "Weights and strength classes only",
+        "most_classes": "Everything except cycling, running and rowing classes (only three of those a month)",
+        "all_classes": "Everything, including unlimited cycling, running and rowing classes"
+      },
+      "question": "What kind of exercise classes do you want?",
+      "help": "Classes that use a bike, treadmill or rowing machine are the ones Peloton charges most for. Everything else – weights, yoga, stretching, walking, dance – is in the cheaper plans.",
+      "options": [
+        {
+          "label": "Just a few, to try it out",
+          "value": "sample"
+        },
+        {
+          "label": "Only weights and strength",
+          "value": "strength_only"
+        },
+        {
+          "label": "Yoga, walking, stretching and weights",
+          "value": "most_classes"
+        },
+        {
+          "label": "Everything, including bike and treadmill classes",
+          "value": "all_classes"
+        }
+      ]
+    },
+    {
+      "key": "equipment_metrics",
+      "label": "Shows your speed, effort and heart rate on screen",
+      "type": "boolean",
+      "question": "Do you want the class screen to show your speed, effort and heart rate as you go?",
+      "help": "Peloton calls these live metrics. They work with a Peloton machine, and also with many other brands of bike, treadmill or rowing machine and with a heart-rate strap."
+    },
+    {
+      "key": "members",
+      "label": "People who get their own account",
+      "type": "number",
+      "question": "How many people in your home would use it, each with their own progress?",
+      "help": "Each person gets their own profile so their workouts and progress are kept separate.",
+      "options": [
+        {
+          "label": "Just me",
+          "value": 1
+        },
+        {
+          "label": "Two of us",
+          "value": 2
+        },
+        {
+          "label": "Three or more in the household",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "key": "requires_equipment",
+      "label": "You must own a Peloton machine",
+      "type": "boolean",
+      "question": "Do you own, or are you buying, a Peloton bike, treadmill, or rower?",
+      "help": "The most expensive membership is only for people who own Peloton equipment – it is the fee that comes with the machine. If you do not own one, choose an app membership instead."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "app-free",
+      "name": "Peloton App Free",
+      "tier": 1,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 0
+        }
+      ],
+      "features": {
+        "classes": "sample",
+        "equipment_metrics": null,
+        "members": 1,
+        "requires_equipment": false
+      },
+      "bestFor": "Trying Peloton before paying anything.",
+      "notes": "Peloton's own press release describes a free tier with 'more than 50 classes curated across 12 of Peloton's modalities' plus a rotating selection. It is free with no card needed. Whether the free tier shows live speed and heart-rate figures could not be confirmed on any official page, so that value is left blank and confidence is 'uncertain'."
+    },
+    {
+      "slug": "strength-plus",
+      "name": "Peloton Strength+",
+      "tier": 2,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 9.99
+        }
+      ],
+      "features": {
+        "classes": "strength_only",
+        "equipment_metrics": false,
+        "members": 1,
+        "requires_equipment": false
+      },
+      "bestFor": "Someone who only wants guided weight training, at the gym or at home.",
+      "notes": "A separate, cheaper Peloton app for strength training only, listed on Peloton's membership comparison page at $9.99 a month with 1 profile, 'Strength only' classes and support for gym equipment. Confidence is 'uncertain' because this price appeared in the page's comparison table while the other tiers' prices did not load, so it could not be cross-checked against a second official source, and no annual price was shown."
+    },
+    {
+      "slug": "app-one",
+      "name": "Peloton App One",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 15.99
+        }
+      ],
+      "features": {
+        "classes": "most_classes",
+        "equipment_metrics": true,
+        "members": 1,
+        "requires_equipment": false
+      },
+      "bestFor": "People without a Peloton machine who mainly do strength, yoga, walking or stretching.",
+      "notes": "Peloton's press release states App One rose from $12.99 to $15.99 a month effective October 2025. Includes unlimited classes across most types plus up to three bike, treadmill or rowing classes per month. An annual option exists (it was $129 a year at the old monthly price) but Peloton's site would not display the current annual figure to us, so no annual amount is recorded. Peloton advertises a 30-day free trial; that is a promotion, not the standard price."
+    },
+    {
+      "slug": "app-plus",
+      "name": "Peloton App+",
+      "tier": 4,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 28.99
+        }
+      ],
+      "features": {
+        "classes": "all_classes",
+        "equipment_metrics": true,
+        "members": 1,
+        "requires_equipment": false
+      },
+      "bestFor": "People who own a non-Peloton bike, treadmill or rower and want unlimited classes for it.",
+      "notes": "Peloton's press release states App+ rose from $24 to $28.99 a month effective October 2025. Includes everything in App One plus unlimited bike, treadmill and rowing classes and exclusive specialty content. An annual option exists (it was $240 a year at the old monthly price) but the current annual figure could not be read from an official page, so it is not recorded."
+    },
+    {
+      "slug": "all-access",
+      "name": "Peloton All-Access Membership",
+      "tier": 5,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 49.99
+        }
+      ],
+      "features": {
+        "classes": "all_classes",
+        "equipment_metrics": true,
+        "members": null,
+        "requires_equipment": true
+      },
+      "bestFor": "Households that own a Peloton Bike, Tread or Row – this is the fee that goes with the machine, and everyone in the house is covered by the one payment.",
+      "notes": "Peloton's press release states the All-Access Membership rose from $44 to $49.99 a month effective October 2025. This membership is tied to Peloton equipment: it is charged per household rather than per person, and it is not sold to people who do not own a Peloton machine. The exact number of household profiles allowed could not be confirmed on any readable official page, so that value is blank and confidence is 'uncertain'. No annual payment option is advertised for this membership."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I need to buy a Peloton bike?",
+      "a": "No. The App memberships work on a phone, tablet, computer or smart TV with no Peloton equipment at all. Only the most expensive membership, All-Access, requires you to own a Peloton machine."
+    },
+    {
+      "q": "What is the difference between App One and App+?",
+      "a": "App One gives you everything except unlimited cycling, running and rowing classes – you get three of those a month. App+ makes those unlimited too. If you have no exercise machine at home, App One is usually plenty."
+    },
+    {
+      "q": "Will it work with my own exercise bike?",
+      "a": "Often, yes. The App memberships can pick up readings from many other brands of bike, treadmill and rower, and from a heart-rate strap, so you see your effort on screen during the class."
+    },
+    {
+      "q": "Does one membership cover my spouse?",
+      "a": "With the All-Access membership that comes with a Peloton machine, everyone in the household is covered by the single payment and each person gets their own profile. The App memberships are for one person each."
+    }
+  ],
+  "notes": "Plan names verified as current: Peloton App Free, Peloton App One, Peloton App+, Peloton All-Access Membership, plus a newer strength-only app called Peloton Strength+. Peloton's own pricing pages (onepeloton.com/membership, /app-membership, /app) load their prices with JavaScript and display '$0/mo' placeholders to any automated reader, and Peloton's support articles return a loading screen, so the monthly prices here come from Peloton Interactive's official investor press release announcing the October 2025 increase (All-Access $44 to $49.99, App+ $24 to $28.99, App One $12.99 to $15.99). No later price change was found. Annual prices are therefore not recorded for any plan – at the previous rates App One was $129/year and App+ $240/year, so annual options do exist and should be re-checked on screen at sign-up. Peloton commonly advertises a 30-day free trial on the App memberships."
+}

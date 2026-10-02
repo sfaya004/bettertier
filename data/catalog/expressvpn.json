@@ -1,0 +1,203 @@
+{
+  "company": {
+    "slug": "expressvpn",
+    "name": "ExpressVPN",
+    "category": "vpn",
+    "website": "https://www.expressvpn.com",
+    "pricingUrl": "https://www.expressvpn.com/pricing",
+    "shortDescription": "A private internet connection (VPN), with optional password keeper and identity protection.",
+    "planHelp": "Sign in at expressvpn.com, then open 'My Account' or 'Subscription'. It shows which plan you are on, what you pay and the date it renews."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.expressvpn.com/pricing",
+      "title": "Choose your ExpressVPN plan",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.expressvpn.com/order",
+      "title": "ExpressVPN order page",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.expressvpn.com/support/manage-account/available-subscriptions/",
+      "title": "What subscriptions are available with ExpressVPN?",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.expressvpn.com/blog/introducing-expressvpn-tiered-pricing/",
+      "title": "ExpressVPN Introduces Tiered Pricing: Basic, Advanced, and Pro",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "devices",
+      "label": "Devices protected at the same time",
+      "type": "number",
+      "question": "How many devices (phones, computers, and tablets) do you want to protect?",
+      "help": "Count everything you would want protected at once, including your family's phones.",
+      "options": [
+        {
+          "label": "Up to 10",
+          "value": 10
+        },
+        {
+          "label": "Up to 12",
+          "value": 12
+        },
+        {
+          "label": "Up to 14",
+          "value": 14
+        }
+      ]
+    },
+    {
+      "key": "password_manager",
+      "label": "Password keeper",
+      "type": "boolean",
+      "question": "Would you like a safe place to store your passwords so you do not have to remember them?",
+      "help": "ExpressVPN calls this \"Keys\". The cheapest plan does not include it."
+    },
+    {
+      "key": "identity_defender",
+      "label": "Identity protection and insurance",
+      "type": "boolean",
+      "question": "Do you want someone watching for your personal details being sold online, plus insurance if your identity is stolen?",
+      "help": "Available to customers in the United States only."
+    },
+    {
+      "key": "ad_blocker",
+      "label": "Blocking ads and dangerous websites",
+      "type": "ordinal",
+      "levels": [
+        "lite",
+        "advanced"
+      ],
+      "levelLabels": {
+        "lite": "Basic blocking of ads and harmful sites",
+        "advanced": "Stronger blocking of ads, trackers and harmful sites"
+      },
+      "question": "How much blocking of ads and dangerous websites do you want?",
+      "options": [
+        {
+          "label": "Basic blocking is fine",
+          "value": "lite"
+        },
+        {
+          "label": "The stronger blocking",
+          "value": "advanced"
+        }
+      ]
+    },
+    {
+      "key": "dedicated_ip",
+      "label": "Your own private internet address",
+      "type": "boolean",
+      "question": "Do you need your own private internet address that nobody else shares?",
+      "help": "Most people do not need this. It can help if your bank's website keeps blocking you. On cheaper plans it can be bought separately."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "basic",
+      "name": "Basic",
+      "tier": 1,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": null
+        },
+        {
+          "period": "annual",
+          "amount": 99.95
+        }
+      ],
+      "features": {
+        "devices": 10,
+        "password_manager": false,
+        "identity_defender": false,
+        "ad_blocker": "lite",
+        "dedicated_ip": false
+      },
+      "bestFor": "Someone who only wants a fast, private internet connection.",
+      "notes": "The $99.95 a year figure is ExpressVPN's own stated ongoing price ('Then autorenews at $99.95 annually'). The MONTH-BY-MONTH price could not be verified: ExpressVPN's public pricing and order pages only display the 2-year introductory offer, so monthly is set to null. PROMOTIONAL ONLY: $83.72 for the first 28 months (advertised as $2.99/month), then $99.95/year. A dedicated IP address can be added for an extra fee."
+    },
+    {
+      "slug": "advanced",
+      "name": "Advanced",
+      "tier": 2,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": null
+        },
+        {
+          "period": "annual",
+          "amount": 119.95
+        }
+      ],
+      "features": {
+        "devices": 12,
+        "password_manager": true,
+        "identity_defender": true,
+        "ad_blocker": "advanced",
+        "dedicated_ip": false
+      },
+      "bestFor": "Most people: private internet plus a password keeper and a watch on your personal details.",
+      "notes": "$119.95 a year is ExpressVPN's stated ongoing price. Month-by-month price not published on the public pages, so set to null. PROMOTIONAL ONLY: $111.72 for the first 28 months (advertised as $3.99/month). Identity Defender here includes dark web monitoring, Social Security number monitoring, data removal, credit alerts and up to $3,000,000 identity theft insurance (US customers only). Also includes 3 days of eSIM travel data on 12-month and 2-year plans."
+    },
+    {
+      "slug": "pro",
+      "name": "Express Pro",
+      "tier": 3,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": null
+        },
+        {
+          "period": "annual",
+          "amount": 199.95
+        }
+      ],
+      "features": {
+        "devices": 14,
+        "password_manager": true,
+        "identity_defender": true,
+        "ad_blocker": "advanced",
+        "dedicated_ip": true
+      },
+      "bestFor": "Someone who wants everything, including their own private internet address and the largest identity theft insurance.",
+      "notes": "$199.95 a year is ExpressVPN's stated ongoing price. Month-by-month price not published on the public pages, so set to null. PROMOTIONAL ONLY: $167.72 for the first 28 months (advertised as $5.99/month). Adds a dedicated IP address at no extra cost, data removal, monthly credit reports, home title, auto title and court record monitoring, and up to $5,000,000 identity theft insurance (US customers only), plus 5 days of eSIM travel data on 12-month and 2-year plans."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Why can't I see a simple monthly price?",
+      "a": "ExpressVPN's public pricing page only advertises its 2-year introductory offer. It does sell 1-month and 12-month subscriptions, but the prices for those are only shown once you start the sign-up, so they are not recorded here."
+    },
+    {
+      "q": "What happens when my introductory offer ends?",
+      "a": "The subscription renews automatically at the standard yearly price: $99.95 for Basic, $119.95 for Advanced and $199.95 for Pro. That is usually much more than you paid for the first term."
+    },
+    {
+      "q": "What is the difference between the three plans?",
+      "a": "They all give the same private internet connection. Advanced adds a password keeper and identity monitoring; Pro adds your own private internet address, data removal and the largest insurance cover."
+    },
+    {
+      "q": "Can I try it and get my money back?",
+      "a": "ExpressVPN advertises a 30-day money-back guarantee for new customers on all three plans."
+    }
+  ],
+  "notes": "ExpressVPN moved to three tiers (Basic, Advanced, Express Pro) in 2025. Verified from official pages on 2026-09-21. The only prices ExpressVPN publishes openly are the 2-year introductory offers and the annual renewal prices; 1-month and 12-month prices are not shown publicly, which is why every plan is marked 'uncertain'. Identity Defender features are limited to customers in the United States."
+}

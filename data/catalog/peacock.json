@@ -1,0 +1,181 @@
+{
+  "company": {
+    "slug": "peacock",
+    "name": "Peacock",
+    "category": "streaming-video",
+    "website": "https://www.peacocktv.com",
+    "pricingUrl": "https://www.peacocktv.com/plans/all-monthly",
+    "shortDescription": "NBC and Bravo shows, movies, and live sports from NBC in the United States.",
+    "planHelp": "On a computer go to peacocktv.com, sign in, click your profile picture in the top right corner and choose Account. Your plan – Select, Premium or Premium Plus – is shown under Plans. In the Peacock app, go to the gear or profile icon, then Account, then Plans."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.peacocktv.com/help/article/how-much-does-a-peacock-subscription-cost",
+      "title": "How much does a Peacock subscription cost? – Peacock Help",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.peacocktv.com/plans/all-monthly",
+      "title": "Peacock – Choose a Plan",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.peacocktv.com/help/article/how-many-streams-can-i-view-concurrently",
+      "title": "How many streams can I view concurrently on Peacock?",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "ad_free",
+      "label": "No advertisements",
+      "type": "boolean",
+      "question": "Do you want to watch without advertisements?",
+      "help": "Only the most expensive plan removes advertisements, and even then live sports and live channels still carry them."
+    },
+    {
+      "key": "downloads",
+      "label": "Save shows to watch without internet",
+      "type": "boolean",
+      "question": "Do you save shows onto a phone or tablet to watch where there is no internet?",
+      "help": "Only the most expensive Peacock plan allows this."
+    },
+    {
+      "key": "live_sports",
+      "label": "Live sports and big events",
+      "type": "boolean",
+      "question": "Do you want live sports and big live events?",
+      "help": "The cheapest Peacock plan leaves out sports, movies and Peacock's own new series."
+    },
+    {
+      "key": "movies_and_originals",
+      "label": "Movies and Peacock's own series",
+      "type": "boolean",
+      "question": "Do you want movies and the new series Peacock makes itself?",
+      "help": "The cheapest plan only has ordinary television shows from NBC, Bravo and similar channels."
+    },
+    {
+      "key": "simultaneous_streams",
+      "label": "People who can watch at the same time",
+      "type": "number",
+      "question": "How many people watch at the same time?",
+      "help": "Peacock allows three at once on every plan.",
+      "options": [
+        {
+          "label": "Just one",
+          "value": 1
+        },
+        {
+          "label": "2 at the same time",
+          "value": 2
+        },
+        {
+          "label": "3 at the same time",
+          "value": 3
+        }
+      ]
+    }
+  ],
+  "plans": [
+    {
+      "slug": "select",
+      "name": "Peacock Select",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 8.99
+        },
+        {
+          "period": "annual",
+          "amount": 89.99
+        }
+      ],
+      "features": {
+        "ad_free": false,
+        "downloads": false,
+        "live_sports": false,
+        "movies_and_originals": false,
+        "simultaneous_streams": 3
+      },
+      "bestFor": "People who only want everyday NBC and Bravo shows and do not care about sport or movies.",
+      "notes": "A cut-down plan. Peacock's own plan page states it does not include sports, movies or Peacock's own new series, and it shows advertisements."
+    },
+    {
+      "slug": "premium",
+      "name": "Peacock Premium",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 12.99
+        },
+        {
+          "period": "annual",
+          "amount": 129.99
+        }
+      ],
+      "features": {
+        "ad_free": false,
+        "downloads": false,
+        "live_sports": true,
+        "movies_and_originals": true,
+        "simultaneous_streams": 3
+      },
+      "bestFor": "Most people – it has the sports, the movies and the new series, and it is the usual choice.",
+      "notes": "Includes live sports and events, movies and Peacock's own series, but shows advertisements. Paying yearly saves about two months' worth compared with paying monthly."
+    },
+    {
+      "slug": "premium-plus",
+      "name": "Peacock Premium Plus",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 19.99
+        },
+        {
+          "period": "annual",
+          "amount": 199.99
+        }
+      ],
+      "features": {
+        "ad_free": true,
+        "downloads": true,
+        "live_sports": true,
+        "movies_and_originals": true,
+        "simultaneous_streams": 3
+      },
+      "bestFor": "People who watch Peacock often and are tired of the advertisements, or who want shows saved for journeys.",
+      "notes": "No advertisements apart from some exceptions: advertisements remain in live channels, live sports and events, and a few shows and movies. Allows saving shows to watch without internet."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Does the most expensive plan really have no advertisements?",
+      "a": "Almost. Peacock says advertisements still appear in its live channels, in live sports and events, and in a few shows and movies, because of the deals behind them."
+    },
+    {
+      "q": "What does the cheapest Select plan leave out?",
+      "a": "It leaves out sports, movies and the new series Peacock makes itself. You get everyday television shows from NBC, Bravo and similar channels."
+    },
+    {
+      "q": "Is it cheaper to pay for a year?",
+      "a": "Yes. Each plan has a yearly price that works out at about ten months' worth instead of twelve."
+    },
+    {
+      "q": "How many people can watch at once?",
+      "a": "Three devices at the same time, on every plan."
+    }
+  ],
+  "notes": "Prices exclude tax. Peacock also sells a student offer at 6.99 per month for twelve months and a bundle with Apple TV starting at 17.99 per month; both are promotional or bundled and are not modelled as plans. Peacock's free tier no longer appears on the current plan page, so it is not included."
+}

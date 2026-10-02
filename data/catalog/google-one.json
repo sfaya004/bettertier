@@ -1,0 +1,321 @@
+{
+  "company": {
+    "slug": "google-one",
+    "name": "Google One",
+    "category": "cloud-storage",
+    "website": "https://one.google.com",
+    "pricingUrl": "https://one.google.com/about/plans",
+    "shortDescription": "Extra storage space for Gmail, Google Photos and Google Drive, and on the higher plans Google's AI assistant.",
+    "planHelp": "Go to one.google.com and sign in with your Google account. The page shows how much storage you have, how much you are using, and the name of your plan. You can also open the Google One app on a phone and tap Settings."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://one.google.com/about/plans",
+      "title": "Plans & Pricing to Upgrade Your Cloud Storage – Google One",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://one.google.com/intl/en/about/google-ai-plans/",
+      "title": "Google AI plans with Cloud Storage – Google One",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://gemini.google/subscriptions/",
+      "title": "Google AI subscription plans – Gemini",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://support.google.com/googleone/answer/9004013",
+      "title": "Sign up for Google One – Google One Help",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://support.google.com/photos/answer/10100180?hl=en",
+      "title": "About your Google Photos activity & storage – Google Photos Help",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "storage_gb",
+      "label": "Storage space",
+      "type": "number",
+      "question": "How much space do you need for your photos, emails and files?",
+      "help": "Everything you keep in Gmail, Google Photos and Google Drive counts toward the same space. A few thousand photos fit in 100 GB.",
+      "options": [
+        {
+          "label": "Mostly documents and a few photos (under 100 GB)",
+          "value": 100
+        },
+        {
+          "label": "Lots of photos and videos (200 GB to 2 TB)",
+          "value": 2000
+        },
+        {
+          "label": "A very large collection, including video (5 TB or more)",
+          "value": 5000
+        }
+      ]
+    },
+    {
+      "key": "members",
+      "label": "People who can share the plan",
+      "type": "number",
+      "question": "How many people in your family would share this?",
+      "help": "One person pays, and up to five others can be invited. Everyone keeps their own private space.",
+      "options": [
+        {
+          "label": "Just me",
+          "value": 1
+        },
+        {
+          "label": "2 people",
+          "value": 2
+        },
+        {
+          "label": "3 or 4 people",
+          "value": 4
+        },
+        {
+          "label": "5 or 6 people",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "key": "family_sharing",
+      "label": "Can be shared with family members",
+      "type": "boolean",
+      "question": "Do you want to share the storage with family members?"
+    },
+    {
+      "key": "model_access",
+      "label": "Google's AI assistant (Gemini)",
+      "type": "ordinal",
+      "levels": [
+        "none",
+        "advanced",
+        "frontier"
+      ],
+      "levelLabels": {
+        "none": "No extra AI, just storage",
+        "advanced": "Google's better AI assistant for writing, research and pictures",
+        "frontier": "Google's most powerful AI, including video making"
+      },
+      "question": "Do you want Google's AI assistant included?",
+      "help": "Anyone can use a basic version of Google's assistant for free. These plans give you more use of the better versions.",
+      "options": [
+        {
+          "label": "No, I just need storage",
+          "value": "none"
+        },
+        {
+          "label": "Yes, the better assistant",
+          "value": "advanced"
+        },
+        {
+          "label": "Yes, the most powerful one",
+          "value": "frontier"
+        }
+      ]
+    },
+    {
+      "key": "usage_limit",
+      "label": "How much you can use the AI each month",
+      "type": "ordinal",
+      "levels": [
+        "limited",
+        "standard",
+        "high",
+        "very_high"
+      ],
+      "levelLabels": {
+        "limited": "Same as the free version",
+        "standard": "About twice as much as free",
+        "high": "About four times as much as free",
+        "very_high": "Many times more than free"
+      },
+      "question": "How often would you use the AI assistant?",
+      "options": [
+        {
+          "label": "Not at all",
+          "value": "limited"
+        },
+        {
+          "label": "Now and then",
+          "value": "standard"
+        },
+        {
+          "label": "Most days",
+          "value": "high"
+        },
+        {
+          "label": "All day, for work",
+          "value": "very_high"
+        }
+      ]
+    }
+  ],
+  "plans": [
+    {
+      "slug": "basic-100gb",
+      "name": "Basic (100 GB)",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 1.99
+        }
+      ],
+      "features": {
+        "storage_gb": 100,
+        "members": 6,
+        "family_sharing": true,
+        "model_access": "none",
+        "usage_limit": "limited"
+      },
+      "bestFor": "Someone whose Gmail or Google Photos is full but who only has a modest number of photos.",
+      "notes": "Price confirmed on Google's own Photos help page: 'In the US, you can get 100 GB of storage for $1.99 per month.' Google also sells a yearly version at a discount, but the yearly amount was not shown on an official page that could be read, so it is not recorded."
+    },
+    {
+      "slug": "standard-200gb",
+      "name": "Standard (200 GB)",
+      "tier": 2,
+      "status": "active",
+      "confidence": "uncertain",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": null
+        }
+      ],
+      "features": {
+        "storage_gb": 200,
+        "members": 6,
+        "family_sharing": true,
+        "model_access": "none",
+        "usage_limit": "limited"
+      },
+      "bestFor": "A household with a large photo collection that does not need AI features.",
+      "notes": "The plan name and the 200 GB size are confirmed on Google's official plans page and help center, but the price is loaded by the website only after you sign in, so it could not be read. Price left null rather than guessed."
+    },
+    {
+      "slug": "ai-plus-400gb",
+      "name": "Google AI Plus (400 GB)",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 4.99
+        }
+      ],
+      "features": {
+        "storage_gb": 400,
+        "members": 6,
+        "family_sharing": true,
+        "model_access": "advanced",
+        "usage_limit": "standard"
+      },
+      "bestFor": "Someone who wants more storage and would like to try Google's AI assistant without paying a lot.",
+      "notes": "Includes about twice the free usage limits of Gemini, picture, music and video making, and Gemini Notebook. Can be shared with up to five other people."
+    },
+    {
+      "slug": "ai-plus-2tb",
+      "name": "Google AI Plus (2 TB)",
+      "tier": 4,
+      "status": "active",
+      "confidence": "uncertain",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": null
+        }
+      ],
+      "features": {
+        "storage_gb": 2000,
+        "members": 6,
+        "family_sharing": true,
+        "model_access": "advanced",
+        "usage_limit": "standard"
+      },
+      "bestFor": "People who used to have the old 2 TB 'Premium' plan and want the same amount of space.",
+      "notes": "Google's help center confirms Google AI Plus is offered with either 400 GB or 2 TB of storage, but the 2 TB price is only shown after signing in, so it is null. This tier replaced what Google previously called 'Google One Premium (2 TB)'. Anyone comparing against older articles should know the 2 TB level was renamed."
+    },
+    {
+      "slug": "ai-pro-5tb",
+      "name": "Google AI Pro (5 TB)",
+      "tier": 5,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 19.99
+        }
+      ],
+      "features": {
+        "storage_gb": 5000,
+        "members": 6,
+        "family_sharing": true,
+        "model_access": "advanced",
+        "usage_limit": "high"
+      },
+      "bestFor": "Someone who uses the AI assistant most days and has a very large photo or video collection.",
+      "notes": "About four times the free usage limits, access to Gemini 3.1 Pro, Deep Research, and Gemini inside Gmail and Docs. Google's help center says AI Pro is also offered with 10 TB of storage; that version's price was not readable and is not listed here. Storage and AI features can be shared with a family group, but the included YouTube Premium Lite benefit cannot be shared."
+    },
+    {
+      "slug": "ai-ultra-20tb",
+      "name": "Google AI Ultra (20 TB)",
+      "tier": 6,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 99.99
+        }
+      ],
+      "features": {
+        "storage_gb": 20000,
+        "members": 6,
+        "family_sharing": true,
+        "model_access": "frontier",
+        "usage_limit": "very_high"
+      },
+      "bestFor": "Professionals who make videos or use AI tools all day. Far more than most households need.",
+      "notes": "Listed as 'from $99.99 a month'; Google's page also shows a higher $199.99 a month option and a 30 TB storage option. Includes YouTube Premium and the most capable Gemini features."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What happens if I run out of Google storage?",
+      "a": "You can still read your email and look at your photos, but Gmail stops accepting new messages and Google Photos and Drive stop saving new files. Buying a plan fixes it right away."
+    },
+    {
+      "q": "Do I already get some storage for free?",
+      "a": "Yes. Every Google account comes with 15 GB at no cost, shared between Gmail, Google Photos and Google Drive. You only need a paid plan when that fills up."
+    },
+    {
+      "q": "Google changed the names of its plans. What happened to 'Premium 2 TB'?",
+      "a": "Google reorganised its plans around its AI assistant. The storage-only plans are now called Basic (100 GB) and Standard (200 GB), and the 2 TB level is now sold as part of Google AI Plus. Older articles may still use the old names."
+    },
+    {
+      "q": "Can my husband or wife use the same plan?",
+      "a": "Yes, on every plan except the small 30 GB 'Lite' plan. One person pays and can invite up to five family members. Each person's files stay private to them."
+    }
+  ],
+  "notes": "IMPORTANT LIMITATION: one.google.com shows prices only after the page loads its pricing panel for a signed-in visitor, so most prices could not be read from the official site. Verified prices come from Google's own Gemini subscriptions page (AI Plus $4.99, AI Pro $19.99, AI Ultra from $99.99) and Google Photos Help (100 GB for $1.99). The 200 GB Standard price and the 2 TB AI Plus price are null and marked uncertain. Google's help center also lists a 'Google One Lite' 30 GB plan (no family sharing) whose price could not be read; it is not included as a plan here. Yearly prices were not readable for any tier."
+}

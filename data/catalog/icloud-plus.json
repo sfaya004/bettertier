@@ -1,0 +1,232 @@
+{
+  "company": {
+    "slug": "icloud-plus",
+    "name": "iCloud+",
+    "category": "cloud-storage",
+    "website": "https://www.apple.com/icloud/",
+    "pricingUrl": "https://support.apple.com/en-us/108047",
+    "shortDescription": "Extra storage space for photos, backups and files on iPhone, iPad and Mac, plus Apple privacy features.",
+    "planHelp": "On an iPhone or iPad, open Settings, tap your name at the very top, then tap iCloud. The bar at the top shows how much space you have and the words 'Manage Account Storage' let you see or change your plan. On a Mac, open System Settings and click your name."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://support.apple.com/en-us/108047",
+      "title": "iCloud+ plans and pricing – Apple Support",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "storage_gb",
+      "label": "Storage space",
+      "type": "number",
+      "question": "How much space do you need for your photos, backups and files?",
+      "help": "Photos and iPhone backups use the most space. A few thousand photos fit in 200 GB.",
+      "options": [
+        {
+          "label": "Mostly documents and a few photos (under 100 GB)",
+          "value": 50
+        },
+        {
+          "label": "Lots of photos and videos (200 GB to 2 TB)",
+          "value": 2000
+        },
+        {
+          "label": "A very large collection, including video (6 TB or more)",
+          "value": 6000
+        }
+      ]
+    },
+    {
+      "key": "family_sharing",
+      "label": "Can be shared with family members",
+      "type": "boolean",
+      "question": "Do you want to share the storage with family members?",
+      "help": "Every paid iCloud+ plan can be shared with up to five other family members at no extra cost."
+    },
+    {
+      "key": "private_relay",
+      "label": "Keeps your web browsing private",
+      "type": "boolean",
+      "question": "Would you like Apple to hide which websites you visit from your internet company?",
+      "help": "Apple calls this Private Relay. It is included with every paid plan."
+    },
+    {
+      "key": "hide_my_email",
+      "label": "Made-up email addresses to avoid junk mail",
+      "type": "boolean",
+      "question": "Would you like to give shops a made-up email address so your real one stays private?",
+      "help": "Apple calls this Hide My Email. It is included with every paid plan."
+    },
+    {
+      "key": "security_cameras",
+      "label": "Home security cameras you can record",
+      "type": "ordinal",
+      "levels": [
+        "one_camera",
+        "five_cameras",
+        "unlimited"
+      ],
+      "levelLabels": {
+        "one_camera": "One camera",
+        "five_cameras": "Up to five cameras",
+        "unlimited": "As many cameras as you like"
+      },
+      "question": "Do you record video from home security cameras through Apple?",
+      "help": "This only matters if you own HomeKit security cameras or video doorbells. Most people do not.",
+      "options": [
+        {
+          "label": "No cameras",
+          "value": "one_camera"
+        },
+        {
+          "label": "A few cameras",
+          "value": "five_cameras"
+        },
+        {
+          "label": "Many cameras",
+          "value": "unlimited"
+        }
+      ]
+    }
+  ],
+  "plans": [
+    {
+      "slug": "50gb",
+      "name": "iCloud+ 50 GB",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 0.99
+        }
+      ],
+      "features": {
+        "storage_gb": 50,
+        "family_sharing": true,
+        "private_relay": true,
+        "hide_my_email": true,
+        "security_cameras": "one_camera"
+      },
+      "bestFor": "One person who mainly needs enough room to back up an iPhone.",
+      "notes": "Supports recording from one home security camera."
+    },
+    {
+      "slug": "200gb",
+      "name": "iCloud+ 200 GB",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 2.99
+        }
+      ],
+      "features": {
+        "storage_gb": 200,
+        "family_sharing": true,
+        "private_relay": true,
+        "hide_my_email": true,
+        "security_cameras": "five_cameras"
+      },
+      "bestFor": "A couple, or one person with a large photo collection.",
+      "notes": "Supports recording from up to five home security cameras."
+    },
+    {
+      "slug": "2tb",
+      "name": "iCloud+ 2 TB",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 9.99
+        }
+      ],
+      "features": {
+        "storage_gb": 2000,
+        "family_sharing": true,
+        "private_relay": true,
+        "hide_my_email": true,
+        "security_cameras": "unlimited"
+      },
+      "bestFor": "A whole family sharing photos, videos and device backups.",
+      "notes": "Supports an unlimited number of home security cameras."
+    },
+    {
+      "slug": "6tb",
+      "name": "iCloud+ 6 TB",
+      "tier": 4,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 29.99
+        }
+      ],
+      "features": {
+        "storage_gb": 6000,
+        "family_sharing": true,
+        "private_relay": true,
+        "hide_my_email": true,
+        "security_cameras": "unlimited"
+      },
+      "bestFor": "Households that store a great deal of video. More than most people need.",
+      "notes": ""
+    },
+    {
+      "slug": "12tb",
+      "name": "iCloud+ 12 TB",
+      "tier": 5,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 59.99
+        }
+      ],
+      "features": {
+        "storage_gb": 12000,
+        "family_sharing": true,
+        "private_relay": true,
+        "hide_my_email": true,
+        "security_cameras": "unlimited"
+      },
+      "bestFor": "Photographers and video makers with very large libraries.",
+      "notes": ""
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I get any iCloud storage without paying?",
+      "a": "Yes. Every Apple account includes 5 GB at no cost. That is usually not enough to back up an iPhone, which is why most people move to the $0.99 plan."
+    },
+    {
+      "q": "What happens if my iCloud storage fills up?",
+      "a": "Your iPhone stops making backups, new photos stop going to iCloud, and iCloud email stops accepting messages. Nothing already stored is deleted. Buying more space fixes it straight away."
+    },
+    {
+      "q": "Do the privacy features cost extra?",
+      "a": "No. Private Relay, Hide My Email, a custom email address and Apple Invites are included with every paid iCloud+ plan, even the cheapest $0.99 one."
+    },
+    {
+      "q": "Can my family use my plan?",
+      "a": "Yes. Any paid plan can be shared with up to five other family members through Family Sharing. Each person's photos and files stay private to them."
+    }
+  ],
+  "notes": "All prices are monthly and were read from Apple's official support page on 2026-09-21. The only feature that changes between plans, apart from the amount of space, is how many home security cameras you can record. Apple also sells iCloud+ inside the Apple One bundle; bundle prices were not on the page checked."
+}

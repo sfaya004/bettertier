@@ -1,0 +1,194 @@
+{
+  "company": {
+    "slug": "max",
+    "name": "HBO Max",
+    "category": "streaming-video",
+    "website": "https://www.hbomax.com",
+    "pricingUrl": "https://help.hbomax.com/plans",
+    "shortDescription": "HBO series and movies, plus Warner Bros. movies, and sport on the more expensive plans.",
+    "planHelp": "On a computer go to hbomax.com, sign in, click your profile picture in the top right corner and choose Subscription or Account. Your plan name – Basic with Ads, Standard or Premium – and the next payment date are listed there. If you pay through Apple, Amazon or a TV provider, check the plan in that account instead."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://help.hbomax.com/plans",
+      "title": "HBO Max plans – Basic with Ads, Standard and Premium",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://help.hbomax.com/US/Answer/Detail/000002580",
+      "title": "HBO Max price changes – Basic with Ads, Standard, Premium",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "simultaneous_streams",
+      "label": "People who can watch at the same time",
+      "type": "number",
+      "question": "How many people watch at the same time?",
+      "help": "Count only people watching at the very same moment. Live sports are limited to two at a time on every plan.",
+      "options": [
+        {
+          "label": "Just one",
+          "value": 1
+        },
+        {
+          "label": "2 at the same time",
+          "value": 2
+        },
+        {
+          "label": "3 or 4 at the same time",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "key": "video_quality",
+      "label": "Picture quality",
+      "type": "ordinal",
+      "levels": [
+        "full_hd",
+        "4k"
+      ],
+      "levelLabels": {
+        "full_hd": "Full HD (1080p)",
+        "4k": "4K Ultra HD"
+      },
+      "question": "What picture quality do you need?",
+      "help": "Full HD looks sharp on almost every television. Only the most expensive plan offers 4K, and it only matters on a 4K television.",
+      "options": [
+        {
+          "label": "Full HD is fine",
+          "value": "full_hd"
+        },
+        {
+          "label": "4K (I have a 4K television and use it)",
+          "value": "4k"
+        }
+      ]
+    },
+    {
+      "key": "ad_free",
+      "label": "No advertisements",
+      "type": "boolean",
+      "question": "Do you want to watch without advertisements?",
+      "help": "Only the cheapest plan shows advertisements."
+    },
+    {
+      "key": "downloads",
+      "label": "Save shows to watch without internet",
+      "type": "boolean",
+      "question": "Do you save shows onto a phone or tablet to watch where there is no internet?",
+      "help": "The cheapest plan does not allow this at all. The middle plan allows 30 saved shows and the most expensive allows 100."
+    },
+    {
+      "key": "live_sports",
+      "label": "Live sports",
+      "type": "boolean",
+      "question": "Do you want to watch live sports?",
+      "help": "Live sports are included on the two more expensive plans."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "basic-with-ads",
+      "name": "Basic with Ads",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 10.99
+        },
+        {
+          "period": "annual",
+          "amount": 109.99
+        }
+      ],
+      "features": {
+        "simultaneous_streams": 2,
+        "video_quality": "full_hd",
+        "ad_free": false,
+        "downloads": false,
+        "live_sports": false
+      },
+      "bestFor": "People who watch HBO series now and then and want the lowest price.",
+      "notes": "Shows advertisements. Does not allow saving shows for offline viewing. Paying yearly saves about 16 percent. Prices took effect for new subscribers on 21 October 2025."
+    },
+    {
+      "slug": "standard",
+      "name": "Standard",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 18.49
+        },
+        {
+          "period": "annual",
+          "amount": 184.99
+        }
+      ],
+      "features": {
+        "simultaneous_streams": 2,
+        "video_quality": "full_hd",
+        "ad_free": true,
+        "downloads": true,
+        "live_sports": true
+      },
+      "bestFor": "One or two people who want no advertisements and want to save shows for journeys.",
+      "notes": "No advertisements, Full HD picture, up to 30 saved shows for offline viewing, and live sports included. Paying yearly saves about 16 percent."
+    },
+    {
+      "slug": "premium",
+      "name": "Premium",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 22.99
+        },
+        {
+          "period": "annual",
+          "amount": 229.99
+        }
+      ],
+      "features": {
+        "simultaneous_streams": 4,
+        "video_quality": "4k",
+        "ad_free": true,
+        "downloads": true,
+        "live_sports": true
+      },
+      "bestFor": "Busy households with several people watching at once, or anyone with a 4K television.",
+      "notes": "Four people may watch at once, but only two at a time for live sports. 4K Ultra HD and Dolby Atmos sound where available, up to 100 saved shows for offline viewing. Paying yearly saves about 16 percent."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the difference between Standard and Premium?",
+      "a": "Premium lets four people watch at once instead of two, offers 4K picture on a 4K television, better sound, and lets you save 100 shows for offline viewing instead of 30."
+    },
+    {
+      "q": "Can I save shows for a journey on the cheapest plan?",
+      "a": "No. Saving shows to watch without internet is only on the Standard and Premium plans."
+    },
+    {
+      "q": "Is paying for a whole year cheaper?",
+      "a": "Yes. Every plan has a yearly price that works out about 16 percent cheaper than paying each month."
+    },
+    {
+      "q": "Can I share my account with someone in another house?",
+      "a": "HBO Max offers an Extra Member add-on for people billed directly by HBO Max, which lets you add someone who lives outside your home for an extra monthly fee. The exact fee is not published on the plans page."
+    }
+  ],
+  "notes": "The service is called HBO Max again (it was briefly named Max). Prices above are the standard prices that took effect for new subscribers on 21 October 2025 and for existing subscribers from 20 November 2025, and they exclude tax. An Extra Member add-on exists for subscribers billed directly by HBO Max, but its price is not stated on the plans page, so no figure is recorded. HBO Max is also sold inside a Disney+, Hulu and HBO Max bundle at 19.99 per month with advertisements or 32.99 per month without."
+}

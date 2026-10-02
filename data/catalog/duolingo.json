@@ -1,0 +1,238 @@
+{
+  "company": {
+    "slug": "duolingo",
+    "name": "Duolingo",
+    "category": "learning",
+    "website": "https://www.duolingo.com",
+    "pricingUrl": "https://www.duolingo.com/super",
+    "shortDescription": "Short daily lessons that teach you a new language on your phone or computer.",
+    "planHelp": "Open the Duolingo app, tap your picture in the top corner, then Settings. Your plan is shown under Subscription. If you signed up through an iPhone or iPad, the charge is managed by Apple: look in the iPhone Settings app, tap your name, then Subscriptions."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.duolingo.com/family",
+      "title": "Duolingo Family Plan – Go further in your learning",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://blog.duolingo.com/super-duolingo-launch/",
+      "title": "Super Duolingo Is Duolingo's New Premium Product – Duolingo Blog (official)",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://blog.duolingo.com/duolingo-max/",
+      "title": "Introducing Duolingo Max – Duolingo Blog (official)",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://blog.duolingo.com/is-duolingo-free/",
+      "title": "Is Duolingo Free for All Learners? – Duolingo Blog (official)",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.duolingo.com/pricing",
+      "title": "Duolingo pricing page (loaded, but prices are shown only after signing in)",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "ad_free",
+      "label": "No advertisements",
+      "type": "boolean",
+      "question": "Do you mind short ads between lessons?",
+      "help": "The free version plays a short ad after most lessons. All the paid plans remove them."
+    },
+    {
+      "key": "unlimited_hearts",
+      "label": "Practice as long as you like",
+      "type": "boolean",
+      "question": "Would you like to keep practicing even after making a few mistakes?",
+      "help": "On the free version, a handful of wrong answers stops you until later in the day. Duolingo has called this limit Hearts and, more recently, Energy. Paid plans remove the limit so you can carry on."
+    },
+    {
+      "key": "ai_features",
+      "label": "Extra help and conversation practice",
+      "type": "ordinal",
+      "levels": [
+        "none",
+        "practice_tools",
+        "ai_tutor"
+      ],
+      "levelLabels": {
+        "none": "Just the lessons",
+        "practice_tools": "Extra practice for the things you get wrong",
+        "ai_tutor": "Talking practice and explanations of your mistakes"
+      },
+      "question": "How much extra help would you like beyond the ordinary lessons?",
+      "help": "The middle level gives you a practice section that revisits your past mistakes. The top level lets you hold a spoken conversation with a character in the app and ask it to explain why an answer was wrong.",
+      "options": [
+        {
+          "label": "The lessons alone are fine",
+          "value": "none"
+        },
+        {
+          "label": "Extra practice on my mistakes",
+          "value": "practice_tools"
+        },
+        {
+          "label": "Talking practice and explanations",
+          "value": "ai_tutor"
+        }
+      ]
+    },
+    {
+      "key": "members",
+      "label": "People who can use it",
+      "type": "number",
+      "question": "How many people in your household or family would use this?",
+      "help": "Everyone gets their own separate account and their own progress – you are just sharing the payment.",
+      "options": [
+        {
+          "label": "Just me",
+          "value": 1
+        },
+        {
+          "label": "Two of us",
+          "value": 2
+        },
+        {
+          "label": "Three or four",
+          "value": 4
+        },
+        {
+          "label": "Five or six",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "key": "streak_repair",
+      "label": "Repair a missed day",
+      "type": "boolean",
+      "question": "Would you like to be able to repair your streak if you miss a day?",
+      "help": "Duolingo counts how many days in a row you have practiced. Paid plans let you repair that streak once a month if life gets in the way."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "free",
+      "name": "Duolingo (free)",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 0
+        }
+      ],
+      "features": {
+        "ad_free": false,
+        "unlimited_hearts": false,
+        "ai_features": "none",
+        "members": 1,
+        "streak_repair": false
+      },
+      "bestFor": "Almost everyone starting out – the whole course is genuinely free.",
+      "notes": "Duolingo's own blog states that every course is available without paying: 'you never have to pay'. The free version shows ads and limits how many mistakes you can make in a sitting."
+    },
+    {
+      "slug": "super",
+      "name": "Super Duolingo",
+      "tier": 2,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": null
+        },
+        {
+          "period": "annual",
+          "amount": null
+        }
+      ],
+      "features": {
+        "ad_free": true,
+        "unlimited_hearts": true,
+        "ai_features": "practice_tools",
+        "members": 1,
+        "streak_repair": true
+      },
+      "bestFor": "One person who finds the ads and the mistake limit annoying.",
+      "notes": "PRICE NOT VERIFIABLE. Duolingo does not publish a price on any public page – duolingo.com/pricing, duolingo.com/super and the help center all show prices only after you sign in, and Duolingo varies the price by account and country. Amounts are therefore left blank rather than guessed. Features confirmed from Duolingo's official blog: 'Progress tracker, Unlimited Hearts, an ad-free experience, monthly Streak Repair' plus the Practice Hub."
+    },
+    {
+      "slug": "super-family",
+      "name": "Super Duolingo Family Plan",
+      "tier": 3,
+      "status": "active",
+      "confidence": "uncertain",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "annual",
+          "amount": null
+        }
+      ],
+      "features": {
+        "ad_free": true,
+        "unlimited_hearts": true,
+        "ai_features": "practice_tools",
+        "members": 6,
+        "streak_repair": true
+      },
+      "bestFor": "A household or group of friends – usually much cheaper per person than separate memberships.",
+      "notes": "PRICE NOT VERIFIABLE for the same reason as Super. Duolingo's Family Plan page confirms you can 'share all the benefits of Super Duolingo with 5 of your family members or friends', which is 6 people in total including you. The family plan is normally sold as a yearly payment only."
+    },
+    {
+      "slug": "max",
+      "name": "Duolingo Max",
+      "tier": 4,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": null
+        },
+        {
+          "period": "annual",
+          "amount": null
+        }
+      ],
+      "features": {
+        "ad_free": true,
+        "unlimited_hearts": true,
+        "ai_features": "ai_tutor",
+        "members": 1,
+        "streak_repair": true
+      },
+      "bestFor": "Someone who wants to practice actually speaking, not just tapping answers.",
+      "notes": "PRICE NOT VERIFIABLE – Duolingo publishes no list price. Duolingo's official blog describes Max as 'a new subscription tier above Super Duolingo' that includes everything in Super plus Video Call (a spoken conversation with the character Lily) and Roleplay (practicing real-life situations with feedback). Explain My Answer, which tells you why an answer was wrong, is also a Max feature. Max is not available for every language course."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is Duolingo really free?",
+      "a": "Yes. Duolingo says on its own blog that every course can be used without paying anything. The paid plans remove ads and add extras, but they do not unlock any lessons that free users cannot reach."
+    },
+    {
+      "q": "Why can't I see the price before I sign up?",
+      "a": "Duolingo only shows its prices once you are signed in, and it charges different amounts to different people depending on the country and the offer you are shown. Check the price on your own screen before agreeing, and check it again when a free trial is about to end."
+    },
+    {
+      "q": "What is the difference between Super and Max?",
+      "a": "Super removes ads, removes the limit on mistakes and adds extra practice. Max includes all of that and adds a talking-practice feature where you hold a spoken conversation with a character in the app, plus explanations of the answers you got wrong."
+    },
+    {
+      "q": "Can my family share one payment?",
+      "a": "Yes. The Family Plan covers up to six people including you. Each person keeps their own account and their own progress; only the bill is shared."
+    }
+  ],
+  "notes": "Duolingo is the clearest case in this catalog of a company that deliberately does not publish prices. Every official page checked (duolingo.com/pricing, /super, /family, the help center and the company blog) either requires sign-in or discusses features without cost. Duolingo also A/B tests prices, so any figure found on a third-party site would be one person's offer, not a list price. All paid amounts are therefore null with confidence 'uncertain'. Naming note: the mistake limit was called Hearts and was renamed Energy in 2025 – Duolingo's older blog posts say Hearts and its newer ones say energy, so both terms may appear in the app. Buying inside the iPhone or iPad app can cost more than buying on the website."
+}

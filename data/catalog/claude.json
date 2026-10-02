@@ -1,0 +1,248 @@
+{
+  "company": {
+    "slug": "claude",
+    "name": "Claude",
+    "category": "ai-tools",
+    "website": "https://claude.com",
+    "pricingUrl": "https://claude.com/pricing",
+    "shortDescription": "An assistant made by Anthropic that you type questions to. It writes, explains, reads your files and helps with computer code.",
+    "planHelp": "Open Claude, click your name or initials in the bottom left corner, then choose Settings. Your plan is shown at the top."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://claude.com/pricing",
+      "title": "Plans & Pricing – Claude by Anthropic",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://support.claude.com/en/articles/11049741-what-is-the-max-plan",
+      "title": "What is the Max plan? – Claude Help Center",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "usage_limit",
+      "label": "How much you can use it before it makes you wait",
+      "type": "ordinal",
+      "levels": [
+        "limited",
+        "standard",
+        "high",
+        "very_high"
+      ],
+      "levelLabels": {
+        "limited": "A small amount each day",
+        "standard": "Enough for regular everyday use",
+        "high": "About five times the everyday amount",
+        "very_high": "About twenty times the everyday amount"
+      },
+      "question": "How often do you use it?",
+      "help": "Claude sets a limit that refills every five hours, and a larger one that refills once a week. When you reach it you have to wait.",
+      "options": [
+        {
+          "label": "Once in a while",
+          "value": "limited"
+        },
+        {
+          "label": "Most days",
+          "value": "standard"
+        },
+        {
+          "label": "Every day, for hours",
+          "value": "high"
+        },
+        {
+          "label": "Many hours every day, it's my job",
+          "value": "very_high"
+        }
+      ]
+    },
+    {
+      "key": "model_access",
+      "label": "How smart the answers are",
+      "type": "ordinal",
+      "levels": [
+        "basic",
+        "advanced",
+        "frontier"
+      ],
+      "levelLabels": {
+        "basic": "The quickest version",
+        "advanced": "The everyday version",
+        "frontier": "The most capable version, for difficult work"
+      },
+      "question": "Do you need it to handle difficult work, or just everyday questions?",
+      "help": "The free plan gives you the quick and everyday versions. Paid plans add the most capable one.",
+      "options": [
+        {
+          "label": "Everyday questions are all I need",
+          "value": "advanced"
+        },
+        {
+          "label": "I need the most capable one for hard work",
+          "value": "frontier"
+        }
+      ]
+    },
+    {
+      "key": "claude_code",
+      "label": "Help with writing computer programs",
+      "type": "boolean",
+      "question": "Do you write computer programs and want Claude to help directly on your computer?",
+      "help": "This is called Claude Code. If you don't write software, you don't need it."
+    },
+    {
+      "key": "research",
+      "label": "Long, thorough research reports",
+      "type": "boolean",
+      "question": "Do you want it to go off, read lots of websites, and come back with a long written report?",
+      "help": "This takes several minutes and produces a detailed write-up showing where it found things."
+    },
+    {
+      "key": "priority_access",
+      "label": "Getting served first when the service is busy",
+      "type": "boolean",
+      "question": "Do you mind waiting when the service is busy?",
+      "help": "Only the largest plans are let through first at busy times."
+    },
+    {
+      "key": "projects",
+      "label": "Keeping your chats in folders",
+      "type": "boolean",
+      "question": "Do you want to keep related conversations together in a folder, with your own notes and files attached?",
+      "help": "Everyone gets this. The free plan allows up to five folders."
+    },
+    {
+      "key": "file_uploads",
+      "label": "Sending it your own documents and photos",
+      "type": "boolean",
+      "question": "Do you want to send it your own files, such as a letter or a spreadsheet, and ask questions about them?",
+      "help": "Every plan can do this. How many you can send depends on your usage allowance."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "free",
+      "name": "Free",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 0
+        }
+      ],
+      "features": {
+        "usage_limit": "limited",
+        "model_access": "advanced",
+        "claude_code": false,
+        "research": false,
+        "priority_access": false,
+        "projects": true,
+        "file_uploads": true
+      },
+      "bestFor": "Trying it out, or asking a handful of questions a day.",
+      "notes": "Includes chat on the web, desktop and phone, web search, making files, running code, memory between conversations, connections to other apps and artifacts. Limited to five projects. Uses the Sonnet and Haiku models only."
+    },
+    {
+      "slug": "pro",
+      "name": "Pro",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 20
+        },
+        {
+          "period": "annual",
+          "amount": 200
+        }
+      ],
+      "features": {
+        "usage_limit": "standard",
+        "model_access": "frontier",
+        "claude_code": true,
+        "research": true,
+        "priority_access": false,
+        "projects": true,
+        "file_uploads": true
+      },
+      "bestFor": "Most people who use it every day for work, study or writing.",
+      "notes": "Anthropic lists \"$17 Per month with annual subscription discount ($200 billed up front)\", or $20 a month if you pay monthly. Adds Claude Code, Claude Design, Slides and Docs, Claude Science, more models including Opus, Research, the Chrome and Microsoft 365 extensions, projects, and scheduled tasks."
+    },
+    {
+      "slug": "max-5x",
+      "name": "Max 5x",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 100
+        }
+      ],
+      "features": {
+        "usage_limit": "high",
+        "model_access": "frontier",
+        "claude_code": true,
+        "research": true,
+        "priority_access": true,
+        "projects": true,
+        "file_uploads": true
+      },
+      "bestFor": "Heavy daily users who keep running out of room on Pro.",
+      "notes": "Anthropic's help center states \"Max 5x: $100 per month\" and that it \"includes five times the Pro plan's per-session usage allowance\". Adds higher output limits, early access to new features, priority at busy times and longer sessions. No annual billing is offered."
+    },
+    {
+      "slug": "max-20x",
+      "name": "Max 20x",
+      "tier": 4,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 200
+        }
+      ],
+      "features": {
+        "usage_limit": "very_high",
+        "model_access": "frontier",
+        "claude_code": true,
+        "research": true,
+        "priority_access": true,
+        "projects": true,
+        "file_uploads": true
+      },
+      "bestFor": "People using it for many hours every day, especially for programming.",
+      "notes": "Anthropic's help center states \"Max 20x: $200 per month\" and that it \"includes 20 times the Pro plan's per-session usage allowance\". Same features as Max 5x; only the amount of use differs. No annual billing is offered."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is the free version good enough for most people?",
+      "a": "For a few questions a day, yes. You get the everyday models, web search and file uploads. You will notice the limits if you use it for an hour or more at a time, and you cannot use the coding tool or the long research reports."
+    },
+    {
+      "q": "How do the limits actually work?",
+      "a": "There is an allowance that refills every five hours, and a larger one that refills once a week on a fixed day. If you run out, Claude tells you when it will start working again. Nothing is charged automatically."
+    },
+    {
+      "q": "Is Max worth twice Pro, or ten times Pro?",
+      "a": "Only if you regularly hit the Pro limit. Max 5x and Max 20x have the same features as Pro; you are paying purely for more room to use it. If you have never seen a limit message on Pro, Max will not do anything for you."
+    },
+    {
+      "q": "Can I pay yearly to save money?",
+      "a": "Only on Pro. Paying for a year up front costs $200, which works out at about $17 a month instead of $20. The Max plans are month by month only."
+    }
+  ],
+  "notes": "Checked 21 September 2026. Prices for Pro and Free come from claude.com/pricing; the Max prices come from Anthropic's help center, because the pricing page shows both Max tiers as \"From $100 per month\" behind a switch. Usage-limit wording (\"5x\" and \"20x\") is Anthropic's own; Anthropic does not publish a message count, so the usage_limit ordinal reflects their multiples rather than a measured number. Paid plans can also buy extra usage credits on top; that is a top-up, not a plan."
+}

@@ -1,0 +1,141 @@
+{
+  "company": {
+    "slug": "amazon-prime",
+    "name": "Amazon Prime",
+    "category": "streaming-video",
+    "website": "https://www.amazon.com/amazonprime",
+    "pricingUrl": "https://www.amazon.com/gp/help/customer/display.html?nodeId=G34EUPKVMYFW8N2U",
+    "shortDescription": "Free fast delivery from Amazon plus Prime Video movies and series. Prime Video can also be bought on its own.",
+    "planHelp": "On a computer go to amazon.com, hover over Account & Lists, then choose Prime Membership (or Your Account, then Prime). The page shows whether you pay monthly or yearly, the amount, and the next payment date. If you only have Prime Video, look under Your Account, then Memberships and Subscriptions."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.aboutamazon.com/news/retail/prime-membership-cost-benefits",
+      "title": "Here's how much a Prime membership costs, and how to make the most of its benefits – About Amazon",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=G34EUPKVMYFW8N2U",
+      "title": "The Amazon Prime Membership Fee – Amazon Customer Service",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.aboutamazon.com/news/entertainment/prime-video-ultra-ad-free-streaming-subscription",
+      "title": "Prime Video's Ad Free subscription is now Prime Video Ultra for $4.99 a month – About Amazon",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "free_delivery",
+      "label": "Free fast delivery on Amazon orders",
+      "type": "boolean",
+      "question": "Do you want free fast delivery on the things you buy from Amazon?",
+      "help": "This is the main reason most people pay for Prime. The video-only subscription does not include it."
+    },
+    {
+      "key": "ad_free",
+      "label": "No advertisements",
+      "type": "boolean",
+      "question": "Do you want to watch movies and series without advertisements?",
+      "help": "Prime Video now plays advertisements unless you pay a small extra amount each month for Prime Video Ultra."
+    },
+    {
+      "key": "simultaneous_streams",
+      "label": "People who can watch at the same time",
+      "type": "number",
+      "question": "How many people watch at the same time?",
+      "options": [
+        {
+          "label": "Just one",
+          "value": 1
+        },
+        {
+          "label": "2 at the same time",
+          "value": 2
+        },
+        {
+          "label": "3 or 4 at the same time",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "key": "downloads",
+      "label": "Save shows to watch without internet",
+      "type": "boolean",
+      "question": "Do you save shows onto a phone or tablet to watch where there is no internet?",
+      "help": "Prime Video lets you keep up to 25 saved shows on the ordinary subscription."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "prime",
+      "name": "Amazon Prime",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 14.99
+        },
+        {
+          "period": "annual",
+          "amount": 139
+        }
+      ],
+      "features": {
+        "free_delivery": true,
+        "ad_free": false,
+        "simultaneous_streams": 4,
+        "downloads": true
+      },
+      "bestFor": "People who order from Amazon regularly – the delivery saving usually pays for the membership, and the movies and series come free with it.",
+      "notes": "14.99 per month or 139 per year, confirmed on Amazon's own news site. Paying yearly saves about 40 dollars over twelve months. Includes Prime Video, free fast delivery, Prime Music and other benefits. Prime Video now shows some advertisements unless you add Prime Video Ultra for 4.99 more per month."
+    },
+    {
+      "slug": "prime-video-only",
+      "name": "Prime Video only",
+      "tier": 1,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 8.99
+        }
+      ],
+      "features": {
+        "free_delivery": false,
+        "ad_free": false,
+        "simultaneous_streams": 4,
+        "downloads": true
+      },
+      "bestFor": "People who want the movies and series but never order anything from Amazon.",
+      "notes": "Marked uncertain. The figure of 8.99 per month for Prime Video on its own was read on Amazon's Prime Membership Fee help page, but that same page also showed out-of-date Prime prices (12.99 monthly and 119 yearly) that contradict Amazon's own news site (14.99 and 139). Because that page appears to carry old figures, treat 8.99 as needing a second check before it is shown to customers. Does not include free delivery or the other shopping benefits."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Does Prime Video show advertisements now?",
+      "a": "Yes. Amazon added advertisements to Prime Video. To remove them you add Prime Video Ultra for 4.99 a month, or 45.99 for a year."
+    },
+    {
+      "q": "What does Prime Video Ultra add?",
+      "a": "No advertisements, five people watching at once instead of four, 100 saved shows instead of 25, 4K picture and Dolby Atmos sound. It costs 4.99 a month on top of your Prime or Prime Video subscription."
+    },
+    {
+      "q": "Is paying yearly worth it?",
+      "a": "Usually. Prime is 139 for a year compared with 14.99 a month, which works out about 40 dollars cheaper over twelve months."
+    },
+    {
+      "q": "Are there cheaper rates for some people?",
+      "a": "Yes. People aged 18 to 24 and college students pay 7.49 a month or 69 a year after a free trial, and people receiving certain government assistance pay 6.99 a month."
+    }
+  ],
+  "notes": "Prime Video Ultra is recorded here for information only and is NOT modelled as a plan: 4.99 per month or 45.99 per year, added on top of Prime or Prime Video. It gives advertisement-free viewing, up to 5 people watching at once, 100 saved shows, 4K picture and Dolby Atmos. It replaced the older ad-free add-on. Discounted memberships, also not modelled: Prime Student / young adult 7.49 per month or 69 per year; Prime Access for people on qualifying government assistance 6.99 per month. Amazon's own help page and Amazon's news site disagree on the current Prime fee – the news site figures (14.99 monthly, 139 yearly) are used here because they match the Prime Video Ultra announcement. All prices exclude tax."
+}

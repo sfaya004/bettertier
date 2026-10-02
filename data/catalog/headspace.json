@@ -1,0 +1,183 @@
+{
+  "company": {
+    "slug": "headspace",
+    "name": "Headspace",
+    "category": "fitness",
+    "website": "https://www.headspace.com",
+    "pricingUrl": "https://www.headspace.com/subscriptions",
+    "shortDescription": "Guided meditation, breathing exercises and bedtime stories to help with stress and sleep.",
+    "planHelp": "Open the Headspace app, tap the person icon for your profile, then Settings, then Manage subscription. If you joined through an iPhone or iPad, the payment is handled by Apple instead – look in iPhone Settings, tap your name, then Subscriptions."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.headspace.com/subscriptions",
+      "title": "Subscribe to Headspace (prices did not display to an automated reader)",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://help.headspace.com/hc/en-us/articles/115015331867-What-is-the-price-for-a-Headspace-subscription",
+      "title": "What is the price for a Headspace subscription? – Headspace Help Center",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://help.headspace.com/hc/en-us/articles/360010693034-What-does-the-Headspace-Family-plan-offer",
+      "title": "What does the Headspace Family plan offer? – Headspace Help Center",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.headspace.com/family-plan",
+      "title": "Family plan to Headspace",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.headspace.com/studentplan",
+      "title": "Headspace Student Discounted Plan",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://help.headspace.com/hc/en-us/articles/360023235413-Are-there-any-discounts-available",
+      "title": "Are there any discounts available? – Headspace Help Center",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "members",
+      "label": "People who get their own account",
+      "type": "number",
+      "question": "How many people in your family would use it?",
+      "help": "Each person gets their own account, so nobody sees anyone else's meditations or progress. Only the payment is shared.",
+      "options": [
+        {
+          "label": "Just me",
+          "value": 1
+        },
+        {
+          "label": "Two of us",
+          "value": 2
+        },
+        {
+          "label": "Three or four",
+          "value": 4
+        },
+        {
+          "label": "Five or six",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "key": "sleep_content",
+      "label": "Bedtime stories and sleep sounds",
+      "type": "boolean",
+      "question": "Do you have trouble falling asleep?",
+      "help": "Headspace includes calm bedtime stories and gentle sounds designed to help you fall asleep. They are part of every paid plan."
+    },
+    {
+      "key": "offline_access",
+      "label": "Download sessions to use without internet",
+      "type": "boolean",
+      "question": "Would you like to use it somewhere with no internet signal?",
+      "help": "Sessions can be downloaded in advance onto your phone or tablet."
+    },
+    {
+      "key": "full_library",
+      "label": "The whole library of sessions",
+      "type": "boolean",
+      "question": "Do you want everything, or just a few starter sessions?",
+      "help": "Without paying, only a small handful of introductory sessions is available. Every paid plan opens up the whole library."
+    }
+  ],
+  "plans": [
+    {
+      "slug": "headspace",
+      "name": "Headspace",
+      "tier": 1,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": null
+        },
+        {
+          "period": "annual",
+          "amount": null
+        }
+      ],
+      "features": {
+        "members": 1,
+        "sleep_content": true,
+        "offline_access": true,
+        "full_library": true
+      },
+      "bestFor": "One person who wants help winding down, sleeping or handling stress.",
+      "notes": "This is the ordinary individual subscription. You can pay either monthly or once a year for the same thing – the yearly way is cheaper per month, which is why both are listed as two prices on this one plan rather than as two different plans. PRICES NOT VERIFIABLE: Headspace's own subscription page loads its prices with JavaScript and showed 'null USD' to us, and the help-center article titled 'What is the price for a Headspace subscription?' contains no figures at all – it simply links back to that page. No amount is recorded rather than guessing. Headspace's student page does state the student rate is '85% off', which implies a regular yearly price somewhere around $66 to $70, but that is an inference and is deliberately not entered as data. A free trial (14 days is referenced on Headspace's site) is offered."
+    },
+    {
+      "slug": "student",
+      "name": "Headspace Student Plan",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "annual",
+          "amount": 9.99
+        }
+      ],
+      "features": {
+        "members": 1,
+        "sleep_content": true,
+        "offline_access": true,
+        "full_library": true
+      },
+      "bestFor": "Anyone currently enrolled at a college or university – it is the same product for a fraction of the price.",
+      "notes": "Headspace's student page states: 'You'll get access to Headspace for $9.99 USD a year while you're a verified college or university student', described as 85% off. You must prove you are a student through SheerID, and the price only lasts while you remain verified. Headspace also lists a separate Educator's Plan for teachers, but no price for it was published on a readable page."
+    },
+    {
+      "slug": "family",
+      "name": "Headspace Family Plan",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 6,
+      "prices": [
+        {
+          "period": "annual",
+          "amount": 99.99
+        }
+      ],
+      "features": {
+        "members": 6,
+        "sleep_content": true,
+        "offline_access": true,
+        "full_library": true
+      },
+      "bestFor": "A household where two or more people would use it – it covers up to six people for not much more than one individual subscription.",
+      "notes": "Two official Headspace pages agree: '$99.99 USD per year' covering 'up to 6 family members (including the family plan owner)'. Yearly payment only – there is no monthly family option. Family members do not have to live at the same address, but each needs their own email address to accept the invitation."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I pay monthly or once a year?",
+      "a": "Both are offered for the same subscription. Paying once a year always works out cheaper per month, but you hand over the whole amount up front. If you are not sure you will stick with it, start monthly and switch to yearly later."
+    },
+    {
+      "q": "Is the family plan worth it?",
+      "a": "If even two people in your household would use it, almost certainly yes. One payment of $99.99 a year covers up to six people, each with their own private account, whereas two separate subscriptions would usually cost more."
+    },
+    {
+      "q": "Can I get it free through my employer or health insurance?",
+      "a": "Quite possibly. Headspace is provided free by many employers and some health insurers. It is worth asking before you pay – people often subscribe without realizing they already have access."
+    },
+    {
+      "q": "Is there anything free?",
+      "a": "There is a free trial and a small number of free introductory sessions, but the full library needs a paid subscription."
+    }
+  ],
+  "notes": "Headspace is the clearest 'monthly versus annual' case in this catalog: the individual subscription is one product with two ways of paying, so it is recorded as a single plan with two prices rather than as two plans. The individual monthly and annual amounts could not be verified – headspace.com/subscriptions renders prices in JavaScript and returned 'null USD' to an automated reader, and Headspace's own help-center pricing article carries no figures. Both discounted plans were verifiable and are included: Student $9.99/year (verified student status required) and Family $99.99/year for up to 6 people. An Educator's Plan is mentioned by Headspace but no price is published. Headspace is also widely distributed free through employers and health plans, which is often the cheapest route. Buying inside the iPhone app can cost more than buying on the website."
+}

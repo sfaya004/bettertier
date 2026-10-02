@@ -1,0 +1,265 @@
+{
+  "company": {
+    "slug": "adobe-creative-cloud",
+    "name": "Adobe Creative Cloud",
+    "category": "creative",
+    "website": "https://www.adobe.com/creativecloud.html",
+    "pricingUrl": "https://www.adobe.com/creativecloud/plans.html",
+    "shortDescription": "Adobe's photo, design and video programs, including Photoshop and Lightroom, paid for monthly.",
+    "planHelp": "Go to account.adobe.com and sign in, then click Plans. The name of your plan and what you pay each month are shown there. You can also open the Creative Cloud program on your computer and click your picture in the top right corner."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.adobe.com/creativecloud/plans.html",
+      "title": "Creative Cloud plans and pricing – Adobe",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.adobe.com/products/photoshop/plans.html",
+      "title": "Photoshop plans and pricing – Adobe",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.adobe.com/creativecloud/photography.html",
+      "title": "Adobe Photography plans – Adobe",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://helpx.adobe.com/firefly/using/generative-credits-faq.html",
+      "title": "Generative credits FAQ – Adobe Help",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://helpx.adobe.com/creative-cloud/faq/ccpp-20gb.html",
+      "title": "Creative Cloud Photography (20GB) pricing changes – Adobe Help",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "apps_included",
+      "label": "How many Adobe programs you get",
+      "type": "ordinal",
+      "levels": [
+        "one_app",
+        "photo_apps",
+        "all_apps"
+      ],
+      "levelLabels": {
+        "one_app": "One program only, such as Photoshop",
+        "photo_apps": "The photo programs: Photoshop and Lightroom",
+        "all_apps": "All 20 or more Adobe programs"
+      },
+      "question": "Which Adobe programs do you actually use?",
+      "help": "Most people who edit family photos only need Photoshop and Lightroom. The big plan adds video, page-layout, and design programs that most people never open.",
+      "options": [
+        {
+          "label": "Just one program",
+          "value": "one_app"
+        },
+        {
+          "label": "Photo editing (Photoshop and Lightroom)",
+          "value": "photo_apps"
+        },
+        {
+          "label": "Everything Adobe makes",
+          "value": "all_apps"
+        }
+      ]
+    },
+    {
+      "key": "storage_gb",
+      "label": "Online storage space",
+      "type": "number",
+      "question": "How much online space do you need for your pictures and projects?",
+      "help": "This is Adobe's own storage, separate from anything you keep on your computer.",
+      "options": [
+        {
+          "label": "Very little (20 GB)",
+          "value": 20
+        },
+        {
+          "label": "Mostly documents and a few photos (100 GB)",
+          "value": 100
+        },
+        {
+          "label": "Lots of photos and videos (1 TB)",
+          "value": 1000
+        }
+      ]
+    },
+    {
+      "key": "generative_credits",
+      "label": "AI picture-making allowance each month",
+      "type": "number",
+      "question": "How much do you plan to use Adobe's AI picture tools each month?",
+      "help": "Each AI picture or effect uses up some of your monthly allowance. If you never use these tools, ignore this.",
+      "options": [
+        {
+          "label": "Not at all (25 a month is plenty)",
+          "value": 25
+        },
+        {
+          "label": "Now and then (250 a month)",
+          "value": 250
+        },
+        {
+          "label": "Often (1,000 a month)",
+          "value": 1000
+        },
+        {
+          "label": "All the time (4,000 a month)",
+          "value": 4000
+        }
+      ]
+    }
+  ],
+  "plans": [
+    {
+      "slug": "lightroom-1tb",
+      "name": "Lightroom (1 TB)",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 11.99
+        }
+      ],
+      "features": {
+        "apps_included": "one_app",
+        "storage_gb": 1000,
+        "generative_credits": 250
+      },
+      "bestFor": "Someone who wants to organize and tidy up photos but does not need Photoshop.",
+      "notes": "Includes Lightroom for computer, phone and web, plus Lightroom Classic. Price shown is the yearly plan paid monthly; you commit for a year."
+    },
+    {
+      "slug": "photography-20gb",
+      "name": "Photography plan (20 GB)",
+      "tier": 2,
+      "status": "grandfathered",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 14.99
+        },
+        {
+          "period": "annual",
+          "amount": 119.88
+        }
+      ],
+      "features": {
+        "apps_included": "photo_apps",
+        "storage_gb": 20,
+        "generative_credits": null
+      },
+      "bestFor": "People who already have this old plan and keep their photos on their own computer.",
+      "notes": "NO LONGER SOLD to new customers as of 15 January 2025, but many people still pay for it, so it is listed. The price rose from $9.99 to $14.99 a month (yearly plan paid monthly) on that date; paying for the whole year at once stayed at $119.88. Adobe's credits page does not list this plan, so the monthly AI allowance is null."
+    },
+    {
+      "slug": "photography-1tb",
+      "name": "Photography plan (1 TB)",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 19.99
+        }
+      ],
+      "features": {
+        "apps_included": "photo_apps",
+        "storage_gb": 1000,
+        "generative_credits": 1000
+      },
+      "bestFor": "Most home photographers: you get Photoshop and Lightroom together at the lowest price.",
+      "notes": "Includes Lightroom, Lightroom Classic and Photoshop for computer and iPad, with 1 TB of online storage. Price shown is the yearly plan paid monthly."
+    },
+    {
+      "slug": "single-app",
+      "name": "Single App (for example Photoshop)",
+      "tier": 4,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 22.99
+        }
+      ],
+      "features": {
+        "apps_included": "one_app",
+        "storage_gb": 100,
+        "generative_credits": 25
+      },
+      "bestFor": "Someone who needs exactly one program, such as Illustrator or Premiere, and no others.",
+      "notes": "$22.99 a month is the price Adobe lists for Photoshop, Illustrator and Premiere on the yearly plan paid monthly; other single programs may cost a different amount. Note that the Photography plan at $19.99 includes Photoshop AND Lightroom AND 1 TB of storage for less money, so a Photoshop-only plan rarely makes sense. Monthly AI allowance is 25 credits for people who subscribed after 17 June 2025 (it was 500 before that)."
+    },
+    {
+      "slug": "creative-cloud-standard",
+      "name": "Creative Cloud Standard",
+      "tier": 5,
+      "status": "active",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 54.99
+        }
+      ],
+      "features": {
+        "apps_included": "all_apps",
+        "storage_gb": null,
+        "generative_credits": 25
+      },
+      "bestFor": "People who want the main Adobe programs but do not need heavy AI use.",
+      "notes": "Marked uncertain: the $54.99 a month figure (yearly plan paid monthly) was read from Adobe's plans page, but that page loads its prices dynamically and the storage amount for this plan was not shown. Adobe describes it as including Photoshop, Illustrator, Acrobat Pro and more. Adobe's own credits page confirms 25 generative credits a month. Storage left null."
+    },
+    {
+      "slug": "creative-cloud-pro",
+      "name": "Creative Cloud Pro",
+      "tier": 6,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 69.99
+        }
+      ],
+      "features": {
+        "apps_included": "all_apps",
+        "storage_gb": 100,
+        "generative_credits": 4000
+      },
+      "bestFor": "Working designers and video makers who use several Adobe programs every week.",
+      "notes": "20 or more programs plus Adobe's Firefly AI. 4,000 premium AI credits a month with unlimited standard AI generations. Adobe currently advertises $34.99 a month for the first 3 months for new subscribers; that is a promotion, not the standard price. Students and teachers are offered $19.99 a month. Far more than a home user needs."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can I buy Photoshop once instead of paying every month?",
+      "a": "No. Adobe only rents its programs by the month or the year. If you stop paying, the programs stop working, although your picture files stay on your computer."
+    },
+    {
+      "q": "Which plan should I get if I just want to edit family photos?",
+      "a": "The Photography plan at $19.99 a month. It includes both Photoshop and Lightroom plus 1 TB of online storage, and costs less than buying Photoshop on its own at $22.99."
+    },
+    {
+      "q": "What does 'annual, billed monthly' mean?",
+      "a": "It means you are agreeing to a whole year but paying in twelve pieces. If you cancel in the middle, Adobe usually charges a fee. A true month-to-month plan costs more but you can stop any time."
+    },
+    {
+      "q": "What are generative credits?",
+      "a": "They are an allowance for Adobe's AI picture tools, such as replacing a sky or removing an object. Each use spends some credits, and the allowance refills every month. If you never use the AI features, the number does not matter."
+    }
+  ],
+  "notes": "Adobe renamed its full-suite plans during 2025: what used to be called 'All Apps' is now sold as Creative Cloud Pro (with heavy AI included) and Creative Cloud Standard (with a small AI allowance). Prices on adobe.com load dynamically, so figures here were gathered from the Photoshop plans page, the Photography page, the generative credits help page and the 20 GB Photography plan help page. All monthly amounts are for a yearly commitment paid monthly unless stated; true month-to-month prices are higher and were not readable for most plans. Single App pricing varies by program; $22.99 is verified for Photoshop, Illustrator and Premiere."
+}

@@ -1,0 +1,185 @@
+{
+  "company": {
+    "slug": "strava",
+    "name": "Strava",
+    "category": "fitness",
+    "website": "https://www.strava.com",
+    "pricingUrl": "https://www.strava.com/pricing",
+    "shortDescription": "Records your walks, runs and bike rides on your phone or watch, and lets you follow friends' activities.",
+    "planHelp": "Open the Strava app, tap You, then the gear icon for Settings, then Subscription. It shows your plan and renewal date. If you joined through an iPhone, cancel in iPhone Settings, your name, then Subscriptions."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.strava.com/pricing",
+      "title": "Strava | Pricing",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://www.strava.com/subscribe",
+      "title": "Strava Subscription",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "url": "https://support.strava.com/en-us/articles/15401674-subscription-pricing-faq",
+      "title": "Subscription Pricing FAQ | Strava Help Center",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "route_planning",
+      "label": "Plan a route before you head out",
+      "type": "boolean",
+      "question": "Would you like the app to plan a walking or cycling route for you?",
+      "help": "You tell it roughly how far you want to go and it draws a route on the map that you can follow on your phone or watch."
+    },
+    {
+      "key": "segment_leaderboards",
+      "label": "See how your times compare with other people's",
+      "type": "boolean",
+      "question": "Do you like to compare your times on a particular hill or stretch of road with other people's?",
+      "help": "Strava calls these segments. Without paying you can see your own times; paying shows the full list of everyone's."
+    },
+    {
+      "key": "training_analysis",
+      "label": "Detailed charts of how your fitness is changing",
+      "type": "boolean",
+      "question": "Do you want charts showing whether you are getting fitter over the weeks and months?",
+      "help": "Includes your full history in one place and goals you set for yourself. Casual walkers rarely need this."
+    },
+    {
+      "key": "members",
+      "label": "People who get their own account",
+      "type": "number",
+      "question": "How many people in your household would use it?",
+      "help": "Each person keeps their own separate account and activities – only the payment is shared.",
+      "options": [
+        {
+          "label": "Just me",
+          "value": 1
+        },
+        {
+          "label": "Two of us",
+          "value": 2
+        },
+        {
+          "label": "Three or four",
+          "value": 4
+        }
+      ]
+    }
+  ],
+  "plans": [
+    {
+      "slug": "free",
+      "name": "Strava (free)",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 0
+        }
+      ],
+      "features": {
+        "route_planning": false,
+        "segment_leaderboards": false,
+        "training_analysis": false,
+        "members": 1
+      },
+      "bestFor": "Most people – recording your walks, runs and rides and sharing them with friends costs nothing.",
+      "notes": "Strava's subscribe page describes the free account as being able to record activities, join the community and use basic route features. Route drawing, the full comparison tables and the detailed fitness charts are reserved for subscribers."
+    },
+    {
+      "slug": "student",
+      "name": "Strava Subscription – Student",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "annual",
+          "amount": 39.99
+        }
+      ],
+      "features": {
+        "route_planning": true,
+        "segment_leaderboards": true,
+        "training_analysis": true,
+        "members": 1
+      },
+      "bestFor": "Students, who get exactly the same subscription for half price.",
+      "notes": "Strava's subscribe page shows 50% off at $39.99 a year plus tax, with a 30-day free trial. You must prove you are a student. Not relevant to most older shoppers but included because it is an officially listed price."
+    },
+    {
+      "slug": "subscription",
+      "name": "Strava Subscription",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 11.99
+        },
+        {
+          "period": "annual",
+          "amount": 79.99
+        }
+      ],
+      "features": {
+        "route_planning": true,
+        "segment_leaderboards": true,
+        "training_analysis": true,
+        "members": 1
+      },
+      "bestFor": "One keen walker, runner or cyclist who wants routes planned and wants to track progress properly.",
+      "notes": "Strava's pricing page states '$11.99/month or $79.99/year plus applicable taxes'. The yearly price works out at $6.67 a month, so paying yearly saves about $64 over twelve months. A 30-day free trial is offered; that is a promotion, not the standard price. Teachers, military members and medical professionals are offered 25% off with proof."
+    },
+    {
+      "slug": "family",
+      "name": "Strava Family Plan",
+      "tier": 4,
+      "status": "active",
+      "confidence": "verified",
+      "seatsIncluded": 4,
+      "prices": [
+        {
+          "period": "annual",
+          "amount": 139.99
+        }
+      ],
+      "features": {
+        "route_planning": true,
+        "segment_leaderboards": true,
+        "training_analysis": true,
+        "members": 4
+      },
+      "bestFor": "Two to four people in one household – far cheaper than buying separate subscriptions.",
+      "notes": "Strava's pricing page gives $139.99 a year plus tax, and the subscribe page describes it as up to 4 accounts at '$2.92/mo. per person'. Two separate yearly subscriptions would cost $159.98, so the family plan is cheaper from two people upwards. Yearly payment only – there is no monthly family option."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is the free version enough?",
+      "a": "For most people, yes. Recording your walks, runs and rides, seeing the map afterwards and following friends all cost nothing. You only need to pay if you want the app to plan routes for you or to show detailed charts of your fitness over time."
+    },
+    {
+      "q": "Is it cheaper to pay yearly?",
+      "a": "Much cheaper. $79.99 for a year works out at $6.67 a month, against $11.99 paying month by month – a saving of about $64 a year. The catch is paying the whole amount at once."
+    },
+    {
+      "q": "Can my family share one subscription?",
+      "a": "Yes. The Family Plan is $139.99 a year and covers up to four people, each with their own account. From two people onwards it is cheaper than buying separate subscriptions."
+    },
+    {
+      "q": "Do I need a special watch?",
+      "a": "No. Strava works using your phone alone. It also connects to a Garmin, Apple Watch, Fitbit or similar if you already have one."
+    }
+  ],
+  "notes": "Strava's pricing page notes it was 'Updated: July 1, 2025' and that Strava is moving to consistent subscription pricing by country, so US prices should be stable. Strava also sells a bundle, 'Strava + Runna', at $149.99 a year plus tax, which adds the Runna running-training app – listed here in notes only because it is a bundle rather than a Strava plan. A yearly-only student rate of $39.99 and 25% discounts for teachers, military and medical professionals are officially advertised. Prices bought inside the iPhone app can be higher than on strava.com."
+}

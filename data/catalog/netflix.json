@@ -1,0 +1,213 @@
+{
+  "company": {
+    "slug": "netflix",
+    "name": "Netflix",
+    "category": "streaming-video",
+    "website": "https://www.netflix.com",
+    "pricingUrl": "https://help.netflix.com/en/node/24926",
+    "shortDescription": "Movies, TV shows and Netflix's own series, watched whenever you like.",
+    "planHelp": "On a computer go to netflix.com, click your picture in the top right corner, choose Account, and look under Membership. On a TV, open the Netflix app, go to your profile, then Account. The plan name (Standard with ads, Standard, or Premium) is shown there."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://help.netflix.com/en/node/24926",
+      "title": "Netflix plans and pricing – Netflix Help Center",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "simultaneous_streams",
+      "label": "People who can watch at the same time",
+      "type": "number",
+      "question": "How many people watch at the same time?",
+      "help": "Count only the people who are watching at the very same moment, not everyone who ever uses the account.",
+      "options": [
+        {
+          "label": "Just one",
+          "value": 1
+        },
+        {
+          "label": "2 at the same time",
+          "value": 2
+        },
+        {
+          "label": "3 or 4 at the same time",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "key": "video_quality",
+      "label": "Picture quality",
+      "type": "ordinal",
+      "levels": [
+        "full_hd",
+        "4k"
+      ],
+      "levelLabels": {
+        "full_hd": "Full HD (1080p)",
+        "4k": "4K Ultra HD with HDR"
+      },
+      "question": "What picture quality do you need?",
+      "help": "Full HD looks sharp on almost every television. 4K only makes a difference if you own a 4K television and have fast internet.",
+      "options": [
+        {
+          "label": "Full HD is fine",
+          "value": "full_hd"
+        },
+        {
+          "label": "4K (I have a 4K television and use it)",
+          "value": "4k"
+        }
+      ]
+    },
+    {
+      "key": "ad_free",
+      "label": "No advertisements",
+      "type": "boolean",
+      "question": "Do you want to watch without advertisements?",
+      "help": "The cheapest plan plays short advertisements before and during shows."
+    },
+    {
+      "key": "downloads",
+      "label": "Save shows to watch without internet",
+      "type": "boolean",
+      "question": "Do you save shows onto a phone or tablet to watch where there is no internet, for example on an airplane?",
+      "help": "All Netflix plans let you do this. The more expensive plans let you save shows on more devices."
+    },
+    {
+      "key": "extra_member_slots",
+      "label": "Extra people outside your home",
+      "type": "number",
+      "question": "How many people who do NOT live in your home use your account?",
+      "help": "Netflix calls these extra members. Each one gets their own sign-in, and you pay a little extra each month for them.",
+      "options": [
+        {
+          "label": "Nobody outside my home",
+          "value": 0
+        },
+        {
+          "label": "1 person",
+          "value": 1
+        },
+        {
+          "label": "2 people",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "plans": [
+    {
+      "slug": "standard-with-ads",
+      "name": "Standard with ads",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 8.99
+        }
+      ],
+      "features": {
+        "simultaneous_streams": 2,
+        "video_quality": "full_hd",
+        "ad_free": false,
+        "downloads": true,
+        "extra_member_slots": 0
+      },
+      "bestFor": "One or two people who watch a normal amount and do not mind short advertisements.",
+      "notes": "Shows advertisements. Saving shows for offline viewing is allowed on 2 devices. A small number of movies and shows are missing from this plan for licensing reasons. Extra members cannot be added to this plan."
+    },
+    {
+      "slug": "standard",
+      "name": "Standard",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 19.99
+        }
+      ],
+      "features": {
+        "simultaneous_streams": 2,
+        "video_quality": "full_hd",
+        "ad_free": true,
+        "downloads": true,
+        "extra_member_slots": 1
+      },
+      "bestFor": "One or two people in the same home who do not want advertisements.",
+      "notes": "No advertisements. Saving shows for offline viewing is allowed on 2 devices. You may add 1 extra member who lives somewhere else, for an additional 9.99 per month (ad-free extra member)."
+    },
+    {
+      "slug": "premium",
+      "name": "Premium",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 26.99
+        }
+      ],
+      "features": {
+        "simultaneous_streams": 4,
+        "video_quality": "4k",
+        "ad_free": true,
+        "downloads": true,
+        "extra_member_slots": 2
+      },
+      "bestFor": "Bigger households where several people watch at once, or anyone with a 4K television.",
+      "notes": "No advertisements. 4K Ultra HD with HDR. Saving shows for offline viewing is allowed on 6 devices. You may add up to 2 extra members who live somewhere else, each for an additional monthly fee (9.99 per month for the ad-free extra member)."
+    },
+    {
+      "slug": "basic",
+      "name": "Basic",
+      "tier": 2,
+      "status": "grandfathered",
+      "confidence": "uncertain",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": null
+        }
+      ],
+      "features": {
+        "simultaneous_streams": 1,
+        "video_quality": null,
+        "ad_free": true,
+        "downloads": true,
+        "extra_member_slots": 0
+      },
+      "bestFor": "Nobody new – this plan can no longer be bought.",
+      "notes": "Netflix's help page states the Basic plan has been discontinued and is no longer available to new or rejoining members. Long-standing members may still be on it. The current price and picture quality for people still on Basic are not published on the plans page, so they are recorded as null rather than guessed."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can I change my Netflix plan whenever I want?",
+      "a": "Yes. Sign in at netflix.com, click your picture in the top right corner, choose Account, then Change plan. There is no cancellation fee and no contract."
+    },
+    {
+      "q": "What is the difference between Standard with ads and Standard?",
+      "a": "They both let two people watch at the same time in Full HD. The cheaper one plays short advertisements and a few shows are missing from it. The more expensive one has no advertisements and lets you add one person from outside your home."
+    },
+    {
+      "q": "Do I need the Premium plan?",
+      "a": "Only if three or four people in your home watch at the same time, or if you have a 4K television and want the sharpest picture. Otherwise Standard is usually enough."
+    },
+    {
+      "q": "What is an extra member?",
+      "a": "It is a person who does not live in your home, such as a grown-up child, who gets their own sign-in on your account. You pay an extra fee each month for each one. Only the Standard and Premium plans allow this."
+    }
+  ],
+  "notes": "Prices are the standard monthly prices from Netflix's own help center on 2026-09-21 and do not include tax. Netflix does not sell an annual plan in the United States. The extra member add-on is 9.99 per month without advertisements; Netflix's plans page does not clearly state a separate with-ads extra member price, so only the 9.99 figure is recorded."
+}

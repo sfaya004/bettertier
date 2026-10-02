@@ -1,0 +1,197 @@
+{
+  "company": {
+    "slug": "playstation-plus",
+    "name": "PlayStation Plus",
+    "category": "gaming",
+    "website": "https://www.playstation.com/en-us/ps-plus/",
+    "pricingUrl": "https://www.playstation.com/en-us/ps-plus/",
+    "shortDescription": "Sony's membership for PlayStation consoles: play online with other people, get free games every month, and on the higher plans a large library of games to play.",
+    "planHelp": "On your PlayStation, go to Settings, then Users and Accounts, then Account, then Payment and Subscriptions, then Subscriptions. Your tier and renewal date are shown there."
+  },
+  "region": "US",
+  "currency": "USD",
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "url": "https://www.playstation.com/en-us/ps-plus/",
+      "title": "PlayStation Plus – PlayStation (US)",
+      "checkedAt": "2026-09-21"
+    }
+  ],
+  "features": [
+    {
+      "key": "online_multiplayer",
+      "label": "Playing with other people online",
+      "type": "boolean",
+      "question": "Do you play games against or alongside other people over the internet?",
+      "help": "Most PlayStation games need a paid membership before you can play with other people."
+    },
+    {
+      "key": "monthly_games",
+      "label": "Free games added to your account every month",
+      "type": "boolean",
+      "question": "Do you want a few games added to your account each month at no extra cost?",
+      "help": "You must claim them while you are a member. They stay playable as long as you keep paying."
+    },
+    {
+      "key": "game_catalog",
+      "label": "A library of games you can play whenever you like",
+      "type": "ordinal",
+      "levels": [
+        "none",
+        "large",
+        "largest"
+      ],
+      "levelLabels": {
+        "none": "No library, just the monthly games",
+        "large": "Hundreds of games",
+        "largest": "Hundreds of games plus older classics and movies"
+      },
+      "question": "Do you want a big library of games to dip into, or are a few games a month enough for you?",
+      "options": [
+        {
+          "label": "A few games a month is enough",
+          "value": "none"
+        },
+        {
+          "label": "I want hundreds of games to choose from",
+          "value": "large"
+        },
+        {
+          "label": "I want the biggest library, including old classics",
+          "value": "largest"
+        }
+      ]
+    },
+    {
+      "key": "ubisoft_classics",
+      "label": "Ubisoft+ Classics included",
+      "type": "boolean",
+      "question": "Do you play Ubisoft games such as Assassin's Creed or Far Cry?"
+    },
+    {
+      "key": "classics",
+      "label": "Games from the older PlayStation machines",
+      "type": "boolean",
+      "question": "Do you want to play games from the original PlayStation, PlayStation 2, PlayStation 3 and PSP?",
+      "help": "This is mostly for people who want to revisit games they played years ago."
+    },
+    {
+      "key": "cloud_streaming",
+      "label": "Streaming games over the internet instead of downloading them",
+      "type": "boolean",
+      "question": "Do you want to start playing straight away by streaming a game, rather than waiting for it to download?"
+    },
+    {
+      "key": "trials",
+      "label": "Trying games before you buy them",
+      "type": "boolean",
+      "question": "Would you like to try a game for a short while before deciding whether to buy it?"
+    }
+  ],
+  "plans": [
+    {
+      "slug": "essential",
+      "name": "PlayStation Plus Essential",
+      "tier": 1,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 10.99
+        },
+        {
+          "period": "annual",
+          "amount": 79.99
+        }
+      ],
+      "features": {
+        "online_multiplayer": true,
+        "monthly_games": true,
+        "game_catalog": "none",
+        "ubisoft_classics": false,
+        "classics": false,
+        "cloud_streaming": false,
+        "trials": false
+      },
+      "bestFor": "People who buy their own games but need to play online with friends.",
+      "notes": "Includes online multiplayer, monthly games, exclusive discounts, exclusive content, cloud storage for saved games and Share Play. Sony also sells a 3-month option at $27.99, which is not recorded in the prices list because the format only allows monthly and annual."
+    },
+    {
+      "slug": "extra",
+      "name": "PlayStation Plus Extra",
+      "tier": 2,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 16.99
+        },
+        {
+          "period": "annual",
+          "amount": 134.99
+        }
+      ],
+      "features": {
+        "online_multiplayer": true,
+        "monthly_games": true,
+        "game_catalog": "large",
+        "ubisoft_classics": true,
+        "classics": false,
+        "cloud_streaming": false,
+        "trials": false
+      },
+      "bestFor": "Someone who wants plenty to play without buying games one at a time.",
+      "notes": "Everything in Essential plus the Game Catalog of hundreds of games and Ubisoft+ Classics. A 3-month option is sold at $43.99."
+    },
+    {
+      "slug": "premium",
+      "name": "PlayStation Plus Premium",
+      "tier": 3,
+      "status": "active",
+      "confidence": "verified",
+      "prices": [
+        {
+          "period": "monthly",
+          "amount": 19.99
+        },
+        {
+          "period": "annual",
+          "amount": 159.99
+        }
+      ],
+      "features": {
+        "online_multiplayer": true,
+        "monthly_games": true,
+        "game_catalog": "largest",
+        "ubisoft_classics": true,
+        "classics": true,
+        "cloud_streaming": true,
+        "trials": true
+      },
+      "bestFor": "Keen players who want the lot, including old classics and the ability to try games first.",
+      "notes": "Everything in Extra plus the Classics Catalog of games from PlayStation history, game trials, cloud streaming of PS5 titles, and the Sony Pictures Catalog of up to 100 movies on demand. Sony marks the 12-month price as \"Best value\". A 3-month option is sold at $54.99."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which one do I actually need?",
+      "a": "If you only want to play online with friends, Essential is enough. If you want lots of games to play without buying them, choose Extra. Premium is only worth it if you want the older classic games, the movie library or the ability to try games before buying."
+    },
+    {
+      "q": "Is paying for a year cheaper?",
+      "a": "Yes, considerably. Essential is $10.99 a month, which is about $132 over a year, against $79.99 if you pay for twelve months up front. The saving is similar on the other two tiers."
+    },
+    {
+      "q": "Do I keep the monthly games forever?",
+      "a": "You keep them as long as you keep paying. You must claim each month's games while you are a member; if your membership lapses they stop working, but they come back if you rejoin."
+    },
+    {
+      "q": "Can I move up to a higher tier partway through?",
+      "a": "Yes. Sony charges you the difference for the time left on your current membership, so you are not paying twice."
+    }
+  ],
+  "notes": "Checked 21 September 2026 from Sony's US PlayStation Plus page. All three tiers are also sold as 3-month memberships ($27.99 Essential, $43.99 Extra, $54.99 Premium); the data format only allows monthly and annual periods, so the quarterly figures are recorded in each plan's notes instead. Every tier includes exclusive discounts, cloud storage for saved games and Share Play, so those are not listed as comparison features. Note that Sony has used the name Deluxe instead of Premium in some countries; in the United States the top tier is called Premium."
+}
